@@ -1,0 +1,26 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Instruments(November 1999)]{PDGFRE}
+Texas Instruments.
+\newblock Pcb design guidelines for reduced emi.
+\newblock \emph{Application Note}, November 1999.
+\newblock URL \url{http://www.ti.com/lit/an/szza009/szza009.pdf}.
+
+\bibitem[Kueck(October 2012)]{PSLE}
+Christian Kueck.
+\newblock Power supply layout and emi.
+\newblock \emph{Application Note, Linear Technology}, October 2012.
+\newblock URL \url{http://cds.linear.com/docs/en/application-note/an139f.pdf}.
+
+\bibitem[Instruments(September 2008–Revised April 2013)]{SNOA529A}
+Texas Instruments.
+\newblock An-1852 designing with ph electrodes.
+\newblock \emph{Application Note}, September 2008–Revised April 2013.
+\newblock URL \url{http://www.ti.com/lit/an/snoa529a/snoa529a.pdf}.
+
+\end{thebibliography}

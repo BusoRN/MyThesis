@@ -1,0 +1,144 @@
+\definecolor{shadecolor}{gray}{0.80}
+
+Blowfish is a symmetric-key block cipher, designed in 1993 by Bruce Schneier. This algorithm is designed for cryptography and it has the particularity of being not proprietary.\newline In this chapter the operations that characterize it will be fully described.
+\section{Description of the algorithm}
+\textit{Blowfish} is a block cipher with secret key of variable length. It is composed by a Feistel network that repeat one coding algorithm 16 times.The size of block is equal to 64 bits, while the size of the key is variable from 32 to 448 bits. Actually, the most long part of the method is the initialization part which take place before the coding.\newline
+There are two parts: the first one is related to the expansion of the key while the second is related to cryption of the data.
+\begin{enumerate}
+ \item \textit{Expansion} takes as input the key composed of 448 bits at maximum and gives back a number of array of sub-keys for a total amount of 4168 byte;
+ \item \textit{Encryption} operation for data includes the use of 16 blocks, each one called round. Inside each round the operations of permutation and substitution are made accordingly to the key and to the data.
+ \end{enumerate}
+The only logical operation used is the XOR while the addition between 32 bits words is the unique mathematical operation. Additionally, each round makes four accesses to array of data.
+\section{Encryption}
+
+The definition of Blowfish is Feistel network composed by 16 round. The input element is composed by 64 bits and the other elements used in the algorithm appertain to two structure called P-array and S-box. How these two structures are computed is fully explained later in this document.\newpage
+
+%\colorbox{gray!20}{%
+%\shadowbox{%
+%\begin{minipage}{\textwidth}
+%
+%\begin{enumerate}
+%\item Input x is divided into two equal parts $x_L$ and $x_R$;
+%\item for $i=1\,to\,15$;
+%\item \qquad $x_L = x_L\,XOR\,P_i$;
+%\item \qquad$x_R = F(x_L)\,XOR\,x_R$;
+%\item \qquad$Swap\,X_L\,e\,X_R$;
+%\item $x_L = x_L\,XOR\,P_16$;
+%\item $x_R = F(x_L)\,XOR\,X_R$;
+%\item $x_R = x_R\,XOR\,P_{17}$;
+%\item $x_L = x_L\,XOR\,P_{18}$;
+%\item $CYPHERTEXT = x_L\,x_R$;
+%\end{enumerate}
+%\end{minipage}}}
+
+The algorithm is shown in the (Fig.\ref{Fig:Blowfish}) and described in the pseudo-code above.\newline
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.66]{Blowfish}
+\caption{Blowfish diagram}
+\label{Fig:Blowfish}
+\end{figure}
+
+
+The function $\mathbf{F}$ implements these operations:\\
+%\colorbox{gray!20}{%
+%\shadowbox{%
+%\begin{minipage}{\textwidth}
+%\begin{enumerate}
+%\item $Divide\,x_L\,in\,four\,blocks\,of\,8\,bits$
+%\item $F(x_L) = ((S_{1,a}+S_{2,b}\,mod\,2^{32})\,XOR\,S_{3,c})+S_{4,d}\,mod\,2^{32}$
+%\end{enumerate}
+%\end{minipage}}}
+
+\vspace{5mm}
+In the (Fig.\ref{Fig:F}) the function \textbf{F} is represented.
+\begin{figure}[!h]
+\centering
+\includegraphics[scale = 1.0]{F}
+\caption{Function F}
+\label{Fig:F}
+\end{figure}
+
+\clearpage
+\section{Decryption}
+
+
+\begin{figure}[!h]
+Decryption works like encryption, except for the order of using sub-keys which is inverted; the difference is shown in the (Fig.\ref{Fig:dif}).
+\begin{center}
+\includegraphics[scale=0.9]{dif}
+\caption{Encryption and Decryption}
+\label{Fig:dif}
+\end{center}
+\end{figure}
+\vspace{-15mm}
+\section{Sub-keys}
+Blowfish is characterized by a large number of sub-keys. These keys have to be precomputed even for encoding or decoding datas.
+ \begin{enumerate}
+ \item \textit{First} subsystem of sub-keys is the P array and it is composed of 18 elements of 32 bits;
+ \item \textit{Second} subsystem is composed of four S-box utilized as lookup table, addressed by one word of 8 bits and capable of extracting one 32 bits word among 256 words, (Fig.\ref{Fig:Subkeys}).
+  \end{enumerate}
+  
+ \begin{figure}[!h]
+ \begin{center}
+ \includegraphics[scale=0.4]{Subkeys}
+ \caption{From key to sub-keys}
+ \label{Fig:Subkeys}
+ \end{center}
+ \end{figure}
+
+\subsection{Sub-keys and S-box generation}
+The key point in the generation of sub-keys is that Blowfish algorithm is used also for this; the method follows the next steps:
+\begin{enumerate}
+\item The first point is to initialize the P-array and then the four S-Box with a fixed string. This string is made by the hexadecimal digit of $\pi$, without the initial 3. For example the scheme will be this:
+ \vspace{-6mm}
+ \begin{figure}[!h]
+ \centering
+ \includegraphics[scale=0.6]{Initialisation}
+ \caption{Initial values}
+ \label{Fig:Initialisation}
+ \end{figure}
+  \vspace{-6mm}
+ \item Then the XOR operation of the first 32 bits of $P_1$ will be done with the first 32 bits of the key and so on for all the bits of the key (Fig.\ref{Fig:Sub-keys1}).  
+ \begin{figure}[!h]
+ \centering
+ \includegraphics[scale=0.5]{Sub-keys1}
+ \caption{Sub-keys generation}
+ \label{Fig:Sub-keys1}
+ \end{figure}
+ \vspace{-6mm}
+ \item This cycle will be repeated until a XOR operation of the full P-array will be executed. Being the key not sufficiently long it will be extended replicating it a certain number of time (Fig.\ref{Fig:Sub_keys2}).
+ \vspace{-2mm}
+ \begin{figure}[!h]
+ \begin{center}
+ \includegraphics[scale=0.5]{Sub-keys2}
+ \caption{Sub-keys generation}
+ \label{Fig:Sub_keys2}
+ \end{center}
+
+ \end{figure}
+ 
+  \item A string of zeroes will be coded using Blowfish algorithm with the $P_i$ keys of previous steps.
+\item  $P_1$, and, $P_2$ will be substituted with the output of previous step.
+\item The second output will be coded using Blowfish algorithm with the first two sub-keys modified.
+\item $P_3$, and, $P_4$ will be replaced by the third output(Fig.\ref{Fig:Sub_keys3}).
+
+\begin{figure}[!h]
+ \begin{center}
+ \includegraphics[scale=0.6]{Sub-keys3}
+ \caption{Sub-keys generation}
+ \label{Fig:Sub_keys3}
+ \end{center}
+ \end{figure}
+ 
+ \item This method is iterated until P-array is completed (Fig.\ref{Fig:P}).
+ \begin{figure}[!h]
+ \centering
+ \includegraphics[scale=0.6]{P}
+ \caption{Final P-array}
+ \label{Fig:P}
+ \end{figure}
+ \item Finally, each of the S-box will be replaced using the same method of P-array.
+\end{enumerate}
+%\newline
+As introduced an high number of iteration is requested: $18/2$ iterations for generating P-array and $256/2$ for each of the S-Box and so a total number of iterations equal to 512.

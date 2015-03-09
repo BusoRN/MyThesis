@@ -1,0 +1,38 @@
+In this chapter all the considerations for multi-threading are reported.
+\\
+\\
+First argument is related to the separation of input data into parts, fundamental for work distribution: our certainty is that distribution has to be balanced as much as possible in order to reach maximum speed in execution. 
+\\
+\\
+Our choice of design is to use a worker-boss model (Fig.\ref{Fig:Boss}) for multi-threads, being the most common technique in our concurrent programming experience. Second argument is memorization of the file from disk to RAM memory: program has been tested with a series of different files like \texttt{.txt} files, .avi files, .iso file and others. This evaluation step shows that treating with different files means have different percentages of used memory; important point is that file sizes comparable to primary memory size do not allow transferring all the blocks in one time. So a second step of division is implemented and without risking any other different or more complex method we simply re-use the same technique twice.
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[scale=0.5]{Boss}
+ \caption{Boss-Workers model}
+ \label{Fig:Boss}
+ \end{center}
+Second division is also easier with respect to first one, because the size of slice has been chosen with a value divisible by eight and so the remainder will have the some property too.
+ \end{figure}
+ 
+\section{Data distribution}
+The constraint in this operation is that block size has to be a multiple of 64 bits, which is the block size defined by Blowfish algorithm. Otherwise, file length is not correlated to block size; so the idea is to give to each generated thread its block forced to have a 64 bits multiple dimension; the remaining part is computed only after the computation of blocks.
+\section{Memory management}
+File and blocks can have any size and so store it completely into the RAM can be not always possible; otherwise forcing a lot of small accesses to the disk decrease dramatically the performance. Our solution is based on working on elements called slices composed of multiple groups of 64 bits but inferior to a maximum arbitrary dimension, decided with a lot of testing on the code. \\
+So, when the block size is too much big the second division in slices occurs and second remaining part is implemented and handled as in the previous case, without padding case. We underline the fact that in RAM memory are stored blocks only when they are less than a fixed value, otherwise one slice for each thread is the real element stored in memory.
+\\
+In this way only when the loaded part is coded/decoded and when the results are stored into the output file the next slice can be loaded. Two level of generation of a remainder is not a problem being the handling algorithm exactly the same.
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\textwidth]{Data}
+ \caption{Data distribution}
+ \label{Fig:Data}
+ \end{figure}
+  \vspace{-14mm}
+ \section{Handling remaining part}
+ %\vspace{-4mm}
+Considering one file with a generic length, remaining part can be equal to zero or different, even among blocks and inside a block; these two possible situations depend on dimension of the file and dimension of the block. Only for remainder of the blocks we have to extend it in order to reach the requested size of 64 bits; for that we use a famous technique implemented in signal theory, called padding. This simple method add a sequence of byte in order to reach the right dimension for elaboration; each byte has as value the number of byte of padding, making easy understanding how many bytes we add. Only at the decryption moment the padding part is removed.
+\\
+Finally, for reminder inside a block, padding is not necessary.
+ \section{Synchronization}
+ % \vspace{-4mm}
+The unique point at which accesses are controlled using semaphores are located where read or write operations on files are implemented. We must guarantee that location in a particular point of the file is not disturbed by the same operation done by another thread. Only when read or write operation is terminated the semaphore is released.

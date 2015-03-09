@@ -1,0 +1,54 @@
+\deactivateaddvspace 
+\select@language {english}
+\select@language {english}
+\contentsline {figure}{\numberline {1}{\ignorespaces \textit {XCEL} project (\textit {Body-on-a-chip})\relax }}{1}{figure.caption.5}
+\contentsline {figure}{\numberline {2}{\ignorespaces Block diagram of the system\relax }}{2}{figure.caption.6}
+\contentsline {figure}{\numberline {3}{\ignorespaces Glasswear's Block Diagram\relax }}{3}{figure.caption.7}
+\contentsline {figure}{\numberline {4}{\ignorespaces Drive Electrovalves Steps\relax }}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {5}{\ignorespaces \textit {Back} menu item\relax }}{4}{figure.caption.9}
+\contentsline {figure}{\numberline {6}{\ignorespaces \textit {Exit} menu item\relax }}{4}{figure.caption.10}
+\contentsline {figure}{\numberline {7}{\ignorespaces The Board\relax }}{5}{figure.caption.11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Storing Microscope Video Program's Icon\relax }}{6}{figure.caption.12}
+\contentsline {figure}{\numberline {9}{\ignorespaces Storing Microscope Video Console\relax }}{7}{figure.caption.13}
+\contentsline {figure}{\numberline {10}{\ignorespaces Video Stored in the Folder\relax }}{7}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Conditioning Circuit and Electrovalves Drivers}}{11}{chapter.1}
+\contentsline {figure}{\numberline {11}{\ignorespaces Typical pH-sensor transfer function\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {12}{\ignorespaces Conditioning circuit for pH sensor\relax }}{12}{figure.caption.16}
+\contentsline {figure}{\numberline {13}{\ignorespaces Error caused by Amplifier's Input Bias Current\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {14}{\ignorespaces Low-Pass Filter Schematic\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {15}{\ignorespaces Low-Pass Filter Frequency Response\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {16}{\ignorespaces Acquisition Path for pH Sensor\relax }}{16}{figure.caption.19}
+\contentsline {figure}{\numberline {17}{\ignorespaces Conditioning Circuit for Temperature Sensor\relax }}{17}{figure.caption.20}
+\contentsline {figure}{\numberline {18}{\ignorespaces Acquisition Path for pH Sensor\relax }}{18}{figure.caption.21}
+\contentsline {figure}{\numberline {19}{\ignorespaces Electrovalves\relax }}{19}{figure.caption.22}
+\contentsline {figure}{\numberline {20}{\ignorespaces Driver for electrovalves\relax }}{19}{figure.caption.23}
+\contentsline {figure}{\numberline {21}{\ignorespaces Electrovalves Driver Circuit\relax }}{20}{figure.caption.24}
+\contentsline {figure}{\numberline {22}{\ignorespaces DC-DC circuit\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {23}{\ignorespaces Relay circuit\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {24}{\ignorespaces Electrovalves Supply Circuit\relax }}{23}{figure.caption.27}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {PCB}}{24}{chapter.2}
+\contentsline {figure}{\numberline {25}{\ignorespaces Final system mounted on a PCB\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {26}{\ignorespaces Schematic of Complete Circuit\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {27}{\ignorespaces \textit {DC-DC} High Speed Switching Path\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {28}{\ignorespaces \textit {PCB} Layout of \textit {DC-DC}\relax }}{26}{figure.caption.31}
+\contentsline {figure}{\numberline {29}{\ignorespaces PCB of the System\relax }}{28}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PCB} Layout Withot Ground Plane}}}{28}{subfigure.29.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PCB} Layout With Both Top and Bottom Ground Plane}}}{28}{subfigure.29.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {PCB} 3-D Model View}}}{28}{subfigure.29.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {PCB} Real Result}}}{28}{subfigure.29.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{30}{chapter.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Embedded Linux}}{31}{chapter.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Google App Engine}}{33}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{34}{chapter.6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{36}{chapter.7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{38}{chapter.8}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{39}{appendix.A}

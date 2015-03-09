@@ -1,0 +1,132 @@
+\documentclass[a4paper,12pt,openany,twoside, abstracton]{book}%classe report di KOMA-Script
+\usepackage[utf8]{inputenc} %accenti italiani
+\usepackage[parts,pdfspacing,eulerchapternumbers,eulermath,dottedtoc]{classicthesis} %parts,pdfspacing,eulerchapternumbers,eulermath,dottedtoc
+\usepackage{arsclassica}
+\usepackage[english]{babel} % serve a far si che i capitoli vengano scritti in italiano
+\usepackage[utf8]{inputenc} % serve per scrivere direttamente i caratteri accentati
+\usepackage[T1]{fontenc} 
+\usepackage{microtype} 
+\usepackage{graphicx} % serve per le
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{framed}
+\usepackage{bm}
+\usepackage{fancybox}
+\usepackage{textcomp} %per inserire °
+\usepackage{colortbl} %serve per colorare le tabelle
+\usepackage{color}
+\usepackage{hyperref} %[colorlinks=false]
+\usepackage{amsfonts}
+\usepackage{listings} %per l'inserimento di codice
+\usepackage{amsmath} %testo dentro equazioni
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{subfig} %matrice di immagini
+\usepackage{natbib} %bibliografia
+\usepackage[tight,italian]{minitoc} % mini indice
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{biblatex}
+%\usepackage{subfigure}
+\captionsetup{tableposition=top,figureposition=bottom,font=small}
+
+\usepackage{tikz}
+%\usepackage{fullpage}
+
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=3cm,bindingoffset=1mm]{geometry}
+\usepackage{multirow}
+\usepackage{stackengine}
+\usepackage{lmodern}
+\usepackage{setspace}
+
+
+%$\frac{\tau\pm\epsilon \cdot V}{\%12}$ esempio di formula
+%chapter
+%section
+\graphicspath{{images/}}
+
+
+\begin{document}
+\fontfamily{ptm} \selectfont
+%Frontespizio
+
+\include{./Frontespizio/frontespizio}
+\newpage
+\pagenumbering{Roman}
+
+
+\selectlanguage{english}
+\linespread{1.5}
+%\begin{abstract}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Abstract}
+
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+
+\chapter*{INTRODUCTION}\label{summary}
+\addcontentsline{toc}{chapter}{{\footnotesize INTRODUCTION}}
+\markboth{Fabio Busignani Master Thesis}{INTRODUCTION}
+\input{Introduzione}
+\cleardoublepage
+\part{Hardware}
+%\chapter{Introduction}\label{ch:Iintroduction}
+\input{Iintroduction}
+\newpage
+
+\chapter{Conditioning Circuit and Electrovalves Drivers}\label{ch:Analog}
+\input{Analog}
+
+\chapter{PCB}
+\input{pcb}
+
+\part{Firmware}
+\chapter{Introduction}\label{ch:IIintroduction}
+\input{IIintroduction}
+
+\chapter{Embedded Linux}\label{ch:firmware}
+\input{Firmware}
+
+\part{Software}
+\chapter{Google App Engine}
+\chapter{Microscope Video Storing}
+\part{Google Glass Application}
+\clearpage
+\chapter{Introduction}\label{ch:IIIintroduction}
+\input{Code}
+
+\clearpage
+\part{Conclusion and Appendix}
+\chapter{Test and performance}\label{sec:Perf}
+
+\appendix
+\chapter{Code}
+\input{code}
+
+\cite{SNOA529A}
+
+\clearpage
+\listoffigures
+\listoftables
+%\appendix
+
+%\input{Code}
+
+
+
+%\vfill
+%\chapter*{BIBLIOGRAPHY}
+%\addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
+%\markboth{Fabio Busignani Master Thesis}{BIBLIOGRAPHY}
+\bibliographystyle{unsrtnat}
+\bibliography{biblio}
+
+%BibTex!!!
+
+\end{document}
