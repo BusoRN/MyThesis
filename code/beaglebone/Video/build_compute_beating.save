@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "compiling" g++ -O2 `pkg-config --cflags --libs opencv` compute_beating.cpp -o 
+compute_beating
+#echo "computing the point"
+#./compute_beating
+
+#echo "saving the plot"
+#gnuplot plotBeating.gp
+
+echo "DONE"

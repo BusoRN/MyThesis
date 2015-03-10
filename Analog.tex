@@ -1,9 +1,89 @@
-\section{PH Conditioning}
+\label{condi}
+\section{The Sensors} 
 
-\subsection{The Sensor}\label{sec:sensorPH}
-A pH sensor is used to measure hydrogen ion activity 
+The sensors used in this project are microfabricated on a single silicon chip, and kindly provided by professor Dr. Sandro Carrara research group from  \'{E}cole
+Polytechnique F\'{e}d\'{e}rale de Lausanne (\textit{EPFL}), Switzerland.
 
-\subsection{The Circuit}\label{sec:circuitPH}
+
+The choice of using a microfabricated sensor instead of a commercial one (the number of commercial sensors is very high even for biomedical applications) has been taken because of a remarkably decrease in sensing occupied space. Indeed, in this way, the area consumption can be optimized.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = .4]{Sensors/multisensor}
+	\caption{Multisensor - Size Comparison}
+	\label{Fig:mulsize}
+	
+\end{figure}
+
+The (Fig.\ref{Fig:mulsize}) shows the sensor and highlights its very small dimension ($35.1\ x\ 9.3\ mm$). This multisensor contains an Iridium Oxide based pH sensor and a platinum resistance temperature detector (\textit{RTD}) \cite{DFTSA}.\\
+The device also hosts five independent working electrodes (\textit{WE}), with shared platinum reference electrode (\textit{RE}) and platinum counter electrode (\textit{CE}). But, at least for the time being, we are not going to use them.
+
+The (Fig.\ref{Fig:mulsensor}) shows the circuit schematic of multisensor. As can be seen, from the interface the pads that are going to be used in this thesis are the four on the bottom. In fact,  the last pair of pins are the temperature ones, and the penultimate ones are tied to the pH sensor (negative pin on top).
+ 
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[scale = .5]{Sensors/multisensor1}
+ 	\caption{Multisensor - Scheme}
+ 	\label{Fig:mulsensor}
+ 	
+ \end{figure}
+ 
+ \subsection{PH Sensor}\label{sec:sensorPH}
+ 
+ The embedded pH sensor has been made by platinum. Its electrical output is a voltage value which varies almost linearly with the pH.
+ 
+ The pH sensor needs to be calibrated before it can be used. The calibration and characterization of sensor are made in different environments and with different solutions. After this step the transfer function of the sensor is linear (Fig.\ref{Fig:typicalph}) with a slope of around $- 100\ mV/pH$.
+ \subsection{Temperature Sensor}\label{sec:sensorT}
+ 
+ For almost all the metal materials, electrical resistance is a parameter which varies with temperature. In order to create a resistance temperature detector (\textit{RTD}), a coupled system of a metal wire and a resistance measurement device is needed. Inside the used device, the temperature sensor is made by a platinum wire. This metal is strongly used for temperature applications because it allows to obtain the most accurate measurements (up to $\pm 0.001\ \text{°}C$) with a linear output response.
+ 
+ The relationship between resistance and temperature of a platinum resistance thermometers is described by the \textit{\textbf{Callendar-Van Dusen}} equation (Eq.\ref{Eq:vancosa}).
+ 
+ \begin{equation}
+ R\left(T\right) \text{ = } R\left(0\right) \cdot \left[1 \text{\textit{+}} A\cdot T \text{\textit{+}} B \cdot T^2 \text{\textit{+}} \left(T-100\right)\cdot C \cdot T^3\right]  \label{Eq:vancosa} \end{equation}
+ 
+ Where:
+ \begin{itemize}
+ 	\item $R\left(T\right)$, is the resistance at the $T$ temperature;
+ 	\item $R\left(0\right)$, is the resistance value at $0\ \text{°}\ C$;
+ 	\item $A$, $B$, and $C$, are the \textit{Callendar-Van Dusen constants} defined by the following:\begin{subequations} \begin{align} 	A &\text{ = }\alpha \text{+} \frac{\alpha\cdot\delta}{100},\\B &\text{ = } - \frac{\alpha\cdot\delta}{100^2},\\ 	C &\text{ = } - \frac{\alpha\cdot\beta}{100^4}. \end{align} \end{subequations}
+ \end{itemize}
+
+And $\alpha \text{ = } 0.003921 \varOmega/\text{\textdegree}C$, $\beta  \text{ = } 0$ for positive temperature and $\delta  \text{ = } 1.49$.
+
+ 
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[scale = .5]{Sensors/multi}
+ 	\caption{PH and Temperature Sensors from an Optical Image}
+ 	\label{Fig:close}
+ 	
+ \end{figure}
+ 
+ The pH and temperature sensors are very close from each others (Fig.\ref{Fig:close}), and this is very important because the pH electrode's sensitivity varies over temperature, thus: temperature affects the pH value, as can be seen from (Eq.\ref{eq:pH}). So, we always need to know at what temperature  we make the pH measure.
+ 
+ \begin{equation}
+ pH\left(X\right) \text{ = } pH\left(S\right) \text{\textit{+}} \frac{\left(E_S - E_X\right) \cdot F}{R \cdot T \cdot \ln\left(10 \right)} 
+ \label{eq:pH}
+ \end{equation}
+ 
+ The (Eq.\ref{eq:pH}) represents the transfer function of a pH sensor, where:
+ \begin{itemize}
+ 	\item $pH\left(X\right)$, is the pH value of unknown solution;
+ 	\item $pH\left(S\right)$, is the pH value of standard solution ($7$);
+ 	\item $E_S$, is the electric potential at standard electrode;
+ 	\item $E_X$, is the electric potential at pH-measuring electrode;
+ 	\item $F$, is the Faraday constant ($9.6485309\cdot10^4\ C\ mol^{-1}$);
+ 	\item $R$, is the universal gas constant ($8.314510\ J\ K^{-1}\ mol^{-1}$);
+ 	\item $T$, is the temperature in Kelvin.
+ \end{itemize}
+ 
+ 
+ 
+ 
+\section{PH Conditioning}\label{phcon}
+
+\label{sec:circuitPH}
 As already explained in (Sec.\ref{sec:sensorPH}), the pH sensor is a passive sensor, which means no excitation source is required because the sensor itself generates its own electrical output signal. In particular any variation of pH in input is transduced in a voltage variation in output.\\
 
 The pH sensor is also bipolar, this means the voltage output may be both positive and negative, as shown in (Fig.\ref{Fig:typicalph}).\\
@@ -16,7 +96,7 @@ The pH sensor is also bipolar, this means the voltage output may be both positiv
 	
 \end{figure}
 
-Resuming, it produce a voltage output that decreases linearly with pH of the solution being measured. The sensors give a sensitivity which ranges between $50$ and $70$ $mV/pH$ (it depends from sensor to sensor), this means that, in order to well observe this variation, an amplification stage may be required.
+Resuming, it produce a voltage output that decreases linearly with pH of the solution being measured. The sensors give a sensitivity which ranges between $50$ and $120$ $mV/pH$ (it depends from sensor to sensor), this means that, in order to well observe this variation, an amplification stage may be required.
 
 The (Fig.\ref{Fig:circuitph}) shows the adopted solution for conditioning the pH sensor. \\
 Fist of all, since the pH sensor produces a bipolar signal and this application operates on a single voltage supply, the signal has been level shifted. To achieve this first challenge the operation amplifier \textit{U1} forces an off-set of $512\ mV$ to the pH sensor. Indeed, the \textit{LM4140A-1.0} is a high precision low noise \textit{LDO} (Low Drop Out) voltage reference which provides an accurate $1.024\ V$. This voltage has been halved by the $10\ K\Omega$ resistor divider. The \textit{U1} is in voltage follower configuration, thus its output should be equal to the input, and it biases the reference electrode of the pH sensor with $512\ mV$, at low impedance.\\
@@ -114,10 +194,9 @@ Connecting together al this part we obtain the circuit in (Fig.\ref{Fig:pHCondit
 \newpage
 \clearpage
 
-\section{Temperature Conditioning}
-\subsection{The Sensor}\label{sec:sensorT}
+\section{Temperature Conditioning}\label{tempcon}
 
-\subsection{The Circuit}
+
 
 As already explained in (Sec.\ref{sec:sensorT}), the temperature sensor is a active sensor, which means excitation source is required because the sensor is resistor based so a current must be passed through it. Then, the corresponding voltage has to be measured in order to determine the temperature value.\\
 So, any variation of temperature in input is transduced in a resistance variation in output.\\

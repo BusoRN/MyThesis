@@ -22,7 +22,7 @@
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{subfig} %matrice di immagini
-\usepackage{natbib} %bibliografia
+\usepackage[numbers]{natbib} %bibliografia
 \usepackage[tight,italian]{minitoc} % mini indice
 \usepackage{rotating}
 \usepackage{caption}
@@ -47,6 +47,9 @@
 %section
 \graphicspath{{images/}}
 
+\makeatletter
+\newcommand*{\lolnoheading}{\@starttoc{lol}}
+\makeatother
 
 \begin{document}
 \fontfamily{ptm} \selectfont
@@ -83,7 +86,7 @@
 \chapter{Conditioning Circuit and Electrovalves Drivers}\label{ch:Analog}
 \input{Analog}
 
-\chapter{PCB}
+\chapter{PCB}\label{cha:PCB}
 \input{pcb}
 
 \part{Firmware}
@@ -99,11 +102,12 @@
 \part{Google Glass Application}
 \clearpage
 \chapter{Introduction}\label{ch:IIIintroduction}
-\input{Code}
+\input{glass}
 
 \clearpage
 \part{Conclusion and Appendix}
 \chapter{Test and performance}\label{sec:Perf}
+\input{Test}
 
 \appendix
 \chapter{Code}
@@ -113,7 +117,11 @@
 
 \clearpage
 \listoffigures
-\listoftables
+\addcontentsline{toc}{chapter}{List of Figures}
+\clearpage
+\chapter*{list of listings}
+\addcontentsline{toc}{chapter}{List of Listings}
+\lolnoheading
 %\appendix
 
 %\input{Code}
@@ -126,6 +134,7 @@
 %\markboth{Fabio Busignani Master Thesis}{BIBLIOGRAPHY}
 \bibliographystyle{unsrtnat}
 \bibliography{biblio}
+\addcontentsline{toc}{chapter}{Bibliography}
 
 %BibTex!!!
 

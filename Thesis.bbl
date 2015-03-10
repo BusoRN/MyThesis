@@ -5,17 +5,20 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Andrea~Cavallini(2012)]{DFTSA}
+Sara Ghoreishizadeh Giovanni De Micheli Sandro~Carrara Andrea~Cavallini,
+  Camilla Baj-Rossi.
+\newblock Design, fabrication, and test of a sensor array for perspective
+  biosensing in chronic pathologies.
+\newblock \emph{IEEE Biomedical Circuits and System Conference}, 2012.
+\newblock URL
+  \url{http://si2.epfl.ch/~demichel/publications/archive/2012/BioCAS_2012_Andrea.pdf}.
+
 \bibitem[Instruments(November 1999)]{PDGFRE}
 Texas Instruments.
 \newblock Pcb design guidelines for reduced emi.
 \newblock \emph{Application Note}, November 1999.
 \newblock URL \url{http://www.ti.com/lit/an/szza009/szza009.pdf}.
-
-\bibitem[Kueck(October 2012)]{PSLE}
-Christian Kueck.
-\newblock Power supply layout and emi.
-\newblock \emph{Application Note, Linear Technology}, October 2012.
-\newblock URL \url{http://cds.linear.com/docs/en/application-note/an139f.pdf}.
 
 \bibitem[Instruments(September 2008–Revised April 2013)]{SNOA529A}
 Texas Instruments.

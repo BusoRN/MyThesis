@@ -1,0 +1,6 @@
+#! /bin/bash
+
+echo "setting cpu frequency @ 1 GHz"
+cpufreq-set -g performance
+cpufreq-set -f 1000MHz
+cpufreq-info

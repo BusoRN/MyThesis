@@ -1,112 +1,66 @@
-In order to check the functionality of our \textit{Multi-Threads Blowfish} we have made some different tests.\\
-Each test is composed by two different measurements:
-\begin{enumerate}
-\item \textbf{Computation time}, is the time needed to encrypt a given file, and decrypt it (in next pages we have reported for any case, encrypting time only).
-\item \textbf{Differences between original file and decrypted one}, after the encrypt-decrypt cycle we need to know whether the initial and final files are equivalent or are not. To accomplish that appointed  target we exploited the \textit{diff} UNIX command:
-\texttt{diff [options] from-file to-file}.\\
-That command allows us to see what are the differences between two files. So, in our cases we had expected that \textit{diff} always returns void parameter, because the two input files have to be equal (Fig.\ref{Fig:diff}). 
 
- \vspace{-5mm}
-
-\end{enumerate}
-The results of tests are function of Kernel version and computer hardware in which our program runs. The following data have been obtained on a Linux machine, which has kernel version 3.13.0-24 and \textit{Intel(R) Core(TM) i7 CPU Q 740  @ 1.73GHz}, which supports \textit{HyperThreading}  for running smartly up to two threads per CPU.
-
-The files used to test the program, and their dimension, are listed below:
-\vspace{-1mm}
-\begin{itemize}
-\item \textit{Contents.txt}, \texttt{337 bytes};
-\item \textit{Lorem\_500.txt}, \texttt{3.384 bytes};
-\item \textit{Lorem\_5000.txt}, \texttt{34.202 bytes};
-\item \textit{pg26798.txt}, \texttt{231.823 bytes};
-\item \textit{pg21531.txt}, \texttt{244.979 bytes};
-\item \textit{pg18680.txt}, \texttt{281.506 bytes};
-\item \textit{Bible.txt}, \texttt{4.397.206 bytes};
-\item \textit{Kalopsia.mp3}, \texttt{11.497.478 bytes};
-\item \textit{Mobile\_application.mp4}, \texttt{111.897.927 bytes};
-\item \textit{Linux\_mint.iso}, \texttt{1.251.999.744 bytes};
-\end{itemize}
-\vspace{-1mm}
-Each file has been tested with different threads number: $1$, $2$, $4$, $8$, $6$, $10$, $15$, $20$, $25$, $32$. And the used files allow to cover the program behaviour from few hundreds of bytes up to more than one gigabytes.
-
-\vspace{-1mm}
-\section{Results}
-
-\begin{sidewaystable}[h]
-\centering
-
-\begin{tabular}{|c|c|c|c|c|c|c|}
-
-\hline \rule[-2ex]{0pt}{4.5ex} {\small \textbf{THREAD NUMBER}} & {\small \textbf{CONTENTS}} & {\small \textbf{LOREM\_500}} & {\small \textbf{LOREM\_5000}} & {\small \textbf{PG26798}} & {\small \textbf{PG21531}} & {\small \textbf{PG18680}}  \\ 
-\hline 
-\hline \rule[-2ex]{0pt}{4.5ex} 1 & 0.001166 \textit{sec} & 0.001725 \textit{sec} & 0.006958 \textit{sec} & 0.022432 \textit{sec} & 0.018046 \textit{sec} & 0.022671 \textit{sec} \\
-\hline \rule[-2ex]{0pt}{4.5ex} 2 & 0.001208 \textit{sec} & 0.000877 \textit{sec} & 0.004274 \textit{sec} & 0.021695 \textit{sec} & 0.022763 \textit{sec} & 0.020236 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 4 & 0.001660 \textit{sec} & 0.002445 \textit{sec} & 0.003399 \textit{sec} & 0.014684 \textit{sec} & 0.011303 \textit{sec} & 0.012489 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 6 & 0.001619 \textit{sec} & 0.002661 \textit{sec} & 0.003692 \textit{sec} & 0.013037 \textit{sec} & 0.011009 \textit{sec} & 0.014170 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 8 & 0.002263 \textit{sec} & 0.003208 \textit{sec} & 0.004891 \textit{sec} & 0.011334 \textit{sec} & 0.010262 \textit{sec} & 0.010258 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 10 & 0.002250 \textit{sec}& 0.002128 \textit{sec} & 0.004060 \textit{sec} & 0.010997 \textit{sec} & 0.017674 \textit{sec} & 0.011799 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 15 & 0.002989 \textit{sec}& 0.002430 \textit{sec} & 0.005109 \textit{sec} & 0.007741 \textit{sec} & 0.011670 \textit{sec} & 0.012083 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 20 & 0.003059 \textit{sec}& 0.002979 \textit{sec} & 0.005693 \textit{sec} & 0.013526 \textit{sec} & 0.013580 \textit{sec} & 0.012127 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 25 & 0.003147 \textit{sec}& 0.004213 \textit{sec} & 0.005403 \textit{sec} & 0.026283 \textit{sec} & 0.010970 \textit{sec} & 0.016384 \textit{sec} \\ 
-\hline \rule[-2ex]{0pt}{4.5ex}  32 & 0.004529\textit{sec}& 0.004151 \textit{sec} & 0.004861 \textit{sec} & 0.015293 \textit{sec} & 0.012811 \textit{sec} & 0.016384 \textit{sec} \\
-\hline 
-\hline
-\hline \rule[-2ex]{0pt}{4.5ex} {\small \textbf{THREAD NUMBER}}& {\small \textbf{BIBLE} }& {\small \textbf{KALOPSIA}} & {\small \textbf{MOBILE\_APPLICATION}} & {\small\textbf{LINUX\_MINT}} & & \\
-\hline \rule[-2ex]{0pt}{4.5ex} 1 & 0.258397 \textit{sec} & 0.683342 \textit{sec} & 10.429358 \textit{sec}& 170.071742\textit{sec} &  &      \\
-\hline \rule[-2ex]{0pt}{4.5ex} 2 & 0.156826 \textit{sec} & 0.393428 \textit{sec} & 4.095223 \textit{sec} & 89.516180 \textit{sec} &  &     \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 4 & 0.135139 \textit{sec} & 0.332331 \textit{sec} & 3.296534 \textit{sec} & 69.916838 \textit{sec} &  &      \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 6 & 0.100043 \textit{sec} & 0.254143 \textit{sec} & 2.388198 \textit{sec} & 61.714959 \textit{sec} &  &      \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 8 & 0.091301 \textit{sec} & 0.215308 \textit{sec} & 2.159168 \textit{sec} & 50.824318 \textit{sec} &  &      \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 10 & 0.097573 \textit{sec}& 0.226689 \textit{sec} & 2.293672 \textit{sec} & 43.850544 \textit{sec} &  &     \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 15 & 0.090361 \textit{sec}& 0.217842 \textit{sec} & 2.038637 \textit{sec} & 36.783085 \textit{sec} &  &     \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 20 & 0.094304 \textit{sec}& 0.218173 \textit{sec} & 2.692941 \textit{sec} & 39.284932 \textit{sec} &  &     \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 25 & 0.094643 \textit{sec}& 0.222394 \textit{sec} & 2.010600 \textit{sec} & 36.185404 \textit{sec} &  &    \\ 
-\hline \rule[-2ex]{0pt}{4.5ex} 32 & 0.096315 \textit{sec}& 0.214665 \textit{sec} & 2.170294 \textit{sec} & 35.900116 \textit{sec} &  &     \\
-\hline
-
-
-\end{tabular}
-
-
-\end{sidewaystable}
-\clearpage
-\subsection{Graphs}
-
-The previous table points out some important characteristic of our program. First of all, multi-threads implementation does not perform very well for all of those files that are too small, for example (Fig.\ref{fig:sottofigure}) shows that anomaly for the whole \textit{.txt} files that have been given to us to test the software. In particular, (Fig.\ref{fig:sottofigure}) shows the computational time in function of threads number for the smallest given text file (\texttt{contents.txt}), the biggest one (\texttt{pg18680.txt}), and all of them.
-
-%
-\begin{figure}[htbp]
-\centering
-\subfloat[]{ \label{bo}
-
-
-\caption{Test with small file }
-\label{fig:sottofigure}
-\end{figure}
-
-
-The other tested files  are: the biggest book known by us, the Bible (Fig.\ref{bible}),  a song of the \textit{Queen of the Stone Age}, Kalopsia.mp3 (Fig.\ref{kalopsia}), a video course of \textit{Politecnico di Torino}, Mobile\_application.mp4, the disk image of \textit{Linux Mint} distro (Fig.\ref{linux}) and Linux\_mint.iso, .\\
-As can be seen, the time required by algorithm decreases very well while the threads number raises, even if the input file is very big.
-
-\begin{figure}[!h]
- \centering
- \includegraphics[scale=0.50]{Bible.eps}
- \caption{\texttt{Bible.txt}}
- \label{bible}
- \end{figure}
-
- \begin{figure}[!h]
- \centering
- \includegraphics[scale=0.50]{Kalopsia.eps}
- \caption{\texttt{Kalopsia.mp3}}
- \label{kalopsia}
- \end{figure}
-
-\begin{figure}[!h]
- \centering
- \includegraphics[scale=0.50]{Linux_mint.eps}
- \caption{\texttt{Linux\_mint.iso.mp3}}
- \label{linux}
- \end{figure}
-
-
-
+	
+	In order to try the reverse control from the Google Glass to the electrovalves we made different kind of experiments.
+	
+	\section{LED Experiments}
+	 First of all we tried the circuit on a breadboard using LEDs instead of electrovalves. The aim of this step is to demonstrate that the firmware running on the Beaglebone Black, the Java code running on the Google Glass and the Python code running on the Google App Engine (used to store the information about the electrovalves status) work well.\\
+	Moreover the LED and the electrovalve have basically the same behavior so, if everything works well with the LEDs, there are all the reasons to believe that everything is going to work well with the electrovalves, too.\\
+	
+	The circuit that actually drives the LEDs is very simple, and it is based on a MOS transistor (\href{http://www.onsemi.com/pub_link/Collateral/BS170-D.PDF}{\textit{BS170}}) used as a switch voltage-controlled, as shown in (Fig.\ref{Fig:driverLED}).
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[]{Driver/driverLED}
+		\caption{Driver for LED}
+		\label{Fig:driverLED}
+	\end{figure}
+	
+	The (Fig.\ref{Fig:circuitLED}) shows the circuit used for this step of testing. As can be seen the number of LEDs used is eight, the same number of electrovalves that can be driven from this system.\\
+	In order to test all of them we made 2 different kind of trials:
+	\begin{enumerate}
+		\item \textit{In order turning on\&off}, first all the LEDs are turned on starting from the first one (on the top right corner) to the last one (on the bottom left corner). Then the LEDs are turned off following the same order.\\The result of this can bee watched in  \href{http://youtu.be/iYeAMpxM9uI}{\textbf{this}} video.
+		\item \textit{Out of order turning on\&off}, in this trial, like before, all the LEDs start from a condition where all of them are off and then we turned on and off all the LEDs, but in this case following a random order.\\ The result of this can bee watched in  \href{http://youtu.be/mIoylW334Ck}{\textbf{this}} video.
+	\end{enumerate}
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=.21]{Experiments/ledBoard}
+		\caption{LEDs experiments board}
+		\label{Fig:circuitLED}
+	\end{figure}
+	
+	
+	\section{Electrovalves experiments}
+	
+	\subsection{Breadboard Phase}
+	The (Fig.\ref{Fig:circuitBreadboard}) shows from the top view the circuit used during the second phase of experiment, the one where we started using electrovalves in a real microfluidic application.\\
+	On the left side of the figure we can see the conditioning circuits for the temperature sensor (on the top) and pH sensor (on the bottom). While, on the other side, we can see the part of circuit in charge to drive the electrovalves.\\
+	In this last one we are going to focus for now. Each electrovalve is driven by the circuit shown in (Fig.\ref{Fig:driverEV}).
+	\clearpage
+	
+	
+	
+	As you can see, this circuit is pretty close to the one of (Fig.\ref{Fig:driverLED}), indeed the only difference is given by freewheeling diode, mandatory because of inductive behavior of electrovalve's solenoid.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=.14]{circuitBreadboard}
+		\caption{Circuit mounted on breadboard top view}
+		\label{Fig:circuitBreadboard}
+	\end{figure}
+	
+	
+	The result of the experiments with electrovalves in a real microfluidic case can bee watched in  \href{https://www.youtube.com/watch?v=CavCVnD2P1k}{\textbf{this}} video.
+	
+	\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=\textwidth]{breadboard}
+		\caption{Circuit mounted on breadboard side view}
+		\label{Fig:circuitsfumatp}
+	\end{center}
+	\subsection{PCB Phase}
+	
+	Finally we replied the last experiment using a PCB (Fig.\ref{fig:PCB}),  designed for this system.\\
+	As expected the result of this experiment is the same of the previus step. 
+	\end{figure}

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# compile the Device Tree Compiler (dtc) Overlays for the circuit
+#echo "Compiling the overlay from .dts to .dtbo"
+#cd ./Pins/
+#dtc -O dtb -o EBB-GPIO-Example-00A0.dtbo -b 0 -@ EEB-GPIO-Example.dts
+#echo "Moving the overlay file to /lib/firmware"
+#mv EBB-GPIO-Example-00A0.dtbo /lib/firmware
+
+#echo "Setting the PINS"
+#sh -c "EBB-GPIO-Example > $SLOTS"
+
+# compile the cpp sure code
+echo "Compiling the electrovalves source code"
+g++ ./Electrovalves/GlassInterface.cpp GPIO.cpp -o ./Electrovalves/GlassInterface -pthread -lcurl
+echo "Done"

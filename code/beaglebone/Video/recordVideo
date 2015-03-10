@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Setting the video format as MJPG"
+v4l2-ctl --set-fmt-video=width=320,height=240,pixelformat=1 -d 0
+v4l2-ctl --set-parm=30
+
+
+echo "Recording one minute of Video"
+./capture -d /dev/video0 -F -o -c 300 > output.raw
+avconv -f mjpeg -i output.raw -vcodec copy output.mp4
+echo "Compressing Video"
+ffmpeg -i output.mp4 -acodec mp2 Video.mp4
+echo "Uploading the Video to the server"
+curl -include --form Video.mp4 =@Video.mp4 -A "National Instruments LabVIEW" http://planar-contact-601.appspot.com/video/submit -0
+echo "Updating the flag for video"
+curl  --data "name=video&status=on" http://planar-contact-601.appspot.com/add/electrovalve
+curl  --data "name=glass&status=on" http://planar-contact-601.appspot.com/add/electrovalve
+echo "Ploting the beating rate"
+./compute_beating
+echo "Uploading the beating plot"
+curl -include --form Image.jpg=@Image.jpg -A "National Instruments LabVIEW" http://planar-contact-601.appspot.com/picture/submit -0
+echo "finish"
