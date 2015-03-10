@@ -1,0 +1,57 @@
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = .9]{bo}
+	\caption{High Level System's Block Diagram}
+	\label{Fig:logicalview}
+	
+\end{figure}
+
+The term \textit{Embedded Systems} is widely used nowadays, because its definition is  very generic: any device that includes a programmable computer, but is not itself a general-purpose computer is referred as Embedded Systems.
+
+Indeed this definition covers a huge number of systems, from  a vending machine to a smartphone, form a electric toothbrush to a body computer of a car.\\
+Peculiarity of an Embedded System is that it has hardware and software parts, takes advantage of application characteristics to optimize the design, interacts with the external environment using sensors and actuators.
+
+\textbf{Embedded Linux} systems are a subset of embedded systems that are enhanced by a Linux operating system (\textit{OS}), here the integration of high-level Linux software and low-level electronics represents a paradigm shift in embedded systems development \cite{EBB}. It allows an easy way to design systems that can meet future challenges in smart buildings, the Internet of Things (\textit{IoT}), human-computer interaction(\textit{HCI}), robotics, and many other applications.
+
+In this thesis project, as can be seen from (Fig.\ref{Fig:logicalview}), the system may be intended as an \textit{IoT} one. Indeed, in order to allow the interfacing between sensors and electrovalves with the Google Glass, I had to use an Internet connection, represented by the Google App Engine. And, while the Google Glass can interact directly with this server, the hardware described in (Part.\ref{HW}) needs a micro computer to be connected with that server.
+
+\section{A Brief Introduction To IoT} 
+
+The term Internet of Things is broadly used to describe the extension of the web and the Internet for the physical objects or "\textit{things}". It is important to realize that the physical connection of the human Internet and the ones of the \textit{IoT} are the same. And even if the \textit{IoT} term has be coined recently, the majority of web traffic nowadays is non-human \cite{ALTIOT}.
+
+Indeed, the massive usage of online services, in part due to the smartphone revolution, has increased the interactions between servers, machine-to-machine (\textit{M2M}) communications. This trend can only increase since it is expected an explosion of wearable systems, such as smartwatch, smartglass and so on..
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = .65]{traffic}
+	\caption{Distribution of Internet of Things}
+	\label{Fig:traffic}
+	
+\end{figure}
+
+In the near future, \textit{Cisco IBSG} predicts there will be $25$ billion devices connected to the Internet by $2015$ and this number is destinate to reach $50$ billion by $2020$, see (Fig.\ref{Fig:cisco})\cite{CISCOIOT}. It is also important to see that these number are based on the grown of $2011$ and do  not consider the rapid advances in device technology. So the number shown in (Fig.\ref{Fig:cisco}) have to be considered as minimum.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = .65]{cisco}
+	\caption{The \textit{IoT} Evolution Prediction}
+	\label{Fig:cisco}
+	
+\end{figure}
+
+
+The IoT concept, that has been exploited even in this thesis, is that if physical sensors and actuators can be linked to the Internet , then a lot of new applications and services are possible \cite{EBB}.
+
+\section{The Beaglebone Black}
+
+For this thesis, the Embedded Linux system has been developed using the \textit{Beaglebone Black}.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.55]{beaglebone}
+	\caption{The \textit{Beaglebone Black}}
+	\label{Fig:beaglebone}
+	
+\end{figure}

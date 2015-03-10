@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  10 MAR 2015 04:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  10 MAR 2015 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1641,7 +1641,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 
 
 (./Frontespizio/frontespizio.tex
-<./Frontespizio/logo_polito.jpg, id=163, 1129.21875pt x 1129.21875pt>
+<./Frontespizio/logo_polito.jpg, id=171, 1129.21875pt x 1129.21875pt>
 File: ./Frontespizio/logo_polito.jpg Graphic file (type jpg)
 
 <use ./Frontespizio/logo_polito.jpg>
@@ -1667,27 +1667,27 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  (./Abstract.tex
-<./firstpage/MIT2.png, id=172, 288.5982pt x 164.2938pt>
+<./firstpage/MIT2.png, id=180, 288.5982pt x 164.2938pt>
 File: ./firstpage/MIT2.png Graphic file (type png)
 
 <use ./firstpage/MIT2.png>
 Package pdftex.def Info: ./firstpage/MIT2.png used on input line 5.
 (pdftex.def)             Requested size: 105.98651pt x 60.3365pt.
 
-<./firstpage/Harvard.png, id=174, 228.855pt x 221.82875pt>
+<./firstpage/Harvard.png, id=182, 228.855pt x 221.82875pt>
 File: ./firstpage/Harvard.png Graphic file (type png)
 
 <use ./firstpage/Harvard.png>
 Package pdftex.def Info: ./firstpage/Harvard.png used on input line 9.
 (pdftex.def)             Requested size: 105.98651pt x 102.73296pt.
 
-<./firstpage/BWH.jpg, id=175, 301.125pt x 301.125pt>
+<./firstpage/BWH.jpg, id=183, 301.125pt x 301.125pt>
 File: ./firstpage/BWH.jpg Graphic file (type jpg)
  <use ./firstpage/BWH.jpg>
 Package pdftex.def Info: ./firstpage/BWH.jpg used on input line 12.
 (pdftex.def)             Requested size: 105.98651pt x 105.98805pt.
 
-<./firstpage/HST.png, id=176, 299.1175pt x 203.76125pt>
+<./firstpage/HST.png, id=184, 299.1175pt x 203.76125pt>
 File: ./firstpage/HST.png Graphic file (type png)
 
 <use ./firstpage/HST.png>
@@ -1832,7 +1832,7 @@ Missing character: There is no ¨ in font lmsy10!
 \openout7 = `Thesis.toc'.
 
  [4] (./Introduzione.tex
-<images/Intro/body.png, id=257, 1223.57124pt x 865.2325pt>
+<images/Intro/body.png, id=267, 1223.57124pt x 865.2325pt>
 File: images/Intro/body.png Graphic file (type png)
 
 <use images/Intro/body.png>
@@ -1853,18 +1853,18 @@ l.20
 
  <./images/Intro/body.png>]
 Package epstopdf Info: Source file: <images/Intro/Block_Diagram.eps>
-(epstopdf)                    date: 2015-03-01 05:20:56
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 15325237 bytes
 (epstopdf)             Output file: <images/Intro/Block_Diagram-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-03-01 05:21:28
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 1028304 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Intro/Block_Diagram
 -eps-converted-to.pdf images/Intro/Block_Diagram.eps>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/Block_Diagram-eps-converted-to.pdf, id=267, 1142.2675pt x 563.103
+<images/Intro/Block_Diagram-eps-converted-to.pdf, id=277, 1142.2675pt x 563.103
 74pt>
 File: images/Intro/Block_Diagram-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/Block_Diagram-eps-converted-to.pdf>
@@ -1883,18 +1883,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
 [2 <./images/Intro/Block_Diagram-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/Intro/block-app.eps>
-(epstopdf)                    date: 2015-03-01 06:07:19
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 1694640 bytes
 (epstopdf)             Output file: <images/Intro/block-app-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2015-03-01 06:09:19
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 420999 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Intro/block-app-eps
 -converted-to.pdf images/Intro/block-app.eps>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/block-app-eps-converted-to.pdf, id=327, 812.03375pt x 645.41125pt
+<images/Intro/block-app-eps-converted-to.pdf, id=337, 812.03375pt x 645.41125pt
 >
 File: images/Intro/block-app-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/block-app-eps-converted-to.pdf>
@@ -1903,18 +1903,18 @@ put line 50.
 (pdftex.def)             Requested size: 423.94609pt x 336.95514pt.
  [3 <./images/Intro/block-app-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/Intro/electrovalves.eps>
-(epstopdf)                    date: 2015-03-01 07:24:09
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 161056 bytes
 (epstopdf)             Output file: <images/Intro/electrovalves-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-03-01 07:24:14
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 95144 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Intro/electrovalves
 -eps-converted-to.pdf images/Intro/electrovalves.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/electrovalves-eps-converted-to.pdf, id=361, 564.1075pt x 97.36375
+<images/Intro/electrovalves-eps-converted-to.pdf, id=371, 564.1075pt x 97.36375
 pt>
 File: images/Intro/electrovalves-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/electrovalves-eps-converted-to.pdf>
@@ -1922,31 +1922,31 @@ Package pdftex.def Info: images/Intro/electrovalves-eps-converted-to.pdf used o
 n input line 60.
 (pdftex.def)             Requested size: 423.94609pt x 73.17267pt.
 
-<images/Intro/back_menu.png, id=367, 642.4pt x 361.35pt>
+<images/Intro/back_menu.png, id=377, 642.4pt x 361.35pt>
 File: images/Intro/back_menu.png Graphic file (type png)
 
 <use images/Intro/back_menu.png>
 Package pdftex.def Info: images/Intro/back_menu.png used on input line 76.
 (pdftex.def)             Requested size: 224.84337pt x 126.4744pt.
 
-<images/Intro/exit.png, id=369, 642.4pt x 361.35pt>
+<images/Intro/exit.png, id=379, 642.4pt x 361.35pt>
 File: images/Intro/exit.png Graphic file (type png)
 
 <use images/Intro/exit.png>
 Package pdftex.def Info: images/Intro/exit.png used on input line 85.
 (pdftex.def)             Requested size: 224.84337pt x 126.4744pt.
 Package epstopdf Info: Source file: <images/thboard.eps>
-(epstopdf)                    date: 2015-03-09 00:39:36
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 11465000 bytes
 (epstopdf)             Output file: <images/thboard-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-03-09 00:39:48
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 495729 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/thboard-eps-convert
 ed-to.pdf images/thboard.eps>
 (epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/thboard-eps-converted-to.pdf, id=370, 570.13pt x 386.44376pt>
+<images/thboard-eps-converted-to.pdf, id=380, 570.13pt x 386.44376pt>
 File: images/thboard-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/thboard-eps-converted-to.pdf>
@@ -1965,7 +1965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
  []
 
 [5 <./images/thboard-eps-converted-to.pdf>]
-<images/storing/icon.png, id=415, 151.56625pt x 179.67125pt>
+<images/storing/icon.png, id=425, 151.56625pt x 179.67125pt>
 File: images/storing/icon.png Graphic file (type png)
 
 <use images/storing/icon.png>
@@ -1985,7 +1985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<images/storing/program-windows.png, id=419, 507.0945pt x 330.033pt>
+<images/storing/program-windows.png, id=429, 507.0945pt x 330.033pt>
 File: images/storing/program-windows.png Graphic file (type png)
 
 <use images/storing/program-windows.png>
@@ -1996,7 +1996,7 @@ Package pdftex.def Info: images/storing/program-windows.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/storing/stored.png, id=420, 1100.11pt x 769.87625pt>
+<images/storing/stored.png, id=430, 1100.11pt x 769.87625pt>
 File: images/storing/stored.png Graphic file (type png)
 
 <use images/storing/stored.png>
@@ -2018,7 +2018,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<images/Sensors/multisensor.png, id=453, 423.08063pt x 423.08063pt>
+<images/Sensors/multisensor.png, id=463, 423.08063pt x 423.08063pt>
 File: images/Sensors/multisensor.png Graphic file (type png)
 
 <use images/Sensors/multisensor.png>
@@ -2031,7 +2031,7 @@ all di-men-sion ($\OML/lmm/m/it/12 35\OT1/lmr/m/n/12 .\OML/lmm/m/it/12 1 x 9\OT
 1/lmr/m/n/12 .\OML/lmm/m/it/12 3 mm$\T1/ptm/m/n/12 ).
  []
 
-<images/Sensors/multisensor1.png, id=457, 656.4525pt x 541.27219pt>
+<images/Sensors/multisensor1.png, id=467, 656.4525pt x 541.27219pt>
 File: images/Sensors/multisensor1.png Graphic file (type png)
 
 <use images/Sensors/multisensor1.png>
@@ -2053,7 +2053,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
  [12 <./images/Sensors/multisensor1.png>]
-<images/Sensors/multi.png, id=477, 452.4403pt x 336.50719pt>
+<images/Sensors/multi.png, id=487, 452.4403pt x 336.50719pt>
 File: images/Sensors/multi.png Graphic file (type png)
 
 <use images/Sensors/multi.png>
@@ -2088,36 +2088,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
  []
 
 Package epstopdf Info: Source file: <images/Sensors/tipicalph.eps>
-(epstopdf)                    date: 2015-03-02 23:06:34
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 27388 bytes
 (epstopdf)             Output file: <images/Sensors/tipicalph-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2015-03-02 23:12:55
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 7076 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/tipicalph-e
 ps-converted-to.pdf images/Sensors/tipicalph.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/tipicalph-eps-converted-to.pdf, id=491, 449.68pt x 338.26375pt>
+<images/Sensors/tipicalph-eps-converted-to.pdf, id=501, 449.68pt x 338.26375pt>
 File: images/Sensors/tipicalph-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Sensors/tipicalph-eps-converted-to.pdf>
 Package pdftex.def Info: images/Sensors/tipicalph-eps-converted-to.pdf used on 
 input line 93.
 (pdftex.def)             Requested size: 292.28853pt x 219.86882pt.
 Package epstopdf Info: Source file: <images/Sensors/phCircuit.eps>
-(epstopdf)                    date: 2015-03-04 17:41:44
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 49359 bytes
 (epstopdf)             Output file: <images/Sensors/phCircuit-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2015-03-04 17:41:59
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 17110 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/phCircuit-e
 ps-converted-to.pdf images/Sensors/phCircuit.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/phCircuit-eps-converted-to.pdf, id=493, 430.60875pt x 380.42125
+<images/Sensors/phCircuit-eps-converted-to.pdf, id=503, 430.60875pt x 380.42125
 pt>
 File: images/Sensors/phCircuit-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/phCircuit-eps-converted-to.pdf>
@@ -2137,18 +2137,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--121
  []
 
 Package epstopdf Info: Source file: <images/Sensors/highimpedence.eps>
-(epstopdf)                    date: 2015-03-04 16:26:57
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 25994 bytes
 (epstopdf)             Output file: <images/Sensors/highimpedence-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2015-03-04 16:27:05
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 10211 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/highimpeden
 ce-eps-converted-to.pdf images/Sensors/highimpedence.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/highimpedence-eps-converted-to.pdf, id=507, 200.75pt x 93.34875
+<images/Sensors/highimpedence-eps-converted-to.pdf, id=517, 200.75pt x 93.34875
 pt>
 File: images/Sensors/highimpedence-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2174,18 +2174,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
 [16]
 Package epstopdf Info: Source file: <images/Sensors/filterCircuit.eps>
-(epstopdf)                    date: 2015-03-05 12:23:53
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 66011 bytes
 (epstopdf)             Output file: <images/Sensors/filterCircuit-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2015-03-05 12:24:01
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 22476 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/filterCircu
 it-eps-converted-to.pdf images/Sensors/filterCircuit.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/filterCircuit-eps-converted-to.pdf, id=541, 274.02374pt x 231.8
+<images/Sensors/filterCircuit-eps-converted-to.pdf, id=551, 274.02374pt x 231.8
 6626pt>
 File: images/Sensors/filterCircuit-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2194,18 +2194,18 @@ Package pdftex.def Info: images/Sensors/filterCircuit-eps-converted-to.pdf used
  on input line 164.
 (pdftex.def)             Requested size: 315.64333pt x 267.06099pt.
 Package epstopdf Info: Source file: <images/Sensors/filterBode.eps>
-(epstopdf)                    date: 2015-03-05 23:17:01
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 17565 bytes
 (epstopdf)             Output file: <images/Sensors/filterBode-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2015-03-05 23:17:06
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 9574 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/filterBode-
 eps-converted-to.pdf images/Sensors/filterBode.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/filterBode-eps-converted-to.pdf, id=542, 533.995pt x 583.17876p
+<images/Sensors/filterBode-eps-converted-to.pdf, id=552, 533.995pt x 583.17876p
 t>
 File: images/Sensors/filterBode-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/filterBode-eps-converted-to.pdf>
@@ -2224,7 +2224,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
-<images/pcb/ph_conditioning.png, id=545, 1049.9225pt x 548.0475pt>
+<images/pcb/ph_conditioning.png, id=555, 1049.9225pt x 548.0475pt>
 File: images/pcb/ph_conditioning.png Graphic file (type png)
 
 <use images/pcb/ph_conditioning.png>
@@ -2238,18 +2238,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--203
  []
 
 Package epstopdf Info: Source file: <images/Sensors/temperatureCircuit.eps>
-(epstopdf)                    date: 2015-03-06 11:21:16
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 35392 bytes
 (epstopdf)             Output file: <images/Sensors/temperatureCircuit-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2015-03-06 11:21:26
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 12938 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/temperature
 Circuit-eps-converted-to.pdf images/Sensors/temperatureCircuit.eps>
 (epstopdf)             \includegraphics on input line 213.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/temperatureCircuit-eps-converted-to.pdf, id=575, 178.6675pt x 2
+<images/Sensors/temperatureCircuit-eps-converted-to.pdf, id=585, 178.6675pt x 2
 04.765pt>
 File: images/Sensors/temperatureCircuit-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2267,7 +2267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-<images/pcb/temperature_conditioning.png, id=577, 826.08624pt x 443.6575pt>
+<images/pcb/temperature_conditioning.png, id=587, 826.08624pt x 443.6575pt>
 File: images/pcb/temperature_conditioning.png Graphic file (type png)
 
 <use images/pcb/temperature_conditioning.png>
@@ -2287,7 +2287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-<images/Driver/electrovalves.jpg, id=592, 712.6625pt x 575.14874pt>
+<images/Driver/electrovalves.jpg, id=602, 712.6625pt x 575.14874pt>
 File: images/Driver/electrovalves.jpg Graphic file (type jpg)
 
 <use images/Driver/electrovalves.jpg>
@@ -2299,17 +2299,17 @@ Package pdftex.def Info: images/Driver/electrovalves.jpg used on input line 245
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <images/Driver/driverEV.eps>
-(epstopdf)                    date: 2015-03-06 14:31:15
+(epstopdf)                    date: 2015-03-10 15:38:39
 (epstopdf)                    size: 41022 bytes
 (epstopdf)             Output file: <images/Driver/driverEV-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2015-03-06 15:20:29
+(epstopdf)                    date: 2015-03-10 15:38:39
 (epstopdf)                    size: 16235 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Driver/driverEV-eps
 -converted-to.pdf images/Driver/driverEV.eps>
 (epstopdf)             \includegraphics on input line 254.
 Package epstopdf Info: Output file is already uptodate.
-<images/Driver/driverEV-eps-converted-to.pdf, id=594, 164.615pt x 138.5175pt>
+<images/Driver/driverEV-eps-converted-to.pdf, id=604, 164.615pt x 138.5175pt>
 File: images/Driver/driverEV-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Driver/driverEV-eps-converted-to.pdf>
@@ -2330,7 +2330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-<images/Driver/electrovalves_circuit.png, id=596, 1418.29875pt x 782.925pt>
+<images/Driver/electrovalves_circuit.png, id=606, 1418.29875pt x 782.925pt>
 File: images/Driver/electrovalves_circuit.png Graphic file (type png)
 
 <use images/Driver/electrovalves_circuit.png>
@@ -2352,18 +2352,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--278
  []
 
 Package epstopdf Info: Source file: <images/Sensors/dcdcCircuit.eps>
-(epstopdf)                    date: 2015-03-07 17:04:46
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 68155 bytes
 (epstopdf)             Output file: <images/Sensors/dcdcCircuit-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-03-07 17:04:51
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 22512 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/dcdcCircuit
 -eps-converted-to.pdf images/Sensors/dcdcCircuit.eps>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/dcdcCircuit-eps-converted-to.pdf, id=607, 355.3275pt x 171.6412
+<images/Sensors/dcdcCircuit-eps-converted-to.pdf, id=617, 355.3275pt x 171.6412
 5pt>
 File: images/Sensors/dcdcCircuit-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/dcdcCircuit-eps-converted-to.pdf>
@@ -2392,18 +2392,18 @@ Missing character: There is no « in font lmsy10!
 [22 <./images/Driver/electrovalves_circuit.png>] [23 <./images/Sensors/dcdcCirc
 uit-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/Sensors/relay.eps>
-(epstopdf)                    date: 2015-03-07 16:15:53
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 44196 bytes
 (epstopdf)             Output file: <images/Sensors/relay-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2015-03-07 16:26:23
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 14576 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Sensors/relay-eps-c
 onverted-to.pdf images/Sensors/relay.eps>
 (epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/relay-eps-converted-to.pdf, id=658, 282.05376pt x 180.675pt>
+<images/Sensors/relay-eps-converted-to.pdf, id=668, 282.05376pt x 180.675pt>
 File: images/Sensors/relay-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Sensors/relay-eps-converted-to.pdf>
@@ -2411,7 +2411,7 @@ Package pdftex.def Info: images/Sensors/relay-eps-converted-to.pdf used on inpu
 t line 341.
 (pdftex.def)             Requested size: 381.54889pt x 244.42726pt.
  [24 <./images/Sensors/relay-eps-converted-to.pdf>] <images/pcb/supply.png, id=
-674, 1204.5pt x 374.39874pt>
+684, 1204.5pt x 374.39874pt>
 File: images/pcb/supply.png Graphic file (type png)
 
 <use images/pcb/supply.png>
@@ -2419,7 +2419,7 @@ Package pdftex.def Info: images/pcb/supply.png used on input line 352.
 (pdftex.def)             Requested size: 423.94609pt x 131.77847pt.
 ) [25 <./images/pcb/supply.png>]
 Chapter 2.
-(./pcb.tex <images/circuitfinisched.JPG, id=682, 1626.075pt x 1084.05pt>
+(./pcb.tex <images/circuitfinisched.JPG, id=692, 1626.075pt x 1084.05pt>
 File: images/circuitfinisched.JPG Graphic file (type jpg)
 
 <use images/circuitfinisched.JPG>
@@ -2440,7 +2440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<images/pcb/circuit1.png, id=685, 2677.00125pt x 1855.93375pt>
+<images/pcb/circuit1.png, id=695, 2677.00125pt x 1855.93375pt>
 File: images/pcb/circuit1.png Graphic file (type png)
 
 <use images/pcb/circuit1.png>
@@ -2450,17 +2450,17 @@ Package pdftex.def Info: images/pcb/circuit1.png used on input line 23.
 
  <./images/circuitfinisched.JPG>] [27 <./images/pcb/circuit1.png>]
 Package epstopdf Info: Source file: <images/pcb/dcdcloop.eps>
-(epstopdf)                    date: 2015-03-08 01:31:50
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 28001 bytes
 (epstopdf)             Output file: <images/pcb/dcdcloop-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-03-08 01:31:57
+(epstopdf)                    date: 2015-03-10 15:38:40
 (epstopdf)                    size: 10155 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/pcb/dcdcloop-eps-co
 nverted-to.pdf images/pcb/dcdcloop.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/pcb/dcdcloop-eps-converted-to.pdf, id=700, 230.8625pt x 64.24pt>
+<images/pcb/dcdcloop-eps-converted-to.pdf, id=710, 230.8625pt x 64.24pt>
 File: images/pcb/dcdcloop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/pcb/dcdcloop-eps-converted-to.pdf>
@@ -2468,7 +2468,7 @@ Package pdftex.def Info: images/pcb/dcdcloop-eps-converted-to.pdf used on input
  line 37.
 (pdftex.def)             Requested size: 423.94609pt x 117.9766pt.
 
-<images/pcb/dcdc-pcb1.png, id=702, 653.44125pt x 532.99126pt>
+<images/pcb/dcdc-pcb1.png, id=712, 653.44125pt x 532.99126pt>
 File: images/pcb/dcdc-pcb1.png Graphic file (type png)
 
 <use images/pcb/dcdc-pcb1.png>
@@ -2481,27 +2481,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-<images/pcb/PCB.png, id=722, 477.785pt x 477.785pt>
+<images/pcb/PCB.png, id=732, 477.785pt x 477.785pt>
 File: images/pcb/PCB.png Graphic file (type png)
  <use images/pcb/PCB.png>
 Package pdftex.def Info: images/pcb/PCB.png used on input line 65.
 (pdftex.def)             Requested size: 211.97304pt x 211.96844pt.
 
-<images/pcb/PCB-both.png, id=723, 477.785pt x 477.785pt>
+<images/pcb/PCB-both.png, id=733, 477.785pt x 477.785pt>
 File: images/pcb/PCB-both.png Graphic file (type png)
 
 <use images/pcb/PCB-both.png>
 Package pdftex.def Info: images/pcb/PCB-both.png used on input line 68.
 (pdftex.def)             Requested size: 211.97304pt x 211.96844pt.
 
-<images/pcb/pcb-up.png, id=724, 547.04375pt x 549.05125pt>
+<images/pcb/pcb-up.png, id=734, 547.04375pt x 549.05125pt>
 File: images/pcb/pcb-up.png Graphic file (type png)
 
 <use images/pcb/pcb-up.png>
 Package pdftex.def Info: images/pcb/pcb-up.png used on input line 71.
 (pdftex.def)             Requested size: 211.97304pt x 212.75516pt.
 
-<images/pcb/foto.png, id=725, 1943.26pt x 2296.58pt>
+<images/pcb/foto.png, id=735, 1943.26pt x 2296.58pt>
 File: images/pcb/foto.png Graphic file (type png)
  <use images/pcb/foto.png>
 Package pdftex.def Info: images/pcb/foto.png used on input line 74.
@@ -2524,30 +2524,80 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 Chapter 3.
-(./IIintroduction.tex) [32
+(./IIintroduction.tex
+Package epstopdf Info: Source file: <images/bo.eps>
+(epstopdf)                    date: 2015-03-10 16:10:04
+(epstopdf)                    size: 83612 bytes
+(epstopdf)             Output file: <images/bo-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-10 16:13:37
+(epstopdf)                    size: 21976 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/bo-eps-converted-to
+.pdf images/bo.eps>
+(epstopdf)             \includegraphics on input line 3.
+Package epstopdf Info: Output file is already uptodate.
 
-]
+<images/bo-eps-converted-to.pdf, id=757, 287.0725pt x 323.2075pt>
+File: images/bo-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/bo-eps-converted-to.pdf>
+Package pdftex.def Info: images/bo-eps-converted-to.pdf used on input line 3.
+(pdftex.def)             Requested size: 258.36285pt x 290.88406pt.
+ [32
+
+ <./images/bo-eps-converted-to.pdf>]
+<images/traffic.png, id=781, 389.95688pt x 327.47343pt>
+File: images/traffic.png Graphic file (type png)
+
+<use images/traffic.png>
+Package pdftex.def Info: images/traffic.png used on input line 28.
+(pdftex.def)             Requested size: 253.46896pt x 212.85521pt.
+ <images/cisco.png, id=785, 435.12563pt x 271.76532pt>
+File: images/cisco.png Graphic file (type png)
+
+<use images/cisco.png>
+Package pdftex.def Info: images/cisco.png used on input line 38.
+(pdftex.def)             Requested size: 282.8283pt x 176.64536pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+<images/beaglebone.jpg, id=787, 610.28pt x 420.57124pt>
+File: images/beaglebone.jpg Graphic file (type jpg)
+
+<use images/beaglebone.jpg>
+Package pdftex.def Info: images/beaglebone.jpg used on input line 53.
+(pdftex.def)             Requested size: 335.65503pt x 231.3149pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./images/traffic.png>]) [34 <./images/cisco.png> <./images/beaglebone.jpg
+>]
 Chapter 4.
-(./Firmware.tex) [33
+(./Firmware.tex) [35
 
-] [34
+] [36
 
 ]
 Chapter 5.
-[35
+[37
 
 ]
 Chapter 6.
-[36
+[38
 
-] [37
+] [39
 
 ]
 Chapter 7.
-(./glass.tex) [38
+(./glass.tex) [40
 
 
-] [39
+] [41
 
 
 ]
@@ -2558,43 +2608,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
  []
 
 Package epstopdf Info: Source file: <images/Driver/driverLED.eps>
-(epstopdf)                    date: 2015-03-03 10:47:27
+(epstopdf)                    date: 2015-03-10 15:38:39
 (epstopdf)                    size: 22875 bytes
 (epstopdf)             Output file: <images/Driver/driverLED-eps-converted-to.p
 df>
-(epstopdf)                    date: 2015-03-03 10:47:34
+(epstopdf)                    date: 2015-03-10 15:38:39
 (epstopdf)                    size: 9553 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Driver/driverLED-ep
 s-converted-to.pdf images/Driver/driverLED.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Driver/driverLED-eps-converted-to.pdf, id=783, 119.44624pt x 171.64125p
+<images/Driver/driverLED-eps-converted-to.pdf, id=833, 119.44624pt x 171.64125p
 t>
 File: images/Driver/driverLED-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Driver/driverLED-eps-converted-to.pdf>
 Package pdftex.def Info: images/Driver/driverLED-eps-converted-to.pdf used on i
 nput line 13.
 (pdftex.def)             Requested size: 119.44594pt x 171.64081pt.
- [40
+ [42
 
  <./images/Driver/driverLED-eps-converted-to.pdf>]
-<images/Experiments/ledBoard.png, id=801, 1549.79pt x 809.0225pt>
+<images/Experiments/ledBoard.png, id=850, 1549.79pt x 809.0225pt>
 File: images/Experiments/ledBoard.png Graphic file (type png)
 
 <use images/Experiments/ledBoard.png>
 Package pdftex.def Info: images/Experiments/ledBoard.png used on input line 28.
 
 (pdftex.def)             Requested size: 325.4655pt x 169.89973pt.
- [41 <./images/Experiments/ledBoard.png>]
-<images/circuitBreadboard.png, id=812, 1373.13pt x 1644.1425pt>
+ [43 <./images/Experiments/ledBoard.png>]
+<images/circuitBreadboard.png, id=861, 1373.13pt x 1644.1425pt>
 File: images/circuitBreadboard.png Graphic file (type png)
 
 <use images/circuitBreadboard.png>
 Package pdftex.def Info: images/circuitBreadboard.png used on input line 48.
 (pdftex.def)             Requested size: 192.2369pt x 230.17838pt.
 
-<images/breadboard.JPG, id=814, 3902.58pt x 2601.72pt>
+<images/breadboard.JPG, id=863, 3902.58pt x 2601.72pt>
 File: images/breadboard.JPG Graphic file (type jpg)
 
 <use images/breadboard.JPG>
@@ -2604,9 +2654,9 @@ Package pdftex.def Info: images/breadboard.JPG used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [42
+) [44
 
- <./images/circuitBreadboard.png>] [43 <./images/breadboard.JPG>]
+ <./images/circuitBreadboard.png>] [45 <./images/breadboard.JPG>]
 Appendix A.
 (./code.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -2626,7 +2676,7 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 13--14
 ][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[44
+[46
 
 ]
 Overfull \hbox (4.45827pt too wide) in paragraph at lines 51--52
@@ -2637,17 +2687,17 @@ Overfull \hbox (4.45827pt too wide) in paragraph at lines 51--52
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45])
-(./code/beaglebone/Sensors/sensor_acquiring.cpp [46]
+ [47])
+(./code/beaglebone/Sensors/sensor_acquiring.cpp [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49])
+ [51])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
@@ -2678,15 +2728,15 @@ Overfull \hbox (244.1607pt too wide) in paragraph at lines 21--22
 ][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/beaglebone/Video/compute_beating.cpp [50]
+) (./code/beaglebone/Video/compute_beating.cpp [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [53]
 Overfull \hbox (55.45879pt too wide) in paragraph at lines 85--87
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [52] (./code/beaglebone/Pins/bo.dts
+) [54] (./code/beaglebone/Pins/bo.dts
 Overfull \hbox (86.0591pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2696,8 +2746,8 @@ Overfull \hbox (86.0591pt too wide) in paragraph at lines 28--29
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53])
-(./code/beaglebone/GPIO.h [54]
+ [55])
+(./code/beaglebone/GPIO.h [56]
 Overfull \hbox (19.75842pt too wide) in paragraph at lines 60--62
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2707,8 +2757,8 @@ Overfull \hbox (19.75842pt too wide) in paragraph at lines 60--62
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55])
-(./code/beaglebone/GPIO.cpp [56]
+ [57])
+(./code/beaglebone/GPIO.cpp [58]
 Overfull \hbox (24.85847pt too wide) in paragraph at lines 65--66
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2718,7 +2768,7 @@ Overfull \hbox (24.85847pt too wide) in paragraph at lines 65--66
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [59]
 Overfull \hbox (9.55832pt too wide) in paragraph at lines 97--98
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2728,10 +2778,10 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 97--98
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
+ [61]
 Overfull \hbox (19.75842pt too wide) in paragraph at lines 210--211
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
@@ -2740,22 +2790,22 @@ Overfull \hbox (19.75842pt too wide) in paragraph at lines 210--211
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [63]
 Overfull \hbox (9.55832pt too wide) in paragraph at lines 286--287
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
-) (./code/beaglebone/http.h [62]) (./code/beaglebone/http.cpp)
+) (./code/beaglebone/http.h [64]) (./code/beaglebone/http.cpp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-(./code/storing/main.cpp [64]) (./code/storing/VideoStoring.pro)
-(./code/storing/mytimer.h [65]) (./code/storing/mytimer.cpp [66])
-(./code/storing/downloader.h) [67] (./code/storing/downloader.cpp
+ [65]
+(./code/storing/main.cpp [66]) (./code/storing/VideoStoring.pro)
+(./code/storing/mytimer.h [67]) (./code/storing/mytimer.cpp [68])
+(./code/storing/downloader.h) [69] (./code/storing/downloader.cpp
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 16--17
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2784,7 +2834,7 @@ Overfull \hbox (45.25868pt too wide) in paragraph at lines 32--34
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [70]
 Overfull \hbox (208.46034pt too wide) in paragraph at lines 70--71
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2793,13 +2843,13 @@ Overfull \hbox (208.46034pt too wide) in paragraph at lines 70--71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69])
+ [71])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) (./code/main.py [70]
+) (./code/main.py [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
+ [73]
 Overfull \hbox (29.95853pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][] 
@@ -2820,7 +2870,7 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 111--112
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [74]
 Overfull \hbox (147.25972pt too wide) in paragraph at lines 159--160
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2829,7 +2879,7 @@ Overfull \hbox (147.25972pt too wide) in paragraph at lines 159--160
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
+ [75]
 Overfull \hbox (147.25972pt too wide) in paragraph at lines 213--214
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2838,7 +2888,7 @@ Overfull \hbox (147.25972pt too wide) in paragraph at lines 213--214
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]
+ [76]
 Overfull \hbox (9.55832pt too wide) in paragraph at lines 244--245
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2848,14 +2898,14 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 244--245
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76])
+ [78])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./code/glass/MainService.java [77]
+(./code/glass/MainService.java [79]
 Overfull \hbox (70.75894pt too wide) in paragraph at lines 76--80
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2877,7 +2927,7 @@ Overfull \hbox (116.65941pt too wide) in paragraph at lines 82--83
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [80]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 93--94
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2946,7 +2996,7 @@ Overfull \hbox (96.2592pt too wide) in paragraph at lines 130--131
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [81]
 Overfull \hbox (126.85951pt too wide) in paragraph at lines 140--143
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2980,7 +3030,7 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 173--174
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [82]
 Overfull \hbox (86.0591pt too wide) in paragraph at lines 206--207
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2998,10 +3048,10 @@ Overfull \hbox (55.45879pt too wide) in paragraph at lines 207--208
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
+ [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [84]
 Overfull \hbox (50.35873pt too wide) in paragraph at lines 280--281
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3024,7 +3074,7 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 324--326
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
+ [85]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 333--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3053,7 +3103,7 @@ Overfull \hbox (254.36081pt too wide) in paragraph at lines 367--368
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
+ [86]
 Overfull \hbox (106.4593pt too wide) in paragraph at lines 384--385
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3071,7 +3121,7 @@ Overfull \hbox (341.06169pt too wide) in paragraph at lines 390--391
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
+ [87]
 Overfull \hbox (91.15915pt too wide) in paragraph at lines 427--428
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3110,7 +3160,7 @@ Overfull \hbox (330.86159pt too wide) in paragraph at lines 464--465
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
+ [88]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 475--476
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3130,7 +3180,7 @@ Overfull \hbox (91.15915pt too wide) in paragraph at lines 523--525
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [89]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 532--533
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3145,7 +3195,7 @@ Overfull \hbox (35.05858pt too wide) in paragraph at lines 558--559
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [90]
 Overfull \hbox (40.15863pt too wide) in paragraph at lines 592--593
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3163,7 +3213,7 @@ Overfull \hbox (19.75842pt too wide) in paragraph at lines 617--618
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89]
+ [91]
 Overfull \hbox (35.05858pt too wide) in paragraph at lines 628--629
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3188,7 +3238,7 @@ Overfull \hbox (91.15915pt too wide) in paragraph at lines 663--665
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90]
+ [92]
 Overfull \hbox (65.65889pt too wide) in paragraph at lines 671--672
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3196,7 +3246,7 @@ Overfull \hbox (65.65889pt too wide) in paragraph at lines 671--672
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [91])
+ [93])
 (./code/glass/AppDrawer.java
 Overfull \hbox (244.1607pt too wide) in paragraph at lines 20--21
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -3219,7 +3269,7 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 29--30
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[92]
+[94]
 Overfull \hbox (65.65889pt too wide) in paragraph at lines 89--90
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3229,7 +3279,7 @@ Overfull \hbox (65.65889pt too wide) in paragraph at lines 89--90
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93]
+ [95]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 100--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3260,7 +3310,7 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 135--137
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94]
+ [96]
 Overfull \hbox (50.35873pt too wide) in paragraph at lines 149--150
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3295,7 +3345,7 @@ Overfull \hbox (45.25868pt too wide) in paragraph at lines 191--192
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95]
+ [97]
 Overfull \hbox (29.95853pt too wide) in paragraph at lines 195--196
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
@@ -3343,7 +3393,7 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 237--238
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [96]
+ [98]
 Overfull \hbox (131.95956pt too wide) in paragraph at lines 246--247
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3354,17 +3404,17 @@ Overfull \hbox (131.95956pt too wide) in paragraph at lines 246--247
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97]
+ [99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
+ [100]
 Overfull \hbox (80.95905pt too wide) in paragraph at lines 357--358
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/MainView.java [99]
+) (./code/glass/MainView.java [101]
 Overfull \hbox (70.75894pt too wide) in paragraph at lines 37--38
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3383,20 +3433,20 @@ Overfull \hbox (86.0591pt too wide) in paragraph at lines 39--40
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100]
+ [102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101]
+ [103]
 Overfull \hbox (19.75842pt too wide) in paragraph at lines 136--137
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/BeatingView.java [102]
+) (./code/glass/BeatingView.java [104]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [103]
+ [105]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 79--80
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3406,7 +3456,7 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 79--80
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [104]
+ [106]
 Overfull \hbox (233.9606pt too wide) in paragraph at lines 150--151
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3416,8 +3466,8 @@ Overfull \hbox (233.9606pt too wide) in paragraph at lines 150--151
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105])
-(./code/glass/PHViewer.java [106]
+ [107])
+(./code/glass/PHViewer.java [108]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 88--89
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3427,7 +3477,7 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 88--89
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107]
+ [109]
 Overfull \hbox (213.5604pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3438,17 +3488,17 @@ Overfull \hbox (213.5604pt too wide) in paragraph at lines 90--91
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108]
+ [110]
 Overfull \hbox (223.7605pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/TemperatureView.java [109]
+) (./code/glass/TemperatureView.java [111]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110]
+ [112]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 83--84
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3458,17 +3508,17 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 83--84
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [111]
+ [113]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
+ [114]
 Overfull \hbox (223.7605pt too wide) in paragraph at lines 156--157
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/VideoPlayerActivity.java [113]
+) (./code/glass/VideoPlayerActivity.java [115]
 Overfull \hbox (75.859pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][] 
@@ -3481,10 +3531,10 @@ Overfull \hbox (24.85847pt too wide) in paragraph at lines 47--48
 [][][][][][][][][][][][][] 
  []
 
-) (./code/glass/MenuActivity.java [114]
+) (./code/glass/MenuActivity.java [116]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115]
+ [117]
 Overfull \hbox (40.15863pt too wide) in paragraph at lines 72--73
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3507,7 +3557,7 @@ Overfull \hbox (40.15863pt too wide) in paragraph at lines 79--80
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116]
+ [118]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
@@ -3534,7 +3584,7 @@ Overfull \hbox (14.65837pt too wide) in paragraph at lines 148--149
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117]
+ [119]
 Overfull \hbox (24.85847pt too wide) in paragraph at lines 162--163
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3554,22 +3604,28 @@ Overfull \hbox (24.85847pt too wide) in paragraph at lines 184--185
 ][] 
  []
 
-) (./code/glass/AppManager.java [118]) (./code/glass/DataPoint.java)) [119]
+) (./code/glass/AppManager.java [120]) (./code/glass/DataPoint.java)) [121]
 (./Thesis.lof)
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
- [120
+ [122
 
 
-] (./Thesis.lol)
+] [123] (./Thesis.lol)
 \tf@lol=\write9
 \openout9 = `Thesis.lol'.
 
- (./Thesis.bbl [121
+ (./Thesis.bbl [124
 
 
-])
+]
+Underfull \hbox (badness 1442) in paragraph at lines 24--30
+[]\T1/ptm/m/n/12 Derek Mol-loy.  \T1/ptm/m/it/12 Ex-plor-ing Bea-gle-Bone: Tool
+s and Tech-niques for Build-ing
+ []
+
+)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Thesis.maf file.
@@ -3581,7 +3637,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Thesis.log file.
 
-[122
+[125
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
@@ -3590,14 +3646,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E4F7960665E704D6F69E92F2E848BD35;2410.
+(rerunfilecheck)             Checksum: E1DE7D04F21C52B3FDA027FE03B2DFD6;2578.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 34309 strings out of 493104
- 584594 string characters out of 6136931
- 699259 words of memory out of 5000000
- 32851 multiletter control sequences out of 15000+600000
+ 34356 strings out of 493104
+ 585404 string characters out of 6136931
+ 699858 words of memory out of 5000000
+ 32883 multiletter control sequences out of 15000+600000
  196992 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,11n,61p,1161b,2031s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3630,10 +3686,10 @@ r/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (127 pages, 27632880 bytes).
+Output written on Thesis.pdf (130 pages, 28178727 bytes).
 PDF statistics:
- 5788 PDF objects out of 6186 (max. 8388607)
- 5420 compressed objects within 55 object streams
- 3870 named destinations out of 4296 (max. 500000)
- 45089 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 5852 PDF objects out of 6186 (max. 8388607)
+ 5476 compressed objects within 55 object streams
+ 3882 named destinations out of 4296 (max. 500000)
+ 45125 words of extra memory for PDF output out of 51595 (max. 10000000)
 

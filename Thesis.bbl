@@ -1,13 +1,13 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Andrea~Cavallini(2012)]{DFTSA}
-Sara Ghoreishizadeh Giovanni De Micheli Sandro~Carrara Andrea~Cavallini,
-  Camilla Baj-Rossi.
+\bibitem[Carrara(2012)]{DFTSA}
+Andrea Cavallini Camilla Baj-Rossi Sara Ghoreishizadeh Giovanni De
+  Micheli~Sandro Carrara.
 \newblock Design, fabrication, and test of a sensor array for perspective
   biosensing in chronic pathologies.
 \newblock \emph{IEEE Biomedical Circuits and System Conference}, 2012.
@@ -19,6 +19,28 @@ Texas Instruments.
 \newblock Pcb design guidelines for reduced emi.
 \newblock \emph{Application Note}, November 1999.
 \newblock URL \url{http://www.ti.com/lit/an/szza009/szza009.pdf}.
+
+\bibitem[Molloy(2014)]{EBB}
+Derek Molloy.
+\newblock \emph{Exploring BeagleBone: Tools and Techniques for Building with
+  Embedded Linux}.
+\newblock Wiley, 2014.
+\newblock ISBN 1118935128.
+\newblock URL \url{http://www.exploringbeaglebone.com/}.
+
+\bibitem[Baum(July 2014)]{ALTIOT}
+Avi Baum.
+\newblock An-1852 designing with ph electrodes.
+\newblock \emph{Application Note, Texas Instruments}, July 2014.
+\newblock URL \url{http://www.ti.com/lit/wp/swry009/swry009.pdf}.
+
+\bibitem[Evans(April 2011)]{CISCOIOT}
+Dave Evans.
+\newblock The internet of things, how the next evolution of the internet is
+  changing everything.
+\newblock \emph{Cisco Systems}, April 2011.
+\newblock URL
+  \url{http://www.cisco.com/web/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf}.
 
 \bibitem[Instruments(September 2008–Revised April 2013)]{SNOA529A}
 Texas Instruments.
