@@ -53,16 +53,18 @@
 \contentsline {figure}{\numberline {38}{\ignorespaces Bash Script Flow Chart\relax }}{37}{figure.caption.41}
 \contentsline {figure}{\numberline {39}{\ignorespaces Sensor UML Description\relax }}{39}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Google App Engine}}{42}{chapter.5}
+\contentsline {xchapter}{\spacedlowsmallcaps {Google App Engine}}{43}{chapter.5}
+\contentsline {figure}{\numberline {40}{\ignorespaces Google App Engine Logo\relax }}{43}{figure.caption.43}
+\contentsline {figure}{\numberline {41}{\ignorespaces Flask Logo\relax }}{44}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{43}{chapter.6}
+\contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{45}{chapter.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{45}{chapter.7}
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{47}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{47}{chapter.8}
-\contentsline {figure}{\numberline {40}{\ignorespaces Driver for LED\relax }}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {41}{\ignorespaces LEDs experiments board\relax }}{48}{figure.caption.44}
-\contentsline {figure}{\numberline {42}{\ignorespaces Circuit mounted on breadboard top view\relax }}{49}{figure.caption.45}
-\contentsline {figure}{\numberline {43}{\ignorespaces Circuit mounted on breadboard side view\relax }}{50}{figure.caption.46}
+\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{49}{chapter.8}
+\contentsline {figure}{\numberline {42}{\ignorespaces Driver for LED\relax }}{49}{figure.caption.45}
+\contentsline {figure}{\numberline {43}{\ignorespaces LEDs experiments board\relax }}{50}{figure.caption.46}
+\contentsline {figure}{\numberline {44}{\ignorespaces Circuit mounted on breadboard top view\relax }}{51}{figure.caption.47}
+\contentsline {figure}{\numberline {45}{\ignorespaces Circuit mounted on breadboard side view\relax }}{52}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{51}{appendix.A}
+\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{53}{appendix.A}

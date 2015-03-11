@@ -4,44 +4,44 @@ The top-level auxiliary file: Thesis.aux
 A level-1 auxiliary file: ./Frontespizio/frontespizio.aux
 The style file: unsrtnat.bst
 Database file #1: biblio.bib
-You've used 6 entries,
+You've used 7 entries,
             2481 wiz_defined-function locations,
-            593 strings with 5518 characters,
-and the built_in function-call counts, 1679 in all, are:
-= -- 151
-> -- 42
-< -- 6
-+ -- 24
-- -- 12
-* -- 81
-:= -- 289
-add.period$ -- 25
-call.type$ -- 6
-change.case$ -- 11
-chr.to.int$ -- 6
-cite$ -- 6
-duplicate$ -- 109
-empty$ -- 171
-format.name$ -- 18
-if$ -- 353
+            600 strings with 5598 characters,
+and the built_in function-call counts, 1950 in all, are:
+= -- 174
+> -- 49
+< -- 7
++ -- 28
+- -- 14
+* -- 93
+:= -- 334
+add.period$ -- 29
+call.type$ -- 7
+change.case$ -- 12
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 128
+empty$ -- 201
+format.name$ -- 21
+if$ -- 412
 int.to.chr$ -- 1
-int.to.str$ -- 7
-missing$ -- 7
-newline$ -- 45
-num.names$ -- 18
-pop$ -- 50
+int.to.str$ -- 8
+missing$ -- 9
+newline$ -- 51
+num.names$ -- 21
+pop$ -- 61
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 7
 quote$ -- 0
-skip$ -- 66
+skip$ -- 76
 stack$ -- 0
-substring$ -- 12
-swap$ -- 12
+substring$ -- 14
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 39
+type$ -- 43
 warning$ -- 0
-while$ -- 12
+while$ -- 14
 width$ -- 0
-write$ -- 93
+write$ -- 107

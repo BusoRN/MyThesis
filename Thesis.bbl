@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,6 +41,12 @@ Dave Evans.
 \newblock \emph{Cisco Systems}, April 2011.
 \newblock URL
   \url{http://www.cisco.com/web/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf}.
+
+\bibitem[Severance(May 2009)]{UGAE}
+Charles Severance.
+\newblock \emph{Using Google App Engine}.
+\newblock O'Reilly Media, May 2009.
+\newblock ISBN 0596555806.
 
 \bibitem[Instruments(September 2008–Revised April 2013)]{SNOA529A}
 Texas Instruments.

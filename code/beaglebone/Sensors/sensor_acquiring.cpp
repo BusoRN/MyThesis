@@ -36,6 +36,12 @@ public:
 	void set_offset(float offset){
 		q = offset;
 	}
+	float get_sensor_value(){
+		float voltage_value = this->get_voltage_value();
+		float sensor_value = (voltage_value - q)/m;
+		return sensor_value;
+	}
+private:
 	float get_voltage_value(){
 		stringstream ss;
 		ss << LDR_PATH << number << "_raw";
@@ -48,11 +54,6 @@ public:
 		float actual_value;
 		return cur_voltage;
 
-	}
-	float get_sensor_value(){
-		float voltage_value = this->get_voltage_value();
-		float sensor_value = (voltage_value - q)/m;
-		return sensor_value;
 	}
 };
 
