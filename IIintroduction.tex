@@ -55,3 +55,19 @@ For this thesis, the Embedded Linux system has been developed using the \textit{
 	\label{Fig:beaglebone}
 	
 \end{figure}
+
+The \textit{Beaglebone Black} is a low-cost, fully open-source (that means everyone can downloads and uses the hardware schematics and layout in order to build up a complete product design), single board micro computer (\textit{SBC}) powered by Linux. 
+
+There are a lot of \textit{SBC} on the market, I chose the Beaglebone Black for the following reasons:
+\begin{itemize}
+	\item low price, it costs $\$50 $;
+	\item powerful, the \textit{Sitara\texttrademark AM335x ARM\textregistered Cortex\texttrademark-A8} processor from Texas Instruments (\textit{TI}) can run up to $1\ GHz$, allowing up to $2$ billion instructions per second;
+	\item $4GB$ on-board embedded multi-media card (\textit{eMMC}), this means the Beaglebone can boot without a \textit{SD} card, unlike other boards like Raspberry PI. It allows faster boot, approximately $10$ seconds;
+	\item $512MB$ \textit{DDR3} of system memory;
+	\item Ethernet processor, which supports \textit{DHCP}, so it can be directly conncted to a network
+	\item \textbf{expansion headers}, $92$ pins with $65$ \textit{GPIOs}, $8$ analog output, $7$ analog input, $3$ different voltage supplies ($5\ V$, $3.3\ V$, and $1.8\ V$), and the whole most used digital interface. All these make the Beaglebone Black built to be interfaced to. 
+	
+\end{itemize}
+Over these, the board has other important feature that are not used in this thesis, but may be used in the future to enhance it. An example is given by the 2 Programmable Real-time Units (\textit{PRU}) that, unlike the definitions of Embedded Linux, make this board usable for real-time applications.
+
+As already said in (Chap.\ref{ch:Analog}), this board has been connected to a custom \textit{capes}, a daughterboard that can be attached to the two headers on the Beaglebone itself.

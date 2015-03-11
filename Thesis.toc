@@ -27,23 +27,26 @@
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Introduction}}{32}{chapter.3}
 \contentsline {section}{\numberline {3.1}A Brief Introduction To IoT}{33}{section.3.1}
 \contentsline {section}{\numberline {3.2}The Beaglebone Black}{34}{section.3.2}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Embedded Linux inside The project}}{35}{chapter.4}
-\contentsline {part}{iii\hspace {1em}\spacedlowsmallcaps {Software}}{36}{part.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Google App Engine}}{37}{chapter.5}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Microscope Video Storing}}{38}{chapter.6}
-\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Google Glass Application}}{39}{part.4}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Introduction}}{40}{chapter.7}
-\contentsline {part}{v\hspace {1em}\spacedlowsmallcaps {Conclusion and Appendix}}{41}{part.5}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Test and performance}}{42}{chapter.8}
-\contentsline {section}{\numberline {8.1}LED Experiments}{42}{section.8.1}
-\contentsline {section}{\numberline {8.2}Electrovalves experiments}{43}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Breadboard Phase}{43}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}PCB Phase}{45}{subsection.8.2.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Code}}{46}{appendix.A}
-\contentsline {section}{\numberline {A.1}Firmware}{46}{section.A.1}
-\contentsline {section}{\numberline {A.2}Video Storing Software}{66}{section.A.2}
-\contentsline {section}{\numberline {A.3}Google App Engine}{72}{section.A.3}
-\contentsline {section}{\numberline {A.4}Glassware}{79}{section.A.4}
-\contentsline {chapter}{List of Figures}{123}{appendix*.44}
-\contentsline {chapter}{List of Listings}{124}{appendix*.45}
-\contentsline {chapter}{Bibliography}{125}{appendix*.46}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Embedded Linux inside The project}}{36}{chapter.4}
+\contentsline {section}{\numberline {4.1}Video Processing and Beating Plot}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sensor Data Acquisition}{38}{section.4.2}
+\contentsline {section}{\numberline {4.3}Electrovalves Updating Task}{39}{section.4.3}
+\contentsline {part}{iii\hspace {1em}\spacedlowsmallcaps {Software}}{41}{part.3}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Google App Engine}}{42}{chapter.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Microscope Video Storing}}{43}{chapter.6}
+\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Google Glass Application}}{44}{part.4}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Introduction}}{45}{chapter.7}
+\contentsline {part}{v\hspace {1em}\spacedlowsmallcaps {Conclusion and Appendix}}{46}{part.5}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Test and performance}}{47}{chapter.8}
+\contentsline {section}{\numberline {8.1}LED Experiments}{47}{section.8.1}
+\contentsline {section}{\numberline {8.2}Electrovalves experiments}{48}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Breadboard Phase}{48}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}PCB Phase}{50}{subsection.8.2.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Code}}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Firmware}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Video Storing Software}{62}{section.A.2}
+\contentsline {section}{\numberline {A.3}Google App Engine}{67}{section.A.3}
+\contentsline {section}{\numberline {A.4}Glassware}{74}{section.A.4}
+\contentsline {chapter}{List of Figures}{119}{appendix*.47}
+\contentsline {chapter}{List of Listings}{120}{appendix*.48}
+\contentsline {chapter}{Bibliography}{121}{appendix*.49}

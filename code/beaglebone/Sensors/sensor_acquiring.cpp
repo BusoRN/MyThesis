@@ -21,44 +21,6 @@ float const OFFSET_TEMPERATURE = 1870;
 float const SLOPE_PH = -0.070;
 float const OFFSET_PH = 0.6;
 
-
-
-//void post_data_sensor(int type, float value){
-//	CURL *curl;
-//	CURLcode res;
-//	/* In windows, this will init the winsock stuff */
-//	curl_global_init(CURL_GLOBAL_ALL);
-//
-//	/* get a curl handle */
-//	curl = curl_easy_init();
-//	if(curl) {
-//	  /* First set the URL that is about to receive our POST. This URL can
-//	     just as well be a https:// URL if that is what should receive the
-//	     data. */
-//	  curl_easy_setopt(curl, CURLOPT_URL, URL_POST.c_str());
-//	  /* Now specify the POST data */
-//	  std::ostringstream ss;
-//	  ss << value;
-//	  std::string s;
-//	  if ( type == 0)
-//		  s= POST_DATA_TEMPERATURE +(ss.str());
-//	  else
-//		  s= POST_DATA_PH +(ss.str());
-//	  curl_easy_setopt(curl, CURLOPT_POSTFIELDS, s.c_str());
-//     /* Perform the request, res will get the return code */
-//	  res = curl_easy_perform(curl);
-//	  /* Check for errors */
-//	  if(res != CURLE_OK)
-//	    fprintf(stderr, "curl_easy_perform() failed: %s\n",
-//	            curl_easy_strerror(res));
-//    /* always cleanup */
-//	  curl_easy_cleanup(curl);
-//	}
-//	curl_global_cleanup();
-//}
-
-
-
 class Sensor
 {
 	int number;

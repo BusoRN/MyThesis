@@ -7,10 +7,10 @@
 
 #define NUMBER_ELECTROVALVES 8
 
-using namespace exploringBB;
 using namespace std;
 
-std::string const ELECTROVALVES_LINK = "http://planar-contact-601.appspot.com/show/";
+std::string const ELECTROVALVES_LINK = 
+    "http://planar-contact-601.appspot.com/show/";
 std::string const TRUE_VALUE = " True ";
 std::string const FALSE_VALUE = " False ";
 
@@ -19,7 +19,6 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
 	((std::string*)userp)->append((char*)contents, size * nmemb);
 	return size * nmemb;
 }
-
 
 int main(void)
 {
@@ -48,7 +47,8 @@ int main(void)
 
 	while(1)
 	{
-		//acquire the values of electrovalves status and store them inside output_vector
+		//acquire the values of electrovalves status and store them inside 
+		//output_vector
 		int i;
 		for(i=0;i<NUMBER_ELECTROVALVES; i++)
 		{
@@ -78,11 +78,8 @@ int main(void)
 					std::cout << "EV" + ss.str()+": OFF" << std::endl;
 					output_vector[i] = LOW;
 				}
-
 			}
-
 		}
-
 		//now I'm ready to write the output pins:
 		EV1.setValue(output_vector[0]);
 		EV2.setValue(output_vector[1]);
@@ -93,8 +90,6 @@ int main(void)
 		EV7.setValue(output_vector[6]);
 		EV8.setValue(output_vector[7]);
 	}
-
-
 	return 0;
 }
 

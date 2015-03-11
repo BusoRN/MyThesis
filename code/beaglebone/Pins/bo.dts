@@ -24,8 +24,8 @@
             
              __overlay__ {
                   ebb_example: KLab {
-			pinctrl-single,pins = <
-                                0x04c 0x07  // P9_16 - Temperture controller - Output Mode7 pulldown
+					  pinctrl-single,pins = <
+                                0x04c 0x07  // P9_16 - T - Output Mode7 pulldown
                                 0x024 0x07  // P8_13 - EV1 - Output Mode7 pulldown
                                 0x028 0x07  // P8_14 - EV4 - Output Mode7 pulldown
                                 0x03c 0x07  // P8_15 - EV3 - Output Mode7 pulldown

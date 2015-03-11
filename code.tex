@@ -20,29 +20,11 @@ showtabs=false,                  % show tabs within strings adding particular un
 stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
 stringstyle=\color{mymauve},     % string literal style
 tabsize=2,                       % sets default tabsize to 2 spaces
-language=C++,
-caption = ElectrovalvesDriver.cpp,
-label = code:Electrovalves]{./code/beaglebone/Electrovalves/GlassInterface.cpp}
+language=bash,
+caption = KlabFirware (bash),
+label = code:recordVideo]{./code/beaglebone/Video/recordVideo}
 
-\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
-basicstyle=\scriptsize\ttfamily,,
-breaklines=false,
-commentstyle=\color{mygreen},
-keepspaces=true,
-keywordstyle=\color{blue}, 
-numbers=left,
-numbersep=5pt, 
-numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-rulecolor=\color{black}, 
-showspaces=false,
-showstringspaces=false,          % underline spaces within strings only
-showtabs=false,                  % show tabs within strings adding particular underscores
-stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-stringstyle=\color{mymauve},     % string literal style
-tabsize=2,                       % sets default tabsize to 2 spaces
-language=C++,
-caption = sensor\_aquiring.cpp,
-label = code:sensors]{./code/beaglebone/Sensors/sensor_acquiring.cpp}
+\clearpage
 
 \lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
 basicstyle=\scriptsize\ttfamily,,
@@ -61,28 +43,8 @@ stepnumber=2,                    % the step between two line-numbers. If it's 1,
 stringstyle=\color{mymauve},     % string literal style
 tabsize=2,                       % sets default tabsize to 2 spaces
 language=bash,
-caption = recordVideo,
-label = code:recordVideo]{./code/beaglebone/Video/recordVideo}
-
-\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
-basicstyle=\scriptsize\ttfamily,,
-breaklines=false,
-commentstyle=\color{mygreen},
-keepspaces=true,
-keywordstyle=\color{blue}, 
-numbers=left,
-numbersep=5pt, 
-numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-rulecolor=\color{black}, 
-showspaces=false,
-showstringspaces=false,          % underline spaces within strings only
-showtabs=false,                  % show tabs within strings adding particular underscores
-stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-stringstyle=\color{mymauve},     % string literal style
-tabsize=2,                       % sets default tabsize to 2 spaces
-language=C++,
-caption = compute\_beating.cpp,
-label = code:beation]{./code/beaglebone/Video/compute_beating.cpp}
+caption = SensorAcquiring (bash),
+label = code:sensorbash]{./code/beaglebone/Sensors/sensorAcquiring}
 
 \lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
 basicstyle=\scriptsize\ttfamily,,
@@ -120,9 +82,9 @@ showtabs=false,                  % show tabs within strings adding particular un
 stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
 stringstyle=\color{mymauve},     % string literal style
 tabsize=2,                       % sets default tabsize to 2 spaces
-language=C++,
-caption = GPIO.h,
-label = code:gpio]{./code/beaglebone/GPIO.h}
+language=C,
+caption = ElectrovalvesDriver.cpp,
+label = code:Electrovalves]{./code/beaglebone/Electrovalves/GlassInterface.cpp}
 
 \lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
 basicstyle=\scriptsize\ttfamily,,
@@ -141,7 +103,89 @@ stepnumber=2,                    % the step between two line-numbers. If it's 1,
 stringstyle=\color{mymauve},     % string literal style
 tabsize=2,                       % sets default tabsize to 2 spaces
 language=C++,
-caption = GPIO.cpp]{./code/beaglebone/GPIO.cpp}
+caption = sensor\_aquiring.cpp,
+label = code:sensors]{./code/beaglebone/Sensors/sensor_acquiring.cpp}
+
+
+
+\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
+basicstyle=\scriptsize\ttfamily,,
+breaklines=false,
+commentstyle=\color{mygreen},
+keepspaces=true,
+keywordstyle=\color{blue}, 
+numbers=left,
+numbersep=5pt, 
+numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+rulecolor=\color{black}, 
+showspaces=false,
+showstringspaces=false,          % underline spaces within strings only
+showtabs=false,                  % show tabs within strings adding particular underscores
+stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+stringstyle=\color{mymauve},     % string literal style
+tabsize=2,                       % sets default tabsize to 2 spaces
+language=C++,
+caption = compute\_beating.cpp,
+label = code:beating]{./code/beaglebone/Video/compute_beating.cpp}
+
+\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
+basicstyle=\scriptsize\ttfamily,,
+breaklines=false,
+commentstyle=\color{mygreen},
+keepspaces=true,
+keywordstyle=\color{blue}, 
+numbers=left,
+numbersep=5pt, 
+numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+rulecolor=\color{black}, 
+showspaces=false,
+showstringspaces=false,          % underline spaces within strings only
+showtabs=false,                  % show tabs within strings adding particular underscores
+stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+stringstyle=\color{mymauve},     % string literal style
+tabsize=2,                       % sets default tabsize to 2 spaces
+language=C++,
+caption = Pins Setting,
+label = code:pins]{./code/beaglebone/Pins/bo.dts}
+
+%\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
+%basicstyle=\scriptsize\ttfamily,,
+%breaklines=false,
+%commentstyle=\color{mygreen},
+%keepspaces=true,
+%keywordstyle=\color{blue}, 
+%numbers=left,
+%numbersep=5pt, 
+%numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+%rulecolor=\color{black}, 
+%showspaces=false,
+%showstringspaces=false,          % underline spaces within strings only
+%showtabs=false,                  % show tabs within strings adding particular underscores
+%stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+%stringstyle=\color{mymauve},     % string literal style
+%tabsize=2,                       % sets default tabsize to 2 spaces
+%language=C++,
+%caption = GPIO.h,
+%label = code:gpio]{./code/beaglebone/GPIO.h}
+%
+%\lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
+%basicstyle=\scriptsize\ttfamily,,
+%breaklines=false,
+%commentstyle=\color{mygreen},
+%keepspaces=true,
+%keywordstyle=\color{blue}, 
+%numbers=left,
+%numbersep=5pt, 
+%numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+%rulecolor=\color{black}, 
+%showspaces=false,
+%showstringspaces=false,          % underline spaces within strings only
+%showtabs=false,                  % show tabs within strings adding particular underscores
+%stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+%stringstyle=\color{mymauve},     % string literal style
+%tabsize=2,                       % sets default tabsize to 2 spaces
+%language=C++,
+%caption = GPIO.cpp]{./code/beaglebone/GPIO.cpp}
 
 \lstinputlisting[frame=single,  basicstyle=\footnotesize, breakatwhitespace=true, 
 basicstyle=\scriptsize\ttfamily,,

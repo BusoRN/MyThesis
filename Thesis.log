@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  10 MAR 2015 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  11 MAR 2015 05:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,17 +1085,39 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks35
 )
+(/usr/share/texlive/texmf-dist/tex/latex/floatflt/floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count142
+\figbox=\box36
+\tabbox=\box37
+\pagebox=\box38
+\ffigcount=\count143
+\ftabcount=\count144
+\fftest=\count145
+\hangcount=\count146
+\nosuccesstryfig=\count147
+\nosuccesstrytab=\count148
+\figgutter=\dimen158
+\tabgutter=\dimen159
+\htdone=\dimen160
+\pageht=\dimen161
+\startpageht=\dimen162
+\tabbredd=\dimen163
+\floatfltwidth=\dimen164
+\fltitemwidth=\dimen165
+\outputpretest=\toks36
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen158
-\pgfutil@tempdimb=\dimen159
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen166
+\pgfutil@tempdimb=\dimen167
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box36
+\pgfutil@abb=\box39
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1110,30 +1132,30 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks39
+\pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen160
-\pgf@y=\dimen161
-\pgf@xa=\dimen162
-\pgf@ya=\dimen163
-\pgf@xb=\dimen164
-\pgf@yb=\dimen165
-\pgf@xc=\dimen166
-\pgf@yc=\dimen167
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count142
-\c@pgf@countb=\count143
-\c@pgf@countc=\count144
-\c@pgf@countd=\count145
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
+\c@pgf@counta=\count149
+\c@pgf@countb=\count150
+\c@pgf@countc=\count151
+\c@pgf@countd=\count152
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -1149,8 +1171,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count146
-\pgfsyssoftpath@bigbuffer@items=\count147
+\pgfsyssoftpath@smallbuffer@items=\count153
+\pgfsyssoftpath@bigbuffer@items=\count154
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -1163,12 +1185,12 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen168
-\pgfmath@count=\count148
-\pgfmath@box=\box37
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count155
+\pgfmath@box=\box40
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1188,57 +1210,57 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count149
+\c@pgfmathroundto@lastzeros=\count156
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen169
-\pgf@picmaxx=\dimen170
-\pgf@picminy=\dimen171
-\pgf@picmaxy=\dimen172
-\pgf@pathminx=\dimen173
-\pgf@pathmaxx=\dimen174
-\pgf@pathminy=\dimen175
-\pgf@pathmaxy=\dimen176
-\pgf@xx=\dimen177
-\pgf@xy=\dimen178
-\pgf@yx=\dimen179
-\pgf@yy=\dimen180
-\pgf@zx=\dimen181
-\pgf@zy=\dimen182
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen183
-\pgf@path@lasty=\dimen184
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen185
-\pgf@shorten@start@additional=\dimen186
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box38
-\pgf@hbox=\box39
-\pgf@layerbox@main=\box40
-\pgf@picture@serial@count=\count150
+\pgfpic=\box41
+\pgf@hbox=\box42
+\pgf@layerbox@main=\box43
+\pgf@picture@serial@count=\count157
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen187
+\pgflinewidth=\dimen195
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen188
-\pgf@pt@y=\dimen189
-\pgf@pt@temp=\dimen190
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1254,12 +1276,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen191
+\pgfarrowsep=\dimen199
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen192
-\pgf@sys@shading@range@num=\count151
+\pgf@max=\dimen200
+\pgf@sys@shading@range@num=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1267,7 +1289,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box41
+\pgfexternal@startupbox=\box44
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1283,15 +1305,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box42
+\pgfnodeparttextbox=\box45
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen193
-\pgf@nodesepend=\dimen194
+\pgf@nodesepstart=\dimen201
+\pgf@nodesepend=\dimen202
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1305,10 +1327,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen195
-\pgffor@skip=\dimen196
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
+\pgffor@iter=\dimen203
+\pgffor@skip=\dimen204
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
@@ -1316,31 +1338,31 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count152
-\pgfplotmarksize=\dimen197
+\pgf@plot@mark@count=\count159
+\pgfplotmarksize=\dimen205
 )
-\tikz@lastx=\dimen198
-\tikz@lasty=\dimen199
-\tikz@lastxsaved=\dimen200
-\tikz@lastysaved=\dimen201
-\tikzleveldistance=\dimen202
-\tikzsiblingdistance=\dimen203
-\tikz@figbox=\box43
-\tikz@figbox@bg=\box44
-\tikz@tempbox=\box45
-\tikz@tempbox@bg=\box46
-\tikztreelevel=\count153
-\tikznumberofchildren=\count154
-\tikznumberofcurrentchild=\count155
-\tikz@fig@count=\count156
+\tikz@lastx=\dimen206
+\tikz@lasty=\dimen207
+\tikz@lastxsaved=\dimen208
+\tikz@lastysaved=\dimen209
+\tikzleveldistance=\dimen210
+\tikzsiblingdistance=\dimen211
+\tikz@figbox=\box46
+\tikz@figbox@bg=\box47
+\tikz@tempbox=\box48
+\tikz@tempbox@bg=\box49
+\tikztreelevel=\count160
+\tikznumberofchildren=\count161
+\tikznumberofcurrentchild=\count162
+\tikz@fig@count=\count163
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count157
-\pgfmatrixcurrentcolumn=\count158
-\pgf@matrix@numberofcolumns=\count159
+\pgfmatrixcurrentrow=\count164
+\pgfmatrixcurrentcolumn=\count165
+\pgf@matrix@numberofcolumns=\count166
 )
-\tikz@expandcount=\count160
+\tikz@expandcount=\count167
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1348,21 +1370,21 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count161
-\Gm@cntv=\count162
-\c@Gm@tempcnt=\count163
-\Gm@bindingoffset=\dimen204
-\Gm@wd@mp=\dimen205
-\Gm@odd@mp=\dimen206
-\Gm@even@mp=\dimen207
-\Gm@layoutwidth=\dimen208
-\Gm@layoutheight=\dimen209
-\Gm@layouthoffset=\dimen210
-\Gm@layoutvoffset=\dimen211
-\Gm@dimlist=\toks48
+\Gm@cnth=\count168
+\Gm@cntv=\count169
+\c@Gm@tempcnt=\count170
+\Gm@bindingoffset=\dimen212
+\Gm@wd@mp=\dimen213
+\Gm@odd@mp=\dimen214
+\Gm@even@mp=\dimen215
+\Gm@layoutwidth=\dimen216
+\Gm@layoutheight=\dimen217
+\Gm@layouthoffset=\dimen218
+\Gm@layoutvoffset=\dimen219
+\Gm@dimlist=\toks49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen212
+\bigstrutjot=\dimen220
 )
 (/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
 Package: stackengine 2014/01/06 v3.24\ Stacking text and objects in convenient 
@@ -1373,33 +1395,33 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count164
+\et@xins=\count171
 )
-\etb@tempcnta=\count165
+\etb@tempcnta=\count172
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count166
-\calc@Bcount=\count167
-\calc@Adimen=\dimen213
-\calc@Bdimen=\dimen214
+\calc@Acount=\count173
+\calc@Bcount=\count174
+\calc@Adimen=\dimen221
+\calc@Bdimen=\dimen222
 \calc@Askip=\skip110
 \calc@Bskip=\skip111
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count168
+\calc@Ccount=\count175
 \calc@Cskip=\skip112
 )
-\c@@stackindex=\count169
+\c@@stackindex=\count176
 \@boxshift=\skip113
 \stack@tmplength=\skip114
 \temp@stkl=\skip115
 \@stackedboxwidth=\skip116
-\@addedbox=\box47
-\@anchorbox=\box48
-\stackedbox=\box49
-\@centerbox=\box50
-\c@ROWcellindex@=\count170
+\@addedbox=\box50
+\@anchorbox=\box51
+\stackedbox=\box52
+\@centerbox=\box53
+\c@ROWcellindex@=\count177
 )
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -1453,41 +1475,143 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen223
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.0 (rcs-revision 1.6)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box54
+\pgfnodeparttwobox=\box55
+\pgfnodepartthreebox=\box56
+\pgfnodepartfourbox=\box57
+\pgfnodeparttwentybox=\box58
+\pgfnodepartnineteenbox=\box59
+\pgfnodeparteighteenbox=\box60
+\pgfnodepartseventeenbox=\box61
+\pgfnodepartsixteenbox=\box62
+\pgfnodepartfifteenbox=\box63
+\pgfnodepartfourteenbox=\box64
+\pgfnodepartthirteenbox=\box65
+\pgfnodeparttwelvebox=\box66
+\pgfnodepartelevenbox=\box67
+\pgfnodeparttenbox=\box68
+\pgfnodepartninebox=\box69
+\pgfnodeparteightbox=\box70
+\pgfnodepartsevenbox=\box71
+\pgfnodepartsixbox=\box72
+\pgfnodepartfivebox=\box73
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.0 (rcs-revision 1.3)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.0 (rcs-revision 1.2)
+)
 
 LaTeX Warning: Unused global option(s):
     [abstracton].
 
-(./Thesis.aux (./Frontespizio/frontespizio.aux))
+(./Thesis.aux (./Frontespizio/frontespizio.aux)
+
+LaTeX Warning: Label `code:pins' multiply defined.
+
+)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 54.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 65.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 54.
+\AtBeginShipoutBox=\box74
+Package hyperref Info: Link coloring OFF on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1495,11 +1619,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write6
@@ -1508,19 +1632,19 @@ LaTeX Info: Redefining \nameref on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count172
-\scratchdimen=\dimen215
-\scratchbox=\box52
-\nofMPsegments=\count173
-\nofMParguments=\count174
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count175
-\MPscratchDim=\dimen216
-\MPnumerator=\count176
-\makeMPintoPDFobject=\count177
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count179
+\scratchdimen=\dimen224
+\scratchbox=\box75
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen225
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks51
 )
-LaTeX Info: Redefining \microtypecontext on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1534,6 +1658,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1553,13 +1678,13 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count178
-\c@minilofdepth=\count179
-\c@minilotdepth=\count180
-\c@partlofdepth=\count181
-\c@partlotdepth=\count182
-\c@sectlofdepth=\count183
-\c@sectlotdepth=\count184
+\c@lstlisting=\count185
+\c@minilofdepth=\count186
+\c@minilotdepth=\count187
+\c@partlofdepth=\count188
+\c@partlotdepth=\count189
+\c@sectlofdepth=\count190
+\c@sectlotdepth=\count191
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -1630,7 +1755,7 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 55.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 66.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1641,7 +1766,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 
 
 (./Frontespizio/frontespizio.tex
-<./Frontespizio/logo_polito.jpg, id=171, 1129.21875pt x 1129.21875pt>
+<./Frontespizio/logo_polito.jpg, id=207, 1129.21875pt x 1129.21875pt>
 File: ./Frontespizio/logo_polito.jpg Graphic file (type jpg)
 
 <use ./Frontespizio/logo_polito.jpg>
@@ -1658,7 +1783,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Frontespizio/logo_polito
 .jpg>])
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 66.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 77.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1667,27 +1792,27 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  (./Abstract.tex
-<./firstpage/MIT2.png, id=180, 288.5982pt x 164.2938pt>
+<./firstpage/MIT2.png, id=217, 288.5982pt x 164.2938pt>
 File: ./firstpage/MIT2.png Graphic file (type png)
 
 <use ./firstpage/MIT2.png>
 Package pdftex.def Info: ./firstpage/MIT2.png used on input line 5.
 (pdftex.def)             Requested size: 105.98651pt x 60.3365pt.
 
-<./firstpage/Harvard.png, id=182, 228.855pt x 221.82875pt>
+<./firstpage/Harvard.png, id=219, 228.855pt x 221.82875pt>
 File: ./firstpage/Harvard.png Graphic file (type png)
 
 <use ./firstpage/Harvard.png>
 Package pdftex.def Info: ./firstpage/Harvard.png used on input line 9.
 (pdftex.def)             Requested size: 105.98651pt x 102.73296pt.
 
-<./firstpage/BWH.jpg, id=183, 301.125pt x 301.125pt>
+<./firstpage/BWH.jpg, id=220, 301.125pt x 301.125pt>
 File: ./firstpage/BWH.jpg Graphic file (type jpg)
  <use ./firstpage/BWH.jpg>
 Package pdftex.def Info: ./firstpage/BWH.jpg used on input line 12.
 (pdftex.def)             Requested size: 105.98651pt x 105.98805pt.
 
-<./firstpage/HST.png, id=184, 299.1175pt x 203.76125pt>
+<./firstpage/HST.png, id=221, 299.1175pt x 203.76125pt>
 File: ./firstpage/HST.png Graphic file (type png)
 
 <use ./firstpage/HST.png>
@@ -1832,7 +1957,7 @@ Missing character: There is no ¨ in font lmsy10!
 \openout7 = `Thesis.toc'.
 
  [4] (./Introduzione.tex
-<images/Intro/body.png, id=267, 1223.57124pt x 865.2325pt>
+<images/Intro/body.png, id=306, 1223.57124pt x 865.2325pt>
 File: images/Intro/body.png Graphic file (type png)
 
 <use images/Intro/body.png>
@@ -1864,7 +1989,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/Block_Diagram-eps-converted-to.pdf, id=277, 1142.2675pt x 563.103
+<images/Intro/Block_Diagram-eps-converted-to.pdf, id=316, 1142.2675pt x 563.103
 74pt>
 File: images/Intro/Block_Diagram-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/Block_Diagram-eps-converted-to.pdf>
@@ -1894,7 +2019,7 @@ f>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/block-app-eps-converted-to.pdf, id=337, 812.03375pt x 645.41125pt
+<images/Intro/block-app-eps-converted-to.pdf, id=376, 812.03375pt x 645.41125pt
 >
 File: images/Intro/block-app-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/block-app-eps-converted-to.pdf>
@@ -1914,7 +2039,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Intro/electrovalves-eps-converted-to.pdf, id=371, 564.1075pt x 97.36375
+<images/Intro/electrovalves-eps-converted-to.pdf, id=411, 564.1075pt x 97.36375
 pt>
 File: images/Intro/electrovalves-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Intro/electrovalves-eps-converted-to.pdf>
@@ -1922,14 +2047,14 @@ Package pdftex.def Info: images/Intro/electrovalves-eps-converted-to.pdf used o
 n input line 60.
 (pdftex.def)             Requested size: 423.94609pt x 73.17267pt.
 
-<images/Intro/back_menu.png, id=377, 642.4pt x 361.35pt>
+<images/Intro/back_menu.png, id=417, 642.4pt x 361.35pt>
 File: images/Intro/back_menu.png Graphic file (type png)
 
 <use images/Intro/back_menu.png>
 Package pdftex.def Info: images/Intro/back_menu.png used on input line 76.
 (pdftex.def)             Requested size: 224.84337pt x 126.4744pt.
 
-<images/Intro/exit.png, id=379, 642.4pt x 361.35pt>
+<images/Intro/exit.png, id=419, 642.4pt x 361.35pt>
 File: images/Intro/exit.png Graphic file (type png)
 
 <use images/Intro/exit.png>
@@ -1946,7 +2071,7 @@ ed-to.pdf images/thboard.eps>
 (epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/thboard-eps-converted-to.pdf, id=380, 570.13pt x 386.44376pt>
+<images/thboard-eps-converted-to.pdf, id=420, 570.13pt x 386.44376pt>
 File: images/thboard-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/thboard-eps-converted-to.pdf>
@@ -1965,7 +2090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
  []
 
 [5 <./images/thboard-eps-converted-to.pdf>]
-<images/storing/icon.png, id=425, 151.56625pt x 179.67125pt>
+<images/storing/icon.png, id=464, 151.56625pt x 179.67125pt>
 File: images/storing/icon.png Graphic file (type png)
 
 <use images/storing/icon.png>
@@ -1985,7 +2110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<images/storing/program-windows.png, id=429, 507.0945pt x 330.033pt>
+<images/storing/program-windows.png, id=468, 507.0945pt x 330.033pt>
 File: images/storing/program-windows.png Graphic file (type png)
 
 <use images/storing/program-windows.png>
@@ -1996,7 +2121,7 @@ Package pdftex.def Info: images/storing/program-windows.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/storing/stored.png, id=430, 1100.11pt x 769.87625pt>
+<images/storing/stored.png, id=469, 1100.11pt x 769.87625pt>
 File: images/storing/stored.png Graphic file (type png)
 
 <use images/storing/stored.png>
@@ -2018,7 +2143,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<images/Sensors/multisensor.png, id=463, 423.08063pt x 423.08063pt>
+<images/Sensors/multisensor.png, id=502, 423.08063pt x 423.08063pt>
 File: images/Sensors/multisensor.png Graphic file (type png)
 
 <use images/Sensors/multisensor.png>
@@ -2031,7 +2156,7 @@ all di-men-sion ($\OML/lmm/m/it/12 35\OT1/lmr/m/n/12 .\OML/lmm/m/it/12 1 x 9\OT
 1/lmr/m/n/12 .\OML/lmm/m/it/12 3 mm$\T1/ptm/m/n/12 ).
  []
 
-<images/Sensors/multisensor1.png, id=467, 656.4525pt x 541.27219pt>
+<images/Sensors/multisensor1.png, id=506, 656.4525pt x 541.27219pt>
 File: images/Sensors/multisensor1.png Graphic file (type png)
 
 <use images/Sensors/multisensor1.png>
@@ -2053,7 +2178,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
  [12 <./images/Sensors/multisensor1.png>]
-<images/Sensors/multi.png, id=487, 452.4403pt x 336.50719pt>
+<images/Sensors/multi.png, id=526, 452.4403pt x 336.50719pt>
 File: images/Sensors/multi.png Graphic file (type png)
 
 <use images/Sensors/multi.png>
@@ -2099,7 +2224,7 @@ ps-converted-to.pdf images/Sensors/tipicalph.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/tipicalph-eps-converted-to.pdf, id=501, 449.68pt x 338.26375pt>
+<images/Sensors/tipicalph-eps-converted-to.pdf, id=540, 449.68pt x 338.26375pt>
 File: images/Sensors/tipicalph-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Sensors/tipicalph-eps-converted-to.pdf>
 Package pdftex.def Info: images/Sensors/tipicalph-eps-converted-to.pdf used on 
@@ -2117,7 +2242,7 @@ ps-converted-to.pdf images/Sensors/phCircuit.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/phCircuit-eps-converted-to.pdf, id=503, 430.60875pt x 380.42125
+<images/Sensors/phCircuit-eps-converted-to.pdf, id=542, 430.60875pt x 380.42125
 pt>
 File: images/Sensors/phCircuit-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/phCircuit-eps-converted-to.pdf>
@@ -2148,7 +2273,7 @@ ce-eps-converted-to.pdf images/Sensors/highimpedence.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/highimpedence-eps-converted-to.pdf, id=517, 200.75pt x 93.34875
+<images/Sensors/highimpedence-eps-converted-to.pdf, id=557, 200.75pt x 93.34875
 pt>
 File: images/Sensors/highimpedence-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2185,7 +2310,7 @@ it-eps-converted-to.pdf images/Sensors/filterCircuit.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/filterCircuit-eps-converted-to.pdf, id=551, 274.02374pt x 231.8
+<images/Sensors/filterCircuit-eps-converted-to.pdf, id=590, 274.02374pt x 231.8
 6626pt>
 File: images/Sensors/filterCircuit-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2205,7 +2330,7 @@ eps-converted-to.pdf images/Sensors/filterBode.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/filterBode-eps-converted-to.pdf, id=552, 533.995pt x 583.17876p
+<images/Sensors/filterBode-eps-converted-to.pdf, id=591, 533.995pt x 583.17876p
 t>
 File: images/Sensors/filterBode-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/filterBode-eps-converted-to.pdf>
@@ -2224,7 +2349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
-<images/pcb/ph_conditioning.png, id=555, 1049.9225pt x 548.0475pt>
+<images/pcb/ph_conditioning.png, id=594, 1049.9225pt x 548.0475pt>
 File: images/pcb/ph_conditioning.png Graphic file (type png)
 
 <use images/pcb/ph_conditioning.png>
@@ -2249,7 +2374,7 @@ Circuit-eps-converted-to.pdf images/Sensors/temperatureCircuit.eps>
 (epstopdf)             \includegraphics on input line 213.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/temperatureCircuit-eps-converted-to.pdf, id=585, 178.6675pt x 2
+<images/Sensors/temperatureCircuit-eps-converted-to.pdf, id=624, 178.6675pt x 2
 04.765pt>
 File: images/Sensors/temperatureCircuit-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2267,7 +2392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-<images/pcb/temperature_conditioning.png, id=587, 826.08624pt x 443.6575pt>
+<images/pcb/temperature_conditioning.png, id=626, 826.08624pt x 443.6575pt>
 File: images/pcb/temperature_conditioning.png Graphic file (type png)
 
 <use images/pcb/temperature_conditioning.png>
@@ -2287,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-<images/Driver/electrovalves.jpg, id=602, 712.6625pt x 575.14874pt>
+<images/Driver/electrovalves.jpg, id=641, 712.6625pt x 575.14874pt>
 File: images/Driver/electrovalves.jpg Graphic file (type jpg)
 
 <use images/Driver/electrovalves.jpg>
@@ -2309,7 +2434,7 @@ f>
 -converted-to.pdf images/Driver/driverEV.eps>
 (epstopdf)             \includegraphics on input line 254.
 Package epstopdf Info: Output file is already uptodate.
-<images/Driver/driverEV-eps-converted-to.pdf, id=604, 164.615pt x 138.5175pt>
+<images/Driver/driverEV-eps-converted-to.pdf, id=643, 164.615pt x 138.5175pt>
 File: images/Driver/driverEV-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Driver/driverEV-eps-converted-to.pdf>
@@ -2330,7 +2455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-<images/Driver/electrovalves_circuit.png, id=606, 1418.29875pt x 782.925pt>
+<images/Driver/electrovalves_circuit.png, id=645, 1418.29875pt x 782.925pt>
 File: images/Driver/electrovalves_circuit.png Graphic file (type png)
 
 <use images/Driver/electrovalves_circuit.png>
@@ -2363,7 +2488,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/dcdcCircuit-eps-converted-to.pdf, id=617, 355.3275pt x 171.6412
+<images/Sensors/dcdcCircuit-eps-converted-to.pdf, id=656, 355.3275pt x 171.6412
 5pt>
 File: images/Sensors/dcdcCircuit-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Sensors/dcdcCircuit-eps-converted-to.pdf>
@@ -2403,7 +2528,7 @@ onverted-to.pdf images/Sensors/relay.eps>
 (epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Sensors/relay-eps-converted-to.pdf, id=668, 282.05376pt x 180.675pt>
+<images/Sensors/relay-eps-converted-to.pdf, id=708, 282.05376pt x 180.675pt>
 File: images/Sensors/relay-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Sensors/relay-eps-converted-to.pdf>
@@ -2411,7 +2536,7 @@ Package pdftex.def Info: images/Sensors/relay-eps-converted-to.pdf used on inpu
 t line 341.
 (pdftex.def)             Requested size: 381.54889pt x 244.42726pt.
  [24 <./images/Sensors/relay-eps-converted-to.pdf>] <images/pcb/supply.png, id=
-684, 1204.5pt x 374.39874pt>
+723, 1204.5pt x 374.39874pt>
 File: images/pcb/supply.png Graphic file (type png)
 
 <use images/pcb/supply.png>
@@ -2419,7 +2544,7 @@ Package pdftex.def Info: images/pcb/supply.png used on input line 352.
 (pdftex.def)             Requested size: 423.94609pt x 131.77847pt.
 ) [25 <./images/pcb/supply.png>]
 Chapter 2.
-(./pcb.tex <images/circuitfinisched.JPG, id=692, 1626.075pt x 1084.05pt>
+(./pcb.tex <images/circuitfinisched.JPG, id=731, 1626.075pt x 1084.05pt>
 File: images/circuitfinisched.JPG Graphic file (type jpg)
 
 <use images/circuitfinisched.JPG>
@@ -2440,7 +2565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<images/pcb/circuit1.png, id=695, 2677.00125pt x 1855.93375pt>
+<images/pcb/circuit1.png, id=734, 2677.00125pt x 1855.93375pt>
 File: images/pcb/circuit1.png Graphic file (type png)
 
 <use images/pcb/circuit1.png>
@@ -2460,7 +2585,7 @@ nverted-to.pdf images/pcb/dcdcloop.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/pcb/dcdcloop-eps-converted-to.pdf, id=710, 230.8625pt x 64.24pt>
+<images/pcb/dcdcloop-eps-converted-to.pdf, id=749, 230.8625pt x 64.24pt>
 File: images/pcb/dcdcloop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/pcb/dcdcloop-eps-converted-to.pdf>
@@ -2468,7 +2593,7 @@ Package pdftex.def Info: images/pcb/dcdcloop-eps-converted-to.pdf used on input
  line 37.
 (pdftex.def)             Requested size: 423.94609pt x 117.9766pt.
 
-<images/pcb/dcdc-pcb1.png, id=712, 653.44125pt x 532.99126pt>
+<images/pcb/dcdc-pcb1.png, id=751, 653.44125pt x 532.99126pt>
 File: images/pcb/dcdc-pcb1.png Graphic file (type png)
 
 <use images/pcb/dcdc-pcb1.png>
@@ -2481,27 +2606,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-<images/pcb/PCB.png, id=732, 477.785pt x 477.785pt>
+<images/pcb/PCB.png, id=771, 477.785pt x 477.785pt>
 File: images/pcb/PCB.png Graphic file (type png)
  <use images/pcb/PCB.png>
 Package pdftex.def Info: images/pcb/PCB.png used on input line 65.
 (pdftex.def)             Requested size: 211.97304pt x 211.96844pt.
 
-<images/pcb/PCB-both.png, id=733, 477.785pt x 477.785pt>
+<images/pcb/PCB-both.png, id=772, 477.785pt x 477.785pt>
 File: images/pcb/PCB-both.png Graphic file (type png)
 
 <use images/pcb/PCB-both.png>
 Package pdftex.def Info: images/pcb/PCB-both.png used on input line 68.
 (pdftex.def)             Requested size: 211.97304pt x 211.96844pt.
 
-<images/pcb/pcb-up.png, id=734, 547.04375pt x 549.05125pt>
+<images/pcb/pcb-up.png, id=773, 547.04375pt x 549.05125pt>
 File: images/pcb/pcb-up.png Graphic file (type png)
 
 <use images/pcb/pcb-up.png>
 Package pdftex.def Info: images/pcb/pcb-up.png used on input line 71.
 (pdftex.def)             Requested size: 211.97304pt x 212.75516pt.
 
-<images/pcb/foto.png, id=735, 1943.26pt x 2296.58pt>
+<images/pcb/foto.png, id=774, 1943.26pt x 2296.58pt>
 File: images/pcb/foto.png Graphic file (type png)
  <use images/pcb/foto.png>
 Package pdftex.def Info: images/pcb/foto.png used on input line 74.
@@ -2536,7 +2661,7 @@ Package epstopdf Info: Source file: <images/bo.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/bo-eps-converted-to.pdf, id=757, 287.0725pt x 323.2075pt>
+<images/bo-eps-converted-to.pdf, id=796, 287.0725pt x 323.2075pt>
 File: images/bo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/bo-eps-converted-to.pdf>
@@ -2545,13 +2670,13 @@ Package pdftex.def Info: images/bo-eps-converted-to.pdf used on input line 3.
  [32
 
  <./images/bo-eps-converted-to.pdf>]
-<images/traffic.png, id=781, 389.95688pt x 327.47343pt>
+<images/traffic.png, id=820, 389.95688pt x 327.47343pt>
 File: images/traffic.png Graphic file (type png)
 
 <use images/traffic.png>
 Package pdftex.def Info: images/traffic.png used on input line 28.
 (pdftex.def)             Requested size: 253.46896pt x 212.85521pt.
- <images/cisco.png, id=785, 435.12563pt x 271.76532pt>
+ <images/cisco.png, id=824, 435.12563pt x 271.76532pt>
 File: images/cisco.png Graphic file (type png)
 
 <use images/cisco.png>
@@ -2566,7 +2691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<images/beaglebone.jpg, id=787, 610.28pt x 420.57124pt>
+<images/beaglebone.jpg, id=826, 610.28pt x 420.57124pt>
 File: images/beaglebone.jpg Graphic file (type jpg)
 
 <use images/beaglebone.jpg>
@@ -2575,29 +2700,76 @@ Package pdftex.def Info: images/beaglebone.jpg used on input line 53.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./images/traffic.png>]) [34 <./images/cisco.png> <./images/beaglebone.jpg
->]
+ [33 <./images/traffic.png>] [34 <./images/cisco.png> <./images/beaglebone.jpg>
+]) [35]
 Chapter 4.
-(./Firmware.tex) [35
+(./Firmware.tex
+Package epstopdf Info: Source file: <images/firmware/bash.eps>
+(epstopdf)                    date: 2015-03-11 02:17:01
+(epstopdf)                    size: 197211 bytes
+(epstopdf)             Output file: <images/firmware/bash-eps-converted-to.pdf>
 
-] [36
+(epstopdf)                    date: 2015-03-11 02:17:10
+(epstopdf)                    size: 55312 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/firmware/bash-eps-c
+onverted-to.pdf images/firmware/bash.eps>
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/firmware/bash-eps-converted-to.pdf, id=852, 249.93375pt x 862.22125pt>
+File: images/firmware/bash-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/firmware/bash-eps-converted-to.pdf>
+Package pdftex.def Info: images/firmware/bash-eps-converted-to.pdf used on inpu
+t line 40.
+(pdftex.def)             Requested size: 150.75464pt x 520.06334pt.
+ [36
+
+] [37 <./images/firmware/bash-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Sensors/uml.eps>
+(epstopdf)                    date: 2015-03-11 04:42:33
+(epstopdf)                    size: 220625 bytes
+(epstopdf)             Output file: <images/Sensors/uml-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-11 04:42:41
+(epstopdf)                    size: 61861 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Sensors/uml-eps-con
+verted-to.pdf images/Sensors/uml.eps>
+(epstopdf)             \includegraphics on input line 75.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Sensors/uml-eps-converted-to.pdf, id=899, 826.08624pt x 316.18124pt>
+File: images/Sensors/uml-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/Sensors/uml-eps-converted-to.pdf>
+Package pdftex.def Info: images/Sensors/uml-eps-converted-to.pdf used on input 
+line 75.
+(pdftex.def)             Requested size: 423.94609pt x 162.26344pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38
+
+] [39 <./images/Sensors/uml-eps-converted-to.pdf>] [40
+
+]) [41
 
 ]
 Chapter 5.
-[37
+[42
 
 ]
 Chapter 6.
-[38
+[43
 
-] [39
+] [44
 
 ]
 Chapter 7.
-(./glass.tex) [40
+(./glass.tex) [45
 
 
-] [41
+] [46
 
 
 ]
@@ -2619,32 +2791,32 @@ s-converted-to.pdf images/Driver/driverLED.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Driver/driverLED-eps-converted-to.pdf, id=833, 119.44624pt x 171.64125p
+<images/Driver/driverLED-eps-converted-to.pdf, id=965, 119.44624pt x 171.64125p
 t>
 File: images/Driver/driverLED-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Driver/driverLED-eps-converted-to.pdf>
 Package pdftex.def Info: images/Driver/driverLED-eps-converted-to.pdf used on i
 nput line 13.
 (pdftex.def)             Requested size: 119.44594pt x 171.64081pt.
- [42
+ [47
 
  <./images/Driver/driverLED-eps-converted-to.pdf>]
-<images/Experiments/ledBoard.png, id=850, 1549.79pt x 809.0225pt>
+<images/Experiments/ledBoard.png, id=982, 1549.79pt x 809.0225pt>
 File: images/Experiments/ledBoard.png Graphic file (type png)
 
 <use images/Experiments/ledBoard.png>
 Package pdftex.def Info: images/Experiments/ledBoard.png used on input line 28.
 
 (pdftex.def)             Requested size: 325.4655pt x 169.89973pt.
- [43 <./images/Experiments/ledBoard.png>]
-<images/circuitBreadboard.png, id=861, 1373.13pt x 1644.1425pt>
+ [48 <./images/Experiments/ledBoard.png>]
+<images/circuitBreadboard.png, id=993, 1373.13pt x 1644.1425pt>
 File: images/circuitBreadboard.png Graphic file (type png)
 
 <use images/circuitBreadboard.png>
 Package pdftex.def Info: images/circuitBreadboard.png used on input line 48.
 (pdftex.def)             Requested size: 192.2369pt x 230.17838pt.
 
-<images/breadboard.JPG, id=863, 3902.58pt x 2601.72pt>
+<images/breadboard.JPG, id=995, 3902.58pt x 2601.72pt>
 File: images/breadboard.JPG Graphic file (type jpg)
 
 <use images/breadboard.JPG>
@@ -2654,11 +2826,24 @@ Package pdftex.def Info: images/breadboard.JPG used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [44
+) [49
 
- <./images/circuitBreadboard.png>] [45 <./images/breadboard.JPG>]
+ <./images/circuitBreadboard.png>] [50 <./images/breadboard.JPG>]
 Appendix A.
 (./code.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 25.
+
+(./code/beaglebone/Video/recordVideo) [51
+
+]
+(./code/beaglebone/Sensors/sensorAcquiring)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -2667,145 +2852,29 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 25.
+(./code/beaglebone/Pins/bo.dts [52
 
-(./code/beaglebone/Electrovalves/GlassInterface.cpp
-Overfull \hbox (9.55832pt too wide) in paragraph at lines 13--14
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[46
-
-]
-Overfull \hbox (4.45827pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
+])
+(./code/beaglebone/Electrovalves/GlassInterface.cpp [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
-(./code/beaglebone/Sensors/sensor_acquiring.cpp [48]
+ [54])
+(./code/beaglebone/Sensors/sensor_acquiring.cpp [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51])
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-(./code/beaglebone/Video/recordVideo
-Overfull \hbox (239.06065pt too wide) in paragraph at lines 14--15
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.05858pt too wide) in paragraph at lines 16--17
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.05858pt too wide) in paragraph at lines 17--18
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (244.1607pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./code/beaglebone/Video/compute_beating.cpp [52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
-Overfull \hbox (55.45879pt too wide) in paragraph at lines 85--87
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [54] (./code/beaglebone/Pins/bo.dts
-Overfull \hbox (86.0591pt too wide) in paragraph at lines 28--29
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55])
-(./code/beaglebone/GPIO.h [56]
-Overfull \hbox (19.75842pt too wide) in paragraph at lines 60--62
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][] 
- []
-
-
+ [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57])
-(./code/beaglebone/GPIO.cpp [58]
-Overfull \hbox (24.85847pt too wide) in paragraph at lines 65--66
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
-Overfull \hbox (9.55832pt too wide) in paragraph at lines 97--98
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./code/beaglebone/Video/compute_beating.cpp [58])
+(./code/beaglebone/Pins/bo.dts [59])
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
  [60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-Overfull \hbox (19.75842pt too wide) in paragraph at lines 210--211
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-Overfull \hbox (9.55832pt too wide) in paragraph at lines 286--287
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-) (./code/beaglebone/http.h [64]) (./code/beaglebone/http.cpp)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65]
-(./code/storing/main.cpp [66]) (./code/storing/VideoStoring.pro)
-(./code/storing/mytimer.h [67]) (./code/storing/mytimer.cpp [68])
-(./code/storing/downloader.h) [69] (./code/storing/downloader.cpp
+(./code/beaglebone/http.h) (./code/beaglebone/http.cpp [61])
+(./code/storing/main.cpp) (./code/storing/VideoStoring.pro [62])
+(./code/storing/mytimer.h) (./code/storing/mytimer.cpp [63])
+(./code/storing/downloader.h [64]) (./code/storing/downloader.cpp
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 16--17
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2816,7 +2885,7 @@ Overfull \hbox (60.55884pt too wide) in paragraph at lines 29--30
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[65]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2832,9 +2901,6 @@ Overfull \hbox (45.25868pt too wide) in paragraph at lines 32--34
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
 Overfull \hbox (208.46034pt too wide) in paragraph at lines 70--71
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2843,13 +2909,13 @@ Overfull \hbox (208.46034pt too wide) in paragraph at lines 70--71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71])
+ [66])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) (./code/main.py [72]
+) (./code/main.py [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
+ [68]
 Overfull \hbox (29.95853pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][] 
@@ -2870,7 +2936,7 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 111--112
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]
+ [69]
 Overfull \hbox (147.25972pt too wide) in paragraph at lines 159--160
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2879,16 +2945,16 @@ Overfull \hbox (147.25972pt too wide) in paragraph at lines 159--160
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
 Overfull \hbox (147.25972pt too wide) in paragraph at lines 213--214
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76]
 Overfull \hbox (9.55832pt too wide) in paragraph at lines 244--245
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2898,14 +2964,17 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 244--245
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78])
+ [73])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./code/glass/MainService.java [79]
+(./code/glass/MainService.java [74]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
 Overfull \hbox (70.75894pt too wide) in paragraph at lines 76--80
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2925,9 +2994,6 @@ Overfull \hbox (116.65941pt too wide) in paragraph at lines 82--83
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [80]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 93--94
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2942,6 +3008,9 @@ Overfull \hbox (14.65837pt too wide) in paragraph at lines 95--96
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76]
 Overfull \hbox (55.45879pt too wide) in paragraph at lines 117--118
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2994,9 +3063,6 @@ Overfull \hbox (96.2592pt too wide) in paragraph at lines 130--131
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81]
 Overfull \hbox (126.85951pt too wide) in paragraph at lines 140--143
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -3013,6 +3079,9 @@ Overfull \hbox (70.75894pt too wide) in paragraph at lines 159--160
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
 Overfull \hbox (101.35925pt too wide) in paragraph at lines 165--166
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3028,9 +3097,6 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 173--174
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [82]
 Overfull \hbox (86.0591pt too wide) in paragraph at lines 206--207
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3048,10 +3114,10 @@ Overfull \hbox (55.45879pt too wide) in paragraph at lines 207--208
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
+ [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
+ [79]
 Overfull \hbox (50.35873pt too wide) in paragraph at lines 280--281
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3059,6 +3125,9 @@ Overfull \hbox (50.35873pt too wide) in paragraph at lines 280--281
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80]
 Overfull \hbox (24.85847pt too wide) in paragraph at lines 315--316
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3072,9 +3141,6 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 324--326
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [85]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 333--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3087,6 +3153,9 @@ Overfull \hbox (35.05858pt too wide) in paragraph at lines 350--351
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
 Overfull \hbox (35.05858pt too wide) in paragraph at lines 366--367
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -3101,9 +3170,6 @@ Overfull \hbox (254.36081pt too wide) in paragraph at lines 367--368
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [86]
 Overfull \hbox (106.4593pt too wide) in paragraph at lines 384--385
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3121,7 +3187,7 @@ Overfull \hbox (341.06169pt too wide) in paragraph at lines 390--391
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [82]
 Overfull \hbox (91.15915pt too wide) in paragraph at lines 427--428
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3152,15 +3218,15 @@ Overfull \hbox (4.45827pt too wide) in paragraph at lines 449--450
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
 Overfull \hbox (330.86159pt too wide) in paragraph at lines 464--465
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 475--476
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3168,6 +3234,9 @@ Overfull \hbox (14.65837pt too wide) in paragraph at lines 475--476
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
 Overfull \hbox (116.65941pt too wide) in paragraph at lines 520--523
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3178,14 +3247,14 @@ Overfull \hbox (91.15915pt too wide) in paragraph at lines 523--525
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 532--533
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
 Overfull \hbox (35.05858pt too wide) in paragraph at lines 558--559
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3193,9 +3262,6 @@ Overfull \hbox (35.05858pt too wide) in paragraph at lines 558--559
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [90]
 Overfull \hbox (40.15863pt too wide) in paragraph at lines 592--593
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3204,6 +3270,9 @@ Overfull \hbox (40.15863pt too wide) in paragraph at lines 592--593
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
 Overfull \hbox (19.75842pt too wide) in paragraph at lines 617--618
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3211,9 +3280,6 @@ Overfull \hbox (19.75842pt too wide) in paragraph at lines 617--618
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [91]
 Overfull \hbox (35.05858pt too wide) in paragraph at lines 628--629
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3226,6 +3292,9 @@ Overfull \hbox (4.45827pt too wide) in paragraph at lines 646--647
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
 Overfull \hbox (96.2592pt too wide) in paragraph at lines 661--663
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3236,9 +3305,6 @@ Overfull \hbox (91.15915pt too wide) in paragraph at lines 663--665
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [92]
 Overfull \hbox (65.65889pt too wide) in paragraph at lines 671--672
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3246,7 +3312,7 @@ Overfull \hbox (65.65889pt too wide) in paragraph at lines 671--672
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93])
+ [88])
 (./code/glass/AppDrawer.java
 Overfull \hbox (244.1607pt too wide) in paragraph at lines 20--21
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -3255,7 +3321,7 @@ Overfull \hbox (244.1607pt too wide) in paragraph at lines 20--21
 ][][][][] 
  []
 
-
+[89]
 Overfull \hbox (198.26024pt too wide) in paragraph at lines 27--28
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3269,7 +3335,10 @@ Overfull \hbox (9.55832pt too wide) in paragraph at lines 29--30
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[94]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90]
 Overfull \hbox (65.65889pt too wide) in paragraph at lines 89--90
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3277,9 +3346,6 @@ Overfull \hbox (65.65889pt too wide) in paragraph at lines 89--90
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 100--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3295,6 +3361,9 @@ Overfull \hbox (40.15863pt too wide) in paragraph at lines 118--119
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
 Overfull \hbox (50.35873pt too wide) in paragraph at lines 134--135
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3308,9 +3377,6 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 135--137
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [96]
 Overfull \hbox (50.35873pt too wide) in paragraph at lines 149--150
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3335,6 +3401,9 @@ Overfull \hbox (228.86055pt too wide) in paragraph at lines 168--169
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92]
 Overfull \hbox (45.25868pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3343,9 +3412,6 @@ Overfull \hbox (45.25868pt too wide) in paragraph at lines 191--192
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [97]
 Overfull \hbox (29.95853pt too wide) in paragraph at lines 195--196
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
@@ -3384,6 +3450,9 @@ Overfull \hbox (19.75842pt too wide) in paragraph at lines 217--218
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [93]
 Overfull \hbox (29.95853pt too wide) in paragraph at lines 237--238
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3391,9 +3460,6 @@ Overfull \hbox (29.95853pt too wide) in paragraph at lines 237--238
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [98]
 Overfull \hbox (131.95956pt too wide) in paragraph at lines 246--247
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3404,17 +3470,21 @@ Overfull \hbox (131.95956pt too wide) in paragraph at lines 246--247
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99]
+ [94]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100]
+ [95]
 Overfull \hbox (80.95905pt too wide) in paragraph at lines 357--358
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/MainView.java [101]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96])
+(./code/glass/MainView.java
 Overfull \hbox (70.75894pt too wide) in paragraph at lines 37--38
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3430,23 +3500,21 @@ Overfull \hbox (86.0591pt too wide) in paragraph at lines 39--40
 ][][][][][][][][][][][][] 
  []
 
-
+[97]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [102]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [103]
+ [98]
 Overfull \hbox (19.75842pt too wide) in paragraph at lines 136--137
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/BeatingView.java [104]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105]
+ [99])
+(./code/glass/BeatingView.java [100]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 79--80
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3456,18 +3524,20 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 79--80
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
 Overfull \hbox (233.9606pt too wide) in paragraph at lines 150--151
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+) (./code/glass/PHViewer.java [103]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107])
-(./code/glass/PHViewer.java [108]
+ [104]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 88--89
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3475,9 +3545,6 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 88--89
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [109]
 Overfull \hbox (213.5604pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3488,17 +3555,18 @@ Overfull \hbox (213.5604pt too wide) in paragraph at lines 90--91
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110]
+ [105]
 Overfull \hbox (223.7605pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/TemperatureView.java [111]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
+ [106])
+(./code/glass/TemperatureView.java [107]
 Overfull \hbox (203.36029pt too wide) in paragraph at lines 83--84
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3508,17 +3576,17 @@ Overfull \hbox (203.36029pt too wide) in paragraph at lines 83--84
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [113]
+ [108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114]
+ [109]
 Overfull \hbox (223.7605pt too wide) in paragraph at lines 156--157
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./code/glass/VideoPlayerActivity.java [115]
+) (./code/glass/VideoPlayerActivity.java [110]
 Overfull \hbox (75.859pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][] 
@@ -3531,10 +3599,11 @@ Overfull \hbox (24.85847pt too wide) in paragraph at lines 47--48
 [][][][][][][][][][][][][] 
  []
 
-) (./code/glass/MenuActivity.java [116]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117]
+ [111])
+(./code/glass/MenuActivity.java [112]
 Overfull \hbox (40.15863pt too wide) in paragraph at lines 72--73
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3557,7 +3626,7 @@ Overfull \hbox (40.15863pt too wide) in paragraph at lines 79--80
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [118]
+ [113]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
@@ -3576,15 +3645,15 @@ Overfull \hbox (14.65837pt too wide) in paragraph at lines 135--136
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114]
 Overfull \hbox (14.65837pt too wide) in paragraph at lines 148--149
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [119]
 Overfull \hbox (24.85847pt too wide) in paragraph at lines 162--163
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3604,19 +3673,23 @@ Overfull \hbox (24.85847pt too wide) in paragraph at lines 184--185
 ][] 
  []
 
-) (./code/glass/AppManager.java [120]) (./code/glass/DataPoint.java)) [121]
-(./Thesis.lof)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [115])
+(./code/glass/AppManager.java) (./code/glass/DataPoint.java [116])) [117]
+(./Thesis.lof [118
+
+
+])
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
- [122
-
-
-] [123] (./Thesis.lol)
+ [119] (./Thesis.lol)
 \tf@lol=\write9
 \openout9 = `Thesis.lol'.
 
- (./Thesis.bbl [124
+ (./Thesis.bbl [120
 
 
 ]
@@ -3637,36 +3710,40 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Thesis.log file.
 
-[125
+[121
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (./Thesis.aux (./Frontespizio/frontespizio.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E1DE7D04F21C52B3FDA027FE03B2DFD6;2578.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+(rerunfilecheck)             Checksum: 9C249C1DE3E71B8FBA0BE0E40E2164BB;2814.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 34356 strings out of 493104
- 585404 string characters out of 6136931
- 699858 words of memory out of 5000000
- 32883 multiletter control sequences out of 15000+600000
- 196992 words of font info for 169 fonts, out of 8000000 for 9000
+ 36428 strings out of 493104
+ 653199 string characters out of 6136931
+ 811039 words of memory out of 5000000
+ 35350 multiletter control sequences out of 15000+600000
+ 198541 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,61p,1161b,2031s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,12n,82p,1161b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
-lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/shar
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/f
+onts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{
+/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 mbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf
@@ -3683,13 +3760,14 @@ type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (130 pages, 28178727 bytes).
+nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Thesis.pdf (126 pages, 28272886 bytes).
 PDF statistics:
- 5852 PDF objects out of 6186 (max. 8388607)
- 5476 compressed objects within 55 object streams
- 3882 named destinations out of 4296 (max. 500000)
- 45125 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 5373 PDF objects out of 6186 (max. 8388607)
+ 4985 compressed objects within 50 object streams
+ 3414 named destinations out of 3580 (max. 500000)
+ 45767 words of extra memory for PDF output out of 51595 (max. 10000000)
 

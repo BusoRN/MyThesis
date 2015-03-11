@@ -28,6 +28,7 @@
 \usepackage{caption}
 \usepackage{enumerate}
 \usepackage{graphicx}
+\usepackage{floatflt}
 %\usepackage{biblatex}
 %\usepackage{subfigure}
 \captionsetup{tableposition=top,figureposition=bottom,font=small}
@@ -41,6 +42,16 @@
 \usepackage{lmodern}
 \usepackage{setspace}
 
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+
+\tikzset{
+	basic/.style  = {draw, text width=3cm, drop shadow, font=\sffamily, rectangle},
+	root/.style   = {basic, rounded corners=2pt, thin, align=center,
+		fill=MidnightBlue!80},
+	level 2/.style = {basic, rounded corners=2pt, thin,align=center, fill=ForestGreen!30,
+		text width=8em,drop shadow,},
+	level 3/.style = {basic, thin, align=center, fill=YellowGreen!15, text width=6.5em, rectangle}
+}
 
 %$\frac{\tau\pm\epsilon \cdot V}{\%12}$ esempio di formula
 %chapter

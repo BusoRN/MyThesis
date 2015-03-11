@@ -48,18 +48,21 @@
 \contentsline {figure}{\numberline {35}{\ignorespaces The \textit {IoT} Evolution Prediction\relax }}{34}{figure.caption.38}
 \contentsline {figure}{\numberline {36}{\ignorespaces The \textit {Beaglebone Black}\relax }}{34}{figure.caption.39}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Embedded Linux inside The project}}{35}{chapter.4}
+\contentsline {xchapter}{\spacedlowsmallcaps {Embedded Linux inside The project}}{36}{chapter.4}
+\contentsline {figure}{\numberline {37}{\ignorespaces Embedded Linux Firmware - Blocks Subdivision\relax }}{36}{figure.caption.40}
+\contentsline {figure}{\numberline {38}{\ignorespaces Bash Script Flow Chart\relax }}{37}{figure.caption.41}
+\contentsline {figure}{\numberline {39}{\ignorespaces Sensor UML Description\relax }}{39}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Google App Engine}}{37}{chapter.5}
+\contentsline {xchapter}{\spacedlowsmallcaps {Google App Engine}}{42}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{38}{chapter.6}
+\contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{43}{chapter.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{40}{chapter.7}
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{45}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{42}{chapter.8}
-\contentsline {figure}{\numberline {37}{\ignorespaces Driver for LED\relax }}{42}{figure.caption.40}
-\contentsline {figure}{\numberline {38}{\ignorespaces LEDs experiments board\relax }}{43}{figure.caption.41}
-\contentsline {figure}{\numberline {39}{\ignorespaces Circuit mounted on breadboard top view\relax }}{44}{figure.caption.42}
-\contentsline {figure}{\numberline {40}{\ignorespaces Circuit mounted on breadboard side view\relax }}{45}{figure.caption.43}
+\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{47}{chapter.8}
+\contentsline {figure}{\numberline {40}{\ignorespaces Driver for LED\relax }}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {41}{\ignorespaces LEDs experiments board\relax }}{48}{figure.caption.44}
+\contentsline {figure}{\numberline {42}{\ignorespaces Circuit mounted on breadboard top view\relax }}{49}{figure.caption.45}
+\contentsline {figure}{\numberline {43}{\ignorespaces Circuit mounted on breadboard side view\relax }}{50}{figure.caption.46}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{46}{appendix.A}
+\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{51}{appendix.A}
