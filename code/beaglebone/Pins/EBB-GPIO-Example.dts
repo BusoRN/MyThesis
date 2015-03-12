@@ -22,7 +22,7 @@
             
              __overlay__ {
                   ebb_example: EBB_GPIO_Example {
-			pinctrl-single,pins = <
+                            pinctrl-single,pins = <
                                 0x04c 0x07  // P9_16 - Temperture controller - Output Mode7 pulldown
                                 0x024 0x07  // P8_13 - EV1 - Output Mode7 pulldown
                                 0x028 0x07  // P8_14 - EV4 - Output Mode7 pulldown
@@ -36,7 +36,7 @@
   
                                /* OUTPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down */
 			       /* INPUT   GPIO(mode7) 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down */
-			>;
+                       >;
 		  };
              };
        };

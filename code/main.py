@@ -1,5 +1,3 @@
-# the application id inside app.yaml has to match with the ID in google app engine
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -15,9 +13,6 @@ import datetime
 import cloudstorage
 import json
 
-key_list = []
-
-NUMBER_OF_ELECTROVALVES = 8
 SECONDS_BETWEEN_UPDATES = 60
 SENSOR_TIMEOUT_IN_SECONDS = 300
 ELECTROVALVES_TIME_OUT = 1000
@@ -25,25 +20,30 @@ BUCKET_NAME = "/planar-contact-601.appspot.com/"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'mp4'}
 UPDATE_FLAG = 'database_updated_recently'
 
-
+#DataPoint contains all the points that have to be plotted
 class DataPoint(ndb.Model):
+    #the y-axes value
     value = ndb.FloatProperty()
+    #the x-axes value (autofilled with the current data)
     date = ndb.DateTimeProperty(auto_now_add=True)
 
     @classmethod
+    # returns the list of DataPoint associated with sensor_key
     def points_for_sensor(cls, sensor_key):
         return cls.query(ancestor=sensor_key).order(-cls.date)
 
     @classmethod
+    #returns the last DataPoint inserted
     def oldest_points(cls):
         return cls.query().order(+cls.date)
 
-
+#Sensor class contains the list of used sensors
 class Sensor(ndb.Model):
     @classmethod
+    # returns that list
     def sensor_list(cls):
         return cls.query()
-
+ 
 
 def update():
     # Check to see if we have updated recently
@@ -80,14 +80,20 @@ def update():
     # Store a list of sensor names in memcache
     memcache.set("sensor_names", ",".join(sensor_names))
 
-
+# this method is used to obtain the json format containg the list of the 
+# entire sensor list made by {value, time, sensor_name} when the http 
+# method is GET or to load a new value for a given sensor using the POST
+# http method. In this last case the data to be passed with the POST are 
+# "sensor", which indicates the sensor name, and "value", which is the
+# float number of the sensor's value.
 @app.route('/', methods=['POST'])
 @app.route('/sensor_values', methods=['GET', 'POST'])
 def process_values():
     if request.method == 'GET':
         sensor_names = memcache.get('sensor_names')
         if sensor_names is None:
-            sensor_names = ",".join([sensor.key.id() for sensor in Sensor.sensor_list()])
+            sensor_names = ",".join([sensor.key.id() for sensor in 
+				     Sensor.sensor_list()])
             memcache.set('sensor_names', sensor_names)
         sensor_names = sensor_names.split(",")
         sensor_values = {}
@@ -106,31 +112,38 @@ def process_values():
             sensor = Sensor()
             sensor.key = ndb.Key('Sensor', sensor_name)
             sensor.put()
-            sensor_names = sensor_name if sensor_names == "" else sensor_names + "," + sensor_name
+            sensor_names = sensor_name if sensor_names == "" else sensor_names + 
+                           "," + sensor_name
             memcache.set('sensor_names', sensor_names)
-        memcache.set(sensor_name + '_value', sensor_value, SENSOR_TIMEOUT_IN_SECONDS)
+        memcache.set(sensor_name + '_value', sensor_value, 
+                     SENSOR_TIMEOUT_IN_SECONDS)
         return "Success\n"
 
-
+# this function is accessible only using a http GET method, it returns a 
+# json object with the sensor's names list
 @app.route('/sensor_names', methods=['GET'])
 def print_names():
     return json.dumps([sensor.key.id() for sensor in Sensor.sensor_list()])
 
-
+# this function is accessible only through GET http method. This GET request
+# has to contain two parameters one is  "sensor", the sensor name, and the 
+# other one is "first_timestamp", the timestamp of the first  point that has 
+# to be plotted (this last parameter in not mandatory, if missed it is assumed 
+# equal to 0.
 @app.route('/graphing_data', methods=['GET'])
 def graphing_data():
-    last_timestamp = request.args.get('last_timestamp')
+    first_timestamp = request.args.get('first_timestamp')
     sensor_name = request.args.get('sensor')
-    if last_timestamp is None:
-        last_timestamp = 0
+    if first_timestamp is None:
+        first_timestamp = 0
     else:
-        last_timestamp = float(last_timestamp)
+        first_timestamp = float(first_timestamp)
     points = DataPoint.points_for_sensor(ndb.Key('Sensor', sensor_name))
     epoch = datetime.datetime(1970, 1, 1)
     res = []
     for point in points.iter():
         timestamp = (point.date - epoch).total_seconds()
-        if timestamp > last_timestamp:
+        if timestamp > first_timestamp:
             _res = {"timestamp": timestamp, "value": point.value}
             res.append(_res)
         else:
@@ -138,7 +151,8 @@ def graphing_data():
     res.reverse()
     return json.dumps(res)
 
-
+# this function is accessible through GET http method and deletes all the
+# point of sensors
 @app.route('/clear', methods=['GET'])
 def clear_data():
     points = DataPoint.query()
@@ -148,7 +162,11 @@ def clear_data():
         sensor.key.delete()
     return "Success"
 
-
+# this function is accessible through both GET and POST http methods and it 
+# is in charge to store the picture of the beating plot. This function is 
+# normally used with the POST method where the image is passed through 
+# "Image.jpg" field. Using a PC is also possible to update an image
+# just using a browser, thank to the GET method implementation
 @app.route('/picture/submit', methods=['GET', 'POST'])
 def set_picture():
     if request.method == 'POST':
@@ -156,7 +174,8 @@ def set_picture():
         _file = request.files['Image.jpg']
 
         if _file:
-            cloud_file = cloudstorage.open(BUCKET_NAME + "microscope_image." + _file.filename.rsplit('.', 1)[1],
+            cloud_file = cloudstorage.open(BUCKET_NAME + "microscope_image." 
+                                           + _file.filename.rsplit('.', 1)[1],
                                            mode='w', content_type="image/jpeg")
             _file.save(cloud_file)
             cloud_file.close()
@@ -167,16 +186,17 @@ def set_picture():
         <title>Upload microscope file V.1</title>
         <h1>Upload microscope file</h1>
         <form method="POST"
-        action=""
-        role="form"
-        enctype="multipart/form-data">
+            action=""
+            role="form"
+            enctype="multipart/form-data">
 
         <p><input type=file name=Image.jpg>
-                <input type=submit value=Upload>
+           <input type=submit value=Upload>
         </form>
         '''
 
-
+# this function is accessible through a GET http method and it returns the image 
+# stored inside the datastore
 @app.route('/picture/view', methods=['GET'])
 def view_picture():
     for _file in cloudstorage.listbucket(BUCKET_NAME):
@@ -191,33 +211,39 @@ def view_picture():
             return response
     return "No file found"
 
-
-@app.route('/video/submit', methods=['GET', 'POST', 'PUT'])
+# this function is accessible through both GET and POST http methods and it 
+# is in charge to store the microscope video. This function is normally used 
+# with the POST method where the image is passed through "Video.mp4" field. 
+# Using a PC is also possible to update a video just using a browser, 
+# thank to the GET method implementation
+@app.route('/video/submit', methods=['GET', 'POST'])
 def set_video():
     if request.method == 'GET':
         return '''
         <!doctype html>
         <title>Upload microscope video</title>
         <h1>Upload microscope video</h1>
-         <form method="POST"
-action=""
-role="form"
-enctype="multipart/form-data">
-            <p><input type=file name=Video.mp4>
-                <input type=submit value=Upload>
-        </form>
-        '''
+        <form method="POST"
+             action=""
+             role="form"
+             enctype="multipart/form-data">
+         <p><input type=file name=Video.mp4>
+         <input type=submit value=Upload>
+         </form>
+         '''
     else:
         _file = request.files['Video.mp4']
         if _file:
-            cloud_file = cloudstorage.open(BUCKET_NAME + "microscope_video." + _file.filename.rsplit('.', 1)[1],
+            cloud_file = cloudstorage.open(BUCKET_NAME + "microscope_video." + 
+                                           _file.filename.rsplit('.', 1)[1],
                                            mode='w', content_type="video/mpeg")
             _file.save(cloud_file)
             cloud_file.close()
         return "Success"
 
 
-
+# this function is accessible through a GET http method and it returns the 
+# microscope video stored inside the datastore
 @app.route('/video/view', methods=['GET'])
 def view_video():
     for _file in cloudstorage.listbucket(BUCKET_NAME):
@@ -232,79 +258,10 @@ def view_video():
             return response
     return "No file found"
 
-
-@app.errorhandler(404)
-def page_not_found(e):
-    """Return a custom 404 error."""
-    return 'Sorry, nothing at this URL.', 404
-
-
-class Electrovalve(ndb.Model):
-    # name = ndb.StringProperty()
-    # status = ndb.BooleanProperty()  # if the status is true, the Electrovalve is on
-    # date = ndb.DateTimeProperty(auto_now_add=True)
-    #
-    # def __init__(self, name, status, **kwds):
-    #     super(Electrovalve, self).__init__(**kwds)
-    #     self.name = name
-    #     self.status = status
-    #
-    # @classmethod
-    # def get_status(cls):
-    #     return cls.status
-    #
-    # @classmethod
-    # def get_ev_by_name(cls, ev_name):
-    #     return cls.query(ancestor=ev_name).fetch
-
-    @classmethod
-    def ev_list(cls):
-        return cls.query()
-
-
-# @app.route('/add/<key>/<message>')
-# def update_message(key, message):
-#     if key and message:
-#
-#         if message == 'on' or message == 'On' or message == 'ON':
-#             MESSAGES[key] = True
-#
-#         else:
-#             MESSAGES[key] = False
-#
-#             # temp = Electrovalve(name=key, status=message)
-#             # temp.put()
-#     return "%s Updated" % key
-
-
-@app.route('/electrovalves/<name>', methods=['GET'])
-def electrovalve(name):
-    ev = memcache.get(name);
-    if ev is None:
-        return ' %r ' % MESSAGES[name] or "%s not found!" % name
-    else:
-        return ' %r ' % memcache.get(name)
-    #     ev_values = {}
-    #    # return "boia"
-    # #     ev_names = ",".join([ev.key.id() for ev in Electrovalve.ev_list()])
-    # #     memcache.set('ev_names', ev_names)
-    # # ev_names = ev_names.split(",")
-    #     ev_values = {}
-    #     for ev_name in ev_names:
-    #         ev_value = memcache.get(ev_name + '_value')
-    #
-    #         if ev_value is not None:
-    #             ev_values[ev_name] = ev_value
-    #
-    #     return ' %r ' % ev_values[name]
-
-    #
-    # # ev_name =
-    # ev_key = ndb.Key("EV", name or "*notitle")
-    # ev = Electrovalve.query(name)
-   # return '%r' % ev.st
-
-
+# this function is accessible through a POST http method and it is in 
+# charge to store the electrovalve status inside the memcache. This http 
+# POST has to have the following parameters: "name", the name that
+# identifies the valve, "status", the status of electrovalve (on, off)
 @app.route('/add/electrovalve', methods=['POST'])
 def add_electrovalve():
     key = request.form.get('name')
@@ -321,15 +278,21 @@ def add_electrovalve():
        # ev.put()
     return '%r' % memcache.get(key)
 
+# this function accessible through a GET method returns the value of the 
+# valve identified through <name> field in the URL
+@app.route('/electrovalves/<name>', methods=['GET'])
+def get_electrovalve(name):
+    ev = memcache.get(name);
+    if ev is None:
+        return ' %r ' % MESSAGES[name] or "%s not found!" % name
+    else:
+        return ' %r ' % memcache.get(name)
+      
+@app.errorhandler(404)
+def page_not_found(e):
+    """Return a custom 404 error."""
+    return 'Sorry, nothing at this URL.', 404
 
-@app.route('/glass')
-def glass():
-    return "Buso e` qui"
-
-
-@app.route("/show/<key>")
-def get_message(key):
-    return ' %r ' % MESSAGES[key] or "%s not found!" % key
 
 
 if __name__ == "__main__":
