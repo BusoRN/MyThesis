@@ -2,8 +2,6 @@
 #include "downloader.h"
 #include "mytimer.h"
 #include <QDebug>
-#include <windows.h> // for Sleep
-
 
 int main(int argc, char *argv[])
 {

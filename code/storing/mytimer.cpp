@@ -12,11 +12,7 @@ MyTimer::MyTimer()
 
 MyTimer::~MyTimer()
 {
-
 }
-
-
-
 
 void MyTimer::timerSlot(){
     d.checkFlag();

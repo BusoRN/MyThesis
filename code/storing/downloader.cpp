@@ -13,7 +13,8 @@ void Downloader::doDownload()
     connect(manager, SIGNAL(finished(QNetworkReply*)),
             this, SLOT(replyFinished(QNetworkReply*)));
 
-    manager->get(QNetworkRequest(QUrl("http://planar-contact-601.appspot.com/video/view")));
+    manager->get(QNetworkRequest(
+               QUrl("http://planar-contact-601.appspot.com/video/view")));
 }
 
 void Downloader::replyFinished (QNetworkReply *reply)
@@ -26,10 +27,14 @@ void Downloader::replyFinished (QNetworkReply *reply)
     else
     {
         qDebug() << reply->header(QNetworkRequest::ContentTypeHeader).toString();
-        qDebug() << reply->header(QNetworkRequest::LastModifiedHeader).toDateTime().toString();
-        qDebug() << reply->header(QNetworkRequest::ContentLengthHeader).toULongLong();
-        qDebug() << reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-        qDebug() << reply->attribute(QNetworkRequest::HttpReasonPhraseAttribute).toString();
+        qDebug() << reply->header(QNetworkRequest::LastModifiedHeader).
+	            toDateTime().toString();
+        qDebug() << reply->header(QNetworkRequest::ContentLengthHeader).
+	            toULongLong();
+        qDebug() << reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).
+	            toInt();
+        qDebug() << reply->attribute(QNetworkRequest::HttpReasonPhraseAttribute).
+	            toString();
 
         data = QDateTime::currentDateTime();
         name = "C:/Video/"+data.toString("yyyy-MM-dd-HH-mmss")+".mpeg";
@@ -67,7 +72,8 @@ void Downloader::checkStatus(QNetworkReply *replay)
 void Downloader::checkFlag()
 {
     manager = new QNetworkAccessManager(this);
-    QNetworkReply *reply = manager->get(QNetworkRequest(QUrl("http://planar-contact-601.appspot.com/electrovalves/video")));
+    QNetworkReply *reply = manager->get(QNetworkRequest
+             (QUrl("http://planar-contact-601.appspot.com/electrovalves/video")));
     QEventLoop loop;
     connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
 

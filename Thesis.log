@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  12 MAR 2015 04:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.12.24)  12 MAR 2015 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2823,7 +2823,7 @@ s-converted-to.pdf images/Driver/driverLED.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Driver/driverLED-eps-converted-to.pdf, id=1016, 119.44624pt x 171.64125
+<images/Driver/driverLED-eps-converted-to.pdf, id=1023, 119.44624pt x 171.64125
 pt>
 File: images/Driver/driverLED-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Driver/driverLED-eps-converted-to.pdf>
@@ -2833,7 +2833,7 @@ nput line 13.
  [51
 
  <./images/Driver/driverLED-eps-converted-to.pdf>]
-<images/Experiments/ledBoard.png, id=1033, 1549.79pt x 809.0225pt>
+<images/Experiments/ledBoard.png, id=1040, 1549.79pt x 809.0225pt>
 File: images/Experiments/ledBoard.png Graphic file (type png)
 
 <use images/Experiments/ledBoard.png>
@@ -2841,14 +2841,14 @@ Package pdftex.def Info: images/Experiments/ledBoard.png used on input line 28.
 
 (pdftex.def)             Requested size: 325.4655pt x 169.89973pt.
  [52 <./images/Experiments/ledBoard.png>]
-<images/circuitBreadboard.png, id=1044, 1373.13pt x 1644.1425pt>
+<images/circuitBreadboard.png, id=1051, 1373.13pt x 1644.1425pt>
 File: images/circuitBreadboard.png Graphic file (type png)
 
 <use images/circuitBreadboard.png>
 Package pdftex.def Info: images/circuitBreadboard.png used on input line 48.
 (pdftex.def)             Requested size: 192.2369pt x 230.17838pt.
 
-<images/breadboard.JPG, id=1046, 3902.58pt x 2601.72pt>
+<images/breadboard.JPG, id=1053, 3902.58pt x 2601.72pt>
 File: images/breadboard.JPG Graphic file (type jpg)
 
 <use images/breadboard.JPG>
@@ -2903,39 +2903,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./code/beaglebone/http.cpp [65]) (./code/storing/main.cpp)
 (./code/storing/VideoStoring.pro [66]) (./code/storing/mytimer.h)
 (./code/storing/mytimer.cpp [67]) (./code/storing/downloader.h [68])
-(./code/storing/downloader.cpp
-Overfull \hbox (45.25868pt too wide) in paragraph at lines 16--17
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (60.55884pt too wide) in paragraph at lines 29--30
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[69]
-Overfull \hbox (14.65837pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (19.75842pt too wide) in paragraph at lines 31--32
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.25868pt too wide) in paragraph at lines 32--34
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (208.46034pt too wide) in paragraph at lines 70--71
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
+(./code/storing/downloader.cpp [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70])
@@ -3715,10 +3683,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 36435 strings out of 493104
- 653231 string characters out of 6136931
- 816746 words of memory out of 5000000
- 35373 multiletter control sequences out of 15000+600000
+ 36433 strings out of 493104
+ 653213 string characters out of 6136931
+ 816747 words of memory out of 5000000
+ 35371 multiletter control sequences out of 15000+600000
  198541 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,82p,1161b,2038s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3752,10 +3720,10 @@ nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (129 pages, 28416113 bytes).
+Output written on Thesis.pdf (129 pages, 28417425 bytes).
 PDF statistics:
- 5383 PDF objects out of 6186 (max. 8388607)
- 4986 compressed objects within 50 object streams
+ 5387 PDF objects out of 6186 (max. 8388607)
+ 4990 compressed objects within 50 object streams
  3389 named destinations out of 3580 (max. 500000)
  45795 words of extra memory for PDF output out of 51595 (max. 10000000)
 
