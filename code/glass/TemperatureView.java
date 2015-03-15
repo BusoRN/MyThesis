@@ -13,11 +13,6 @@ package com.google.android.glass.sample.klabinterface;
         import android.widget.TextView;
 
 
-/**
- * View used to display draw a running Chronometer.
- *
- * This code is greatly inspired by the Android's Chronometer widget.
- */
 public class TemperatureView extends FrameLayout {
 
     private Bitmap bmp;
@@ -58,8 +53,6 @@ public class TemperatureView extends FrameLayout {
 
         public double getAvg();
     }
-
-
     private Listener mChangeListener;
 
     private ManageBitmap mManage;
@@ -80,22 +73,20 @@ public class TemperatureView extends FrameLayout {
         AvgView = (TextView) findViewById(R.id.avg);
 
         mTitle.setText("Temperature");
-        int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
+        int id = getResources().getIdentifier(
+		         "com.google.android.glass.sample.stopwatch:drawable/layout_color"
+				 ,null,null);
         beatingImage.setImageResource(id);
-
-
     }
-
-
     /**
-     * Sets a {@link Listener}.
+     * Sets a Listener.
      */
     public void setListener(Listener listener) {
         mChangeListener = listener;
     }
 
     /**
-     * Returns the set {@link Listener}.
+     * Returns the set Listener.
      */
     public Listener getListener() {
         return mChangeListener;
@@ -132,36 +123,22 @@ public class TemperatureView extends FrameLayout {
         return true;
     }
     /**
-     * Sets a {@link Listener}.
+     * Sets a Listener.
      */
     public void setManageBPM(ManageBitmap manager) {
         mManage = manager;
     }
 
-
-    /**
-     * Updates the value of the chronometer, visible for testing.
-     */
     void updateText() {
         if(mManage.isReady())
         {
-            Log.i("Temperature", "ce prova");
             bmp = mManage.getBitmap();
             AvgView.setText(Double.toString(mManage.getAvg()));
             beatingImage.setImageBitmap(bmp);
 
         }
-        //  else
-        //{
-        //  int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
-        // beatingImage.setImageResource(id);
-        //}
         if (mChangeListener != null) {
             mChangeListener.onChange();
         }
     }
-
-
-
-
 }

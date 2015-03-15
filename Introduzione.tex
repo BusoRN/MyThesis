@@ -11,10 +11,10 @@ The goal of this project is to develop a system, a microscale bioreactor contain
 	
 \end{figure}
 
-The (Fig.\ref{Fig:Body}) shows, in a schematic representation, the design of the entire \textit{XCEL} project. On the breadboard four organs are connected from each others: liver, heart, ling, and vascular system (\textit{Vasc}). The medium used to connect them is using tubing circuit where the media flows. This tubing connections are driven by electrovalves.
+The (Fig.\ref{Fig:Body}) shows, in a schematic representation, the design of the entire \textit{XCEL} project. On the breadboard four organs are connected to each others: liver, heart, lung, and vascular system (\textit{Vasc}). The medium used to connect them is a tubes circuit where the media flows. This tubes connections are driven by electrovalves.
 
 
-My role in this project has been to create a custom user interface on Google Glass for simultaneous recording of biosensing data such as temperature, pH, and microscopy images/videos as well as remote control of the microfluidic valves previously introduced. In summary my aim was to design a Google Glass App for use in organs-on-a-chip platforms.
+My role in this project has been to create a custom user interface on Google Glass for simultaneous recording of biosensing data such as temperature, pH, and microscopy images/videos as well as remote control of the microfluidic valves previously introduced. In summary my aim was to design a Google Glass App to use in organs-on-a-chip platforms.
 
 The \textit{organs-on-a-chip} platforms contain interconnected microfluidic modular components including the bioreactors for hosting biomimicry human organ models, downstream biochemical sensors to continually monitor the levels of biomarkers secreted by the organs, and physical sensors to monitor the physical microenvironment of the circulatory system. Due to their extensive similarity with human organs, these miniature human models are finding widespread applications where the prediction of in vivo responses of the human body is needed, including but not limited to drug screening, basic biomedical studies, and environmental safety assessment. Thus, the \textit{organs-on-a-chip} platforms seek to recapitulate human organ function at micro-scale by integrating microfluidic networks with three-dimensional organ models, which are expected to provide robust and accurate predictions of drug/toxin effects in human bodies. In fulfilling this aim, a set of physical/chemical parameters need to be monitored and stored in order to capture such effects of drug/toxin administered into the system.\\
 
@@ -34,15 +34,15 @@ The system designed and described in this thesis is illustrated in (Fig.\ref{Fig
  The Beaglebone Black runs processes that are in charged to:
  \begin{itemize}
  	\item acquire the sensors value and to store them onto \textit{Google App Engine Data Storage};
- 	\item acquire the video, perform the beating plot, and to store them onto \textit{Google App Engine Data Storage};
- 	\item get from the \textit{Google App Engine Data Storage} the electrovalves status set from the user through the Google Glass and to drive the electrovalves.
+ 	\item acquire the video, elaborate it (using \textit{OpenCV}) in order to perform the beating plot, and to store them onto \textit{Google App Engine Data Storage};
+ 	\item get from the \textit{Google App Engine Data Storage} the electrovalves status set from the user through the Google Glass and to drive the valves.
  \end{itemize} 
  
  The whole designed environment includes a program, written using the framework \textit{Qt}, for storing the recorded video from microscope.
  
  \section*{The Glasswear}
  \addcontentsline{toc}{section}{The Glasswear}
- The (Fig.\ref{Fig:GlasswearDiagram}) shows the structure of the Glasswear. From the Home Screen (Fig.\ref{Fig:GlasswearDiagram}a), using the voice trigger "\textit{Show Measurement}" or tapping on the "\textit{Measurement}" card (Fig.\ref{Fig:GlasswearDiagram}b) user is allowed to enter in the application (Fig.\ref{Fig:GlasswearDiagram}c). From this point, tapping and swiping, it's possible to navigate into the glasswear's menu (Fig.\ref{Fig:GlasswearDiagram}d-h) and choose which card has to be shown. \textit{View PH} (Fig.\ref{Fig:GlasswearDiagram}i) and \textit{View Temperature} (Fig.\ref{Fig:GlasswearDiagram}j) cards  plot on the card's left side the value of pH and temperature, respectively. While on the right side they show the average value. The microscope's video is shown by tapping on \textit{View Video} (Fig.\ref{Fig:GlasswearDiagram}k). The \textit{View Beating} card shows the graph of the beating associated to the video.
+ The (Fig.\ref{Fig:GlasswearDiagram}) shows the structure of the Glasswear. From the Home Screen (Fig.\ref{Fig:GlasswearDiagram}a), using the voice trigger "\textit{Show Measurement}" or tapping on the "\textit{Measurement}" card (Fig.\ref{Fig:GlasswearDiagram}b) user is allowed to enter the application (Fig.\ref{Fig:GlasswearDiagram}c). From this point, tapping and swiping, it is possible to navigate into the glasswear's menu (Fig.\ref{Fig:GlasswearDiagram}d-h) and choose which card has to be shown. \textit{View PH} (Fig.\ref{Fig:GlasswearDiagram}i) and \textit{View Temperature} (Fig.\ref{Fig:GlasswearDiagram}j) cards  plot on the card's left side the value of pH and temperature, respectively. While on the right side they show the average value. The microscope's video is shown by tapping on \textit{View Video} (Fig.\ref{Fig:GlasswearDiagram}k). The \textit{View Beating} card shows the graph of the beating associated to the video.
  \\
  
  \begin{figure}[h]
@@ -113,13 +113,13 @@ The remaining two headers, shown in the top left corner of (Fig.\ref{Fig:board})
 \section*{Video Storing}
 \addcontentsline{toc}{section}{Video Storing}
 The storing of the microscope video plays an important role of this system. It may be essential to review the recorded video  during the experiment and in order to fulfill this aim a \textit{Qt} program has been designed.\\
-We chose \textit{Qt} because in this way the program is available for different operating systems, \textit{Linux}, \textit{Windows}, and \textit{MacOS}.\\
+I chose \textit{Qt} because in this way the program is available for different operating systems, \textit{Linux}, \textit{Windows}, and \textit{MacOS}.\\
 
 The program is very easy to use, the user just has to run the executable (Fig.\ref{Fig:icostoring}).
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[scale=.5]{storing/icon}
+		\includegraphics[scale=.8]{storing/icon}
 		\caption{Storing Microscope Video Program's Icon}
 		\label{Fig:icostoring}
 	\end{center}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -48,10 +48,61 @@ Charles Severance.
 \newblock O'Reilly Media, May 2009.
 \newblock ISBN 0596555806.
 
+\bibitem[Salas(2014)]{DDGG}
+Allen Firstenberg~Jason Salas.
+\newblock \emph{Designing and Developing for Google Glass: Thinking Differently
+  for a New Platform}.
+\newblock O'Reilly, 2014.
+\newblock ISBN 1491946458.
+
+\bibitem[Tang(2014)]{BGGD}
+Jeff Tang.
+\newblock \emph{Beginning Google Glas Development}.
+\newblock Apress, 2014.
+\newblock ISBN 1430267887.
+
+\bibitem[Aggarwal(November 2014)]{GGC}
+Shalabh Aggarwal.
+\newblock \emph{Flask Framework Cookbook}.
+\newblock Packt Publishing, November 2014.
+\newblock ISBN 9781783983407.
+
+\bibitem[Jung(2005)]{OAAH}
+Walt Jung.
+\newblock \emph{Op Amp Aplications Handbook}.
+\newblock Newnes, 2005.
+\newblock ISBN 0750678445.
+\newblock URL
+  \url{http://www.analog.com/library/analogDialogue/archives/39-05/op_amp_applications_handbook.html}.
+
+\bibitem[Redmond(2013)]{PGG}
+Eric Redmond.
+\newblock \emph{Programming Google Glass, The Mirror API}.
+\newblock The Pragmatic Bookshelf, 2013.
+\newblock ISBN 9781937785796.
+
+\bibitem[Kueck(October 2012)]{PSLE}
+Christian Kueck.
+\newblock Power supply layout and emi.
+\newblock \emph{Application Note, Linear Technology}, October 2012.
+\newblock URL \url{http://cds.linear.com/docs/en/application-note/an139f.pdf}.
+
 \bibitem[Instruments(September 2008–Revised April 2013)]{SNOA529A}
 Texas Instruments.
 \newblock An-1852 designing with ph electrodes.
 \newblock \emph{Application Note}, September 2008–Revised April 2013.
 \newblock URL \url{http://www.ti.com/lit/an/snoa529a/snoa529a.pdf}.
+
+\bibitem[Instruments(January 2008–Revised December 2014)]{SNOSAW6E}
+Texas Instruments.
+\newblock Lmp7721 3-femtoampere input bias current precision amplifier.
+\newblock \emph{Datasheet}, January 2008–Revised December 2014.
+\newblock URL \url{http://www.ti.com/lit/ds/symlink/lmp7721.pdf}.
+
+\bibitem[Instruments(June 2000–Revised April 2013)]{SNVS053E}
+Texas Instruments.
+\newblock Lm4140 high precision low noise low dropout voltage reference.
+\newblock \emph{Datasheet}, June 2000–Revised April 2013.
+\newblock URL \url{http://www.ti.com/lit/ds/symlink/lm4140.pdf}.
 
 \end{thebibliography}

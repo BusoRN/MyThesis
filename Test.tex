@@ -1,6 +1,13 @@
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{breadboard}
+		\caption{Circuit mounted on breadboard side view}
+		\label{Fig:circuitsfumatp}
+	\end{center}
+\end{figure}
+For what concern the sensors acquiring paths, unfortunately, rigorous experiments have not been done. This is due to the end of my six months period. What I can say for those parts is that from the experiment that I made (not in a microfluidic or biomedical context) the results appear acceptable.
 
-	
-	In order to try the reverse control from the Google Glass to the electrovalves we made different kind of experiments.
+	While, in order to try the reverse control from the Google Glass to the electrovalves we made different kind of experiments.
 	
 	\section{LED Experiments}
 	 First of all we tried the circuit on a breadboard using LEDs instead of electrovalves. The aim of this step is to demonstrate that the firmware running on the Beaglebone Black, the Java code running on the Google Glass and the Python code running on the Google App Engine (used to store the information about the electrovalves status) work well.\\
@@ -37,10 +44,7 @@
 	The (Fig.\ref{Fig:circuitBreadboard}) shows from the top view the circuit used during the second phase of experiment, the one where we started using electrovalves in a real microfluidic application.\\
 	On the left side of the figure we can see the conditioning circuits for the temperature sensor (on the top) and pH sensor (on the bottom). While, on the other side, we can see the part of circuit in charge to drive the electrovalves.\\
 	In this last one we are going to focus for now. Each electrovalve is driven by the circuit shown in (Fig.\ref{Fig:driverEV}).
-	\clearpage
-	
-	
-	
+		
 	As you can see, this circuit is pretty close to the one of (Fig.\ref{Fig:driverLED}), indeed the only difference is given by freewheeling diode, mandatory because of inductive behavior of electrovalve's solenoid.
 	
 	\begin{figure}[h]
@@ -48,19 +52,36 @@
 		\includegraphics[scale=.14]{circuitBreadboard}
 		\caption{Circuit mounted on breadboard top view}
 		\label{Fig:circuitBreadboard}
+		
+		
 	\end{figure}
 	
 	
 	The result of the experiments with electrovalves in a real microfluidic case can bee watched in  \href{https://www.youtube.com/watch?v=CavCVnD2P1k}{\textbf{this}} video.
 	
-	\begin{figure}[h]
-		\begin{center}
-		\includegraphics[width=\textwidth]{breadboard}
-		\caption{Circuit mounted on breadboard side view}
-		\label{Fig:circuitsfumatp}
-	\end{center}
+	
 	\subsection{PCB Phase}
 	
 	Finally we replied the last experiment using a PCB (Fig.\ref{fig:PCB}),  designed for this system.\\
-	As expected the result of this experiment is the same of the previus step. 
-	\end{figure}
+	As expected the result of this experiment is the same of the previous step. 
+	
+	
+\chapter{Limitations and Improvements}
+
+As already said, unfortunately, the experiments made to test the sensors acquiring have not be made in a biomedical context.\\
+What I did was, in a first time, to test whether the Glassware is able to plot dummy data stored inside the Google App Engine. And in a second time, I tried to plot data from pH and temperature sensors, but not in an organ-on-a-chip application. In both cases the results of experiments were positive, in any case I strongly suggest experiments in a biomedical context.
+
+The embedded system that has been developed involves Internet connection and a server. every time that we are talking about Internet of Think, it is important to deal with Internet security. Thus, the next step of this project regards how to keep the data safe, and how to ensure the privacy, in such a way that no one which is not allowed to see data can have access to them. 
+
+A first, and fast way to fulfill this aim is  using accounts. In fact, \textit{Flask} framework gives the possibility to hide some link if the user is not logged in the web application. In this way, the \textit{Qt} application, the Glassware, and the Embedded Linux firmware have to log-in as the first step.
+
+As is shown in (Fig.\ref{Fig:board}), \textit{PCB} presents two connectors that are not used yet: \textit{Buttons} and \textit{Display} connectors. As can be seen fro the circuit schematic, (Fig.\ref{Fig:circuit}), the first connector has its pins tied to \textit{GPIO} pins of the microcontroller and it is supposed to be used in order to add 4 additional buttons. While the second one is tied to \textit{I2C0} interface of the microcontroller and is though to connect a \textit{I2C display}. In this way, the circuit allows some additional applications that do not require the Google Glass and PC interactions. For example a possible, and really useful, application is to include the sensors calibration. Indeed, for the time being, user has to make the calibration and then modify the bash script which runs the sensor acquiring, (List.\ref{code:sensorbash}):
+
+\begin{lstlisting}[basicstyle=\footnotesize]
+./sensor_acquiring [slope_temperature slope_ph 
+                    offset_temperature offset_ph]
+\end{lstlisting}
+
+While embedding the sensors calibration, user must perform the same calibration steps as before, but the linear regression and transfer function modification  are automatically performed by the system.
+
+\cite{ALTIOT} \cite{BGGD} \cite{CISCOIOT} \cite{DDGG} \cite{DFTSA} \cite{EBB} \cite{GGC} \cite{OAAH} \cite{PDGFRE} \cite{PGG} \cite{PSLE} \cite{SNOA529A} \cite{SNOSAW6E} \cite{SNVS053E} \cite{UGAE}

@@ -2,7 +2,7 @@
 
 while true; do
   echo "Clearing previus data on server"
-  curl http://planar-contact-601.appspot.com/clear
+  curl http://CENSURED/clear
   echo "Acquiring and uploading new sensors data"
   ./sensor_acquiring
 

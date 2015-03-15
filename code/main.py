@@ -16,7 +16,7 @@ import json
 SECONDS_BETWEEN_UPDATES = 60
 SENSOR_TIMEOUT_IN_SECONDS = 300
 ELECTROVALVES_TIME_OUT = 1000
-BUCKET_NAME = "/planar-contact-601.appspot.com/"
+BUCKET_NAME = "/CENSURED/"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'mp4'}
 UPDATE_FLAG = 'database_updated_recently'
 

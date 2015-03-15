@@ -69,30 +69,34 @@ public class MainService extends Service {
     private static final String VIDEO_TAG = "Video";
     /** TAG associated to the Beating view   */
     private static final String BEATING_TAG = "Beating";
+    /** TAG associated to the Electrovalves view */
+    private static final String ELECTROVALVES_TAG = "Electrovalve";
 
     private Bitmap bmp;
 
     /** URL where the image is stored   */
-    private static final String URL_IMAGE = "http://planar-contact-601.appspot.com/picture/view";
+    private static final String URL_IMAGE = 
+	                 "http://CENSURED/picture/view";
 
 
 
     /** Runnable which describes the task to download the Beating's graph */
-    private final ImageDownloader mImageDownloader = new ImageDownloader(URL_IMAGE, this);
-    /** Action is an enumerate used to implement switch-case for the extra text appended to the intent  */
+    private final ImageDownloader mImageDownloader = 
+	                     new ImageDownloader(URL_IMAGE, this);
+    /** Action is an enumerate used to implement switch-case for the extra 
+	  * text appended to the intent  */
     private static enum Action
     {
-        Menu, Temperature, pH, Video, Beating
+        Menu, Temperature, pH, Video, Beating, Electrovalves
     }
 
-
     private AppDrawer mCallback;
-
     private LiveCard mLiveCard;
 
-    /** HandlerThread used to launch a background thread that manages the Data updating   */
+    /** HandlerThread used to launch a background thread that manages the 
+	  * Data updating */
     private HandlerThread mHandlerThread;
-    /** Handler used to launch a background thread that manages the Data updating   */
+    /** Handler used to launch a background thread that manages the Data updating*/
     private Handler mHandler;
 
     /** INT associated to the Menu view request  */
@@ -114,20 +118,32 @@ public class MainService extends Service {
     private static final long FRAME_TIME_MILLIS = 100;
     private static final long VIDEO_UPDATE_DELAY_MILLIS = 60*1000; //time for video
 
-    /** Runnable which describes the task to update the pH and Temperature sensors values   */
-    private final UpdateSensorValuesRunnable mUpdateSensorValuesRunnable = new UpdateSensorValuesRunnable();
-    /** Runnable which describes the task to compute the pH and Temperature graph (starting from their value)  */
-    private final UpdateSensorGraphsRunnable mUpdateSensorGraphsRunnable = new UpdateSensorGraphsRunnable();
+    /** Runnable which describes the task to update the pH and Temperature 
+	  * sensors values */
+    private final UpdateSensorValuesRunnable mUpdateSensorValuesRunnable = 
+	                                        new UpdateSensorValuesRunnable();
+    /** Runnable which describes the task to compute the pH and Temperature 
+	  * graph (starting from their value)  */
+    private final UpdateSensorGraphsRunnable mUpdateSensorGraphsRunnable = 
+	                                        new UpdateSensorGraphsRunnable();
 
-    private final UpdateMicroscopeVideoRunnable mUpdateMicroscopeVideoRunnable = new UpdateMicroscopeVideoRunnable();
+    private final UpdateMicroscopeVideoRunnable mUpdateMicroscopeVideoRunnable = 
+	                                         new UpdateMicroscopeVideoRunnable();
+											  
+	 /** Runnable which describes the task to update the Electrovalves status */
+    private final UpdateElectrovalvesStatus mUpdateElectrovalvesStatus = 
+	                                             new UpdateElectrovalvesStatus();
 
-    private static final String VIDEO_FILE_NAME = Environment.getExternalStorageDirectory()+"/microscope_video.mp4";
-    private static final String TEMP_VIDEO_FILE_NAME = Environment.getExternalStorageDirectory()+"/temp_microscope_video.mp4";
+
+    private static final String VIDEO_FILE_NAME = 
+	            Environment.getExternalStorageDirectory()+"/microscope_video.mp4";
+    private static final String TEMP_VIDEO_FILE_NAME = 
+	       Environment.getExternalStorageDirectory()+"/temp_microscope_video.mp4";
 
     /** String array for the sensors (PH and Temperature) */
     private String[] mSensors = new String[]{PH_TAG, TEMPERATURE_TAG};
 
-    /*                          Hash table used for creating the graphs                             */
+    //          Hash table used for creating the graphs                             */
     /** Hash table in which the sensors values are stored  */
     private Map<String,Double> mCurrentSensorValues;
     /** Hash table in which the graphs points are stored  */
@@ -136,9 +152,6 @@ public class MainService extends Service {
     private Map<String,Bitmap> mCurrentSensorGraphs;
 
     private Map<String,Double> mSensorAverage;
-
-  //  private ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -153,16 +166,18 @@ public class MainService extends Service {
 
             // Keep track of the callback to remove it before unpublishing.
             mCallback = new AppDrawer(this);
-            mLiveCard.setDirectRenderingEnabled(true).getSurfaceHolder().addCallback(mCallback);
+            mLiveCard.setDirectRenderingEnabled(true).getSurfaceHolder().
+			                                         addCallback(mCallback);
 
             Intent menuIntent = new Intent(this, MenuActivity.class);
-            menuIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            menuIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | 
+			                     Intent.FLAG_ACTIVITY_CLEAR_TASK);
             mLiveCard.setAction(PendingIntent.getActivity(this, 0, menuIntent, 0));
             mLiveCard.attach(this);
             mLiveCard.publish(PublishMode.REVEAL);
 
 
-             /*                  Launch the task to update the data in another thread                */
+             /* Launch the task to update the data in another thread  */
             mHandlerThread = new HandlerThread("myHandlerThread");
             mHandlerThread.start();
             mHandler = new Handler(mHandlerThread.getLooper());
@@ -170,7 +185,8 @@ public class MainService extends Service {
             task.execute(this);
         } else {
             if(intent.getStringExtra(Intent.EXTRA_TEXT)!= null) {
-                Action action = Action.valueOf(intent.getStringExtra(Intent.EXTRA_TEXT));
+                Action action = Action.valueOf(intent.getStringExtra
+				                                  (Intent.EXTRA_TEXT));
                 switch (action) {
                     case Menu:
                         Log.i(LIVE_CARD_TAG, "State = Menu");
@@ -192,6 +208,10 @@ public class MainService extends Service {
                         Log.i(LIVE_CARD_TAG, "State = Video");
                         AppManager.getInstance().setState(VIDEO);
                         break;
+					case Electrovalves:
+					    Log.i(LIVE_CARD_TAG, "State = Electrovalves");
+						AppManager.getInstance().setState(ELECTROVALVES);
+						break;
                     default:
                         mLiveCard.navigate();
                         break;
@@ -203,8 +223,9 @@ public class MainService extends Service {
             }
         }
 
-        // Return START_NOT_STICKY to prevent the system from restarting the service if it is killed
-        // (e.g., due to an error). It doesn't make sense to restart automatically because the
+        // Return START_NOT_STICKY to prevent the system from restarting the 
+        // service if it is killed (e.g., due to an error). 
+        // It doesn't make sense to restart automatically because the
         // stopwatch state will have been lost.
         return START_NOT_STICKY;
     }
@@ -233,6 +254,12 @@ public class MainService extends Service {
         {
             mUpdateMicroscopeVideoRunnable.setStop(true);
             Log.i(VIDEO_TAG, "Removed Task of Uploading values");
+        }
+		if (!mUpdateElectrovalvesStatus.isStopped())
+        {
+            mUpdateElectrovalvesStatus.setStop(true);
+            Log.i(ELECTROVALVES_TAG, "Removed Task for getting 
+			                          Electrovalves status");
         }
         if (mLiveCard != null && mLiveCard.isPublished()) {
             mLiveCard.unpublish();
@@ -269,29 +296,21 @@ public class MainService extends Service {
 
             Log.i(LIVE_CARD_TAG, "Download the data");
 
-            //uploads the value captured by PH and Temperature sensors
-            //NetworkInfo ni = cm.getActiveNetworkInfo();
-            //if(ni!= null) {
+            mUpdateSensorValuesRunnable.run();
+            // give the hash table to the Callback
+            // mCallback.setSensorValues(mCurrentSensorValues);
+            // compute the graphs with previous values and give them to 
+		    // the AppDrawer
+            mUpdateSensorGraphsRunnable.run();
 
-               // if (ni.isConnected()) {
-                    mUpdateSensorValuesRunnable.run();
-                    // give the hash table to the Callback
-                    // mCallback.setSensorValues(mCurrentSensorValues);
-                    // compute the graphs with previous values and give them to the AppDrawer
-                    mUpdateSensorGraphsRunnable.run();
-
-                    // give the hash table to the Callback
-                    // mCallback.setSensorGraphs(mCurrentSensorGraphs);
-                    // download the beating image and give this to the AppDrawer
-                    mImageDownloader.run();
+            // give the hash table to the Callback
+            // mCallback.setSensorGraphs(mCurrentSensorGraphs);
+            // download the beating image and give this to the AppDrawer
+            mImageDownloader.run();
 
             mUpdateMicroscopeVideoRunnable.run();
-            //    }
-   //         }
-
-
-
-
+			
+			mUpdateElectrovalvesStatus.run();
             return null;
         }
     }
@@ -312,7 +331,8 @@ public class MainService extends Service {
         {
             if (!isStopped())
             {
-                /** JavaScript object in which the sensor values are temporary stored */
+                /** JavaScript object, where the sensor values are 
+				  * temporary stored */
                 JSONObject values = getSensorValues();
                 if (values != null)
                 {
@@ -321,7 +341,8 @@ public class MainService extends Service {
                         try
                         {
                             // update the hash table of sensor values
-                            mCurrentSensorValues.put(mSensor, values.getDouble(mSensor));
+                            mCurrentSensorValues.put(mSensor, 
+							                 values.getDouble(mSensor));
 
                         }
                         catch (JSONException ignored)
@@ -330,7 +351,8 @@ public class MainService extends Service {
                 }
 
                 // restart the Runnable after a given amount of time
-                mHandler.postDelayed(mUpdateSensorValuesRunnable, DATA_UPDATE_DELAY_MILLIS);
+                mHandler.postDelayed(mUpdateSensorValuesRunnable,
+                        				DATA_UPDATE_DELAY_MILLIS);
             }
         }
 
@@ -347,7 +369,8 @@ public class MainService extends Service {
 
         /** It is the setter that allows to stop the runnable
          *
-         * @param isStopped, true if the user wishes to stop the runnable, false otherwise
+         * @param isStopped, true if the user wishes to stop the runnable, 
+		 * false otherwise
          */
         public void setStop(boolean isStopped)
         {
@@ -363,8 +386,10 @@ public class MainService extends Service {
     {
         try
         {
-            String values = getURL("http://planar-contact-601.appspot.com/sensor_values");
-            // return a JSONObject constructed by JSONTokener, which takes a source string and extracts characters and tokens from it
+            String values = 
+			      getURL("http://CENSURED/sensor_values");
+            // return a JSONObject constructed by JSONTokener, which takes 
+			// a source string and extracts characters and tokens from it
             return new JSONObject(new JSONTokener(values));
         }
         catch (Exception e)
@@ -381,13 +406,16 @@ public class MainService extends Service {
      *
      * @param sensor , the name of sensor (pH or Temperature)
      * @param last_timestamp , the previous value of timestamp
-     * @return JSONArray, return a list of values that corresponds to the points that have to be plotted
+     * @return JSONArray, return a list of values that corresponds to the 
+	 *   points that have to be plotted
      */
     private JSONArray getDataPoints(String sensor, double last_timestamp)
     {
         try
         {
-            String url = "http://planar-contact-601.appspot.com/graphing_data?sensor=" + sensor + "&last_timestamp=" + String.valueOf(last_timestamp);
+            String url = 
+			  "http://CENSURED/graphing_data?sensor=" + 
+			   sensor + "&last_timestamp=" + String.valueOf(last_timestamp);
             String values = getURL(url);
             return new JSONArray(new JSONTokener(values));
         }
@@ -424,27 +452,12 @@ public class MainService extends Service {
         {
             if (!isStopped())
             {
-//                GraphViewSeries exampleSeries = new GraphViewSeries(new GraphView.GraphViewData[] {
-//                        new GraphView.GraphViewData(1, 2.0d)
-//                        , new GraphView.GraphViewData(2, 1.5d)
-//                        , new GraphView.GraphViewData(3, 2.5d)
-//                        , new GraphView.GraphViewData(4, 1.0d)
-//                });
-//
-//                GraphView graphView = new LineGraphView( MainService.this, "GraphViewDemo");
-//
-//                graphView.addSeries(exampleSeries);
-//
-//                mCallback.setPHGraphViewer(graphView);
-
-
-
-
-
                 // Loop through each of the sensors
                 for (String curr_sensor : mSensors) {
-                    ArrayList<DataPoint> curr_data = mSensorGraphData.get(curr_sensor);
-                    double lastTimestamp = curr_data.size() > 0 ? curr_data.get(curr_data.size() - 1).getTimestamp() : 0.;
+                    ArrayList<DataPoint> curr_data = 
+					        mSensorGraphData.get(curr_sensor);
+                    double lastTimestamp = curr_data.size() > 0 ? 
+					  curr_data.get(curr_data.size() - 1).getTimestamp() : 0.;
                     // Get a list of the new data points for this sensor
                     JSONArray newPoints = getDataPoints(curr_sensor, lastTimestamp);
                     for (int j = 0; j < newPoints.length(); j++) {
@@ -456,12 +469,13 @@ public class MainService extends Service {
                             curr_data.add(new DataPoint(timestamp, value));
                         } catch (JSONException e) {
                             Log.e(LIVE_CARD_TAG, "JSON error", e);
-                            //continue;
                         }
                     }
                     // Clear out points that are over an hour old
                     while (true) {
-                        if (curr_data.size() > 0 && curr_data.get(0).getTimestamp() < (curr_data.get(curr_data.size() - 1).getTimestamp()) - 3600) {
+                        if (curr_data.size() > 0 && curr_data.get(0).getTimestamp()
+							         < (curr_data.get(curr_data.size() - 1)
+								     .getTimestamp()) - 3600) {
                             Log.i(LIVE_CARD_TAG, "Deleting old data point");
                             curr_data.remove(0);
                         } else {
@@ -472,13 +486,12 @@ public class MainService extends Service {
                     if (curr_data.size() == 0) {
                         continue;
                     }
-                    // Store the timestamps and values in separate arrays for graphing
+                    // Store the timestamps and values in separate arrays to graph
                     ArrayList<Double> timestamps = new ArrayList<Double>();
                     ArrayList<Double> values = new ArrayList<Double>();
                     for (DataPoint curr_point : curr_data) {
                         timestamps.add(curr_point.getTimestamp());
                         values.add(curr_point.getValue());
-                        //System.out.println("Value = " + values.get(j));
                     }
 
                     mSensorAverage.put(curr_sensor,computeAverage(values));
@@ -512,15 +525,15 @@ public class MainService extends Service {
 
                     // Data xData = Data.newData(timestamps);
                     Data yData = Data.newData(values);
-
-
                     Plot plot = Plots.newPlot(yData);
                     LineChart lineChart = GCharts.newLineChart(plot);
                     lineChart.setSize(400, 200);
-                    lineChart.addYAxisLabels(AxisLabelsFactory.newNumericRangeAxisLabels(minVal, maxVal));
+                    lineChart.addYAxisLabels(AxisLabelsFactory
+					          .newNumericRangeAxisLabels(minVal, maxVal));
 
 
-                    mCurrentSensorGraphs.put(curr_sensor, getBitmapFromURL(lineChart.toURLString()));
+                    mCurrentSensorGraphs.put(curr_sensor, 
+					           getBitmapFromURL(lineChart.toURLString()));
 
                 }
 
@@ -529,7 +542,8 @@ public class MainService extends Service {
                 Log.i("Main Service", "Graphs updated");
 
                 // restart it after a given amount of time
-                mHandler.postDelayed(mUpdateSensorGraphsRunnable,GRAPH_UPDATE_DELAY_MILLIS);
+                mHandler.postDelayed(mUpdateSensorGraphsRunnable,
+				         GRAPH_UPDATE_DELAY_MILLIS);
             }
         }
 
@@ -555,30 +569,14 @@ public class MainService extends Service {
 
         /** It is the setter that allows to stop the runnable
          *
-         * @param isStopped, true if the user wishes to stop the runnable, false otherwise
+         * @param isStopped, true if the user wishes to stop the runnable,
+		 *  false otherwise
          */
         public void setStop(boolean isStopped)
         {
             this.mIsStopped = isStopped;
         }
     }
-//
-//
-//    class DataPoint {
-//        private final double mTimestamp;
-//        private final double mValue;
-//        DataPoint(double timestamp, double value) {
-//            mTimestamp = timestamp;
-//            mValue = value;
-//        }
-//        public double getTimestamp() {
-//            return mTimestamp;
-//        }
-//        public double getValue() {
-//            return mValue;
-//        }
-//    }
-
 
     /** Runnable that implements the task for downloading beating image   */
     public class ImageDownloader implements Runnable {
@@ -589,8 +587,8 @@ public class MainService extends Service {
         /** Class constructor of ImageDownloader runnable
          *
          * @param url, url link of image
-         * @param c, is the context in which the request of downloading image has been sent
-         * @see
+         * @param c, is the context in which the request of downloading image 
+		 *       has been sent
          */
         public ImageDownloader(String url,Context c )
         {
@@ -614,7 +612,8 @@ public class MainService extends Service {
             }
         }
 
-        /** It is the getter function that shows the status of ImageDownloader runnable
+        /** It is the getter function that shows the status of ImageDownloader 
+		 * runnable
          *
          * @return mIsStopped, true if the runnable is stopped, false otherwise
          */
@@ -625,7 +624,8 @@ public class MainService extends Service {
 
         /** It is the setter that allows to stop the runnable
          *
-         * @param isStopped, true if the user wishes to stop the runnable, false otherwise
+         * @param isStopped, true if the user wishes to stop the runnable,
+         * false otherwise
          */
         public void setIsStopped(boolean isStopped)
         {
@@ -658,9 +658,6 @@ public class MainService extends Service {
         }
     }
 
-    //============================================================================================= //
-
-    // =========================================================================================== //
 
     // Runnable that updates the microscope video
     private class UpdateMicroscopeVideoRunnable implements Runnable {
@@ -668,7 +665,8 @@ public class MainService extends Service {
         public void run() {
             if (!isStopped()) {
                 getMicroscopeVideo();
-                mHandler.postDelayed(mUpdateMicroscopeVideoRunnable, VIDEO_UPDATE_DELAY_MILLIS);
+                mHandler.postDelayed(mUpdateMicroscopeVideoRunnable, 
+				               VIDEO_UPDATE_DELAY_MILLIS);
             }
         }
         public boolean isStopped() {
@@ -682,7 +680,7 @@ public class MainService extends Service {
     // Pull the microscope video from a URL
     private void getMicroscopeVideo() {
         try {
-            URL url = new URL("http://planar-contact-601.appspot.com/video/view");
+            URL url = new URL("http://CENSURED/video/view");
             long startTime = System.currentTimeMillis();
             Log.i(VIDEO_TAG, "video download beginning: "+url);
             URLConnection ucon = url.openConnection();
@@ -715,6 +713,77 @@ public class MainService extends Service {
         catch (IOException e) {
             Log.e(VIDEO_TAG, "Failed to download microscope video", e);
         }
+    }
+	
+    private class UpdateElectrovalvesStatus implements Runnable {
+        private boolean mIsStopped = false;
+
+        public void run(){
+            if (!isStopped()){
+                try {
+                    getElectrovalvesStatus();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Log.i(LIVE_CARD_TAG, "Status Updated");
+            }
+        }
+        public boolean isStopped(){
+            return mIsStopped;
+        }
+        public void setStop(boolean isStopped){
+            this.mIsStopped = isStopped;
+        }
+    }
+
+    public static void getElectrovalvesStatus() throws IOException, 
+	                                                   InterruptedException {
+        for(int index = 0; index < Electrovalves.ELECTROVALVES_NUMBER; index++){
+            String res = HTTPget(Electrovalves.URL_ELECTROVALVES_BASE + "EV" + 
+			             Integer.toString(index+1));
+            if(res.equals(" True ")){
+                Electrovalves.setElectrovalvesStatus(index,true);
+            }
+            else if(res.equals(" False ")) {
+                Electrovalves.setElectrovalvesStatus(index,false);
+            }
+            Log.i("EV"+Integer.toString(index+1), res);
+
+        }
+    }
+
+
+    private static String HTTPget(String link) throws IOException, 
+	                                                  InterruptedException {
+        URL url = new URL(link);
+        HttpURLConnection mUrlConnection = (HttpURLConnection) url.openConnection();
+        InputStream in = new BufferedInputStream(mUrlConnection.getInputStream());
+        int ch;
+        StringBuffer b = new StringBuffer();
+        while ((ch = in.read()) != -1){
+            b.append((char) ch);
+        }
+
+        String mResult = new String(b);
+        return mResult;
+
+    }
+
+    // convert inputstream to String
+    private static String convertInputStreamToString(InputStream inputStream) 
+	                                                      throws IOException{
+        BufferedReader bufferedReader = new BufferedReader( 
+		                                 new InputStreamReader(inputStream));
+        String line = "";
+        String result = "";
+        while((line = bufferedReader.readLine()) != null)
+            result += line;
+
+        inputStream.close();
+        return result;
+
     }
 
 

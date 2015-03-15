@@ -8,7 +8,7 @@
 #include<stdlib.h>
 #include<curl/curl.h>
 
-std::string const URL_POST = "http://planar-contact-601.appspot.com/sensor_values";
+std::string const URL_POST = "http://CENSURED/sensor_values";
 std::string const POST_DATA_TEMPERATURE =  "sensor=temperature&value=";
 std::string const POST_DATA_PH =  "sensor=pH&value=";
 std::string const POST_DATA_BEATING =  "sensor=beating&value=";

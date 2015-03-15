@@ -72,7 +72,7 @@ How it works: using a for loop, program runs $100$ times the reading of pH and t
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{Sensors/uml1}
+	\includegraphics[width = \textwidth]{Sensors/class}
 	\caption{Sensor UML Description}
 	\label{Fig:umlsensors}
 	
@@ -83,4 +83,10 @@ How it works: using a for loop, program runs $100$ times the reading of pH and t
 The code of task which performs the driving of the valves is shown in (List.\ref{code:Electrovalves}). Also this program uses the \textit{curl} library to communicate with the Google App Engine, and also this program has been built with an infinite loop.
 
 What the task does is to download from the Google App Engine the status of each electrovalve that has been set by the user through the Google Glass. These status value are then stored onto a vector, to be written in a second step onto the output pins. As explained in (Sec.\ref{sec:electrovalves}) each valve is connected to a \textit{MOS} transistor that acts as voltage-controlled switch. The voltage which drives the transistor is the digital value written onto the output pins.
+
+The task may be called with a parameter, the suply voltage value for valves:
+\begin{verbatim}
+./ValvesUpdating [12 | 24]
+\end{verbatim}
+If the parameter is missing, $24\ V$ as voltage are assumed as default. This parameter is going to drive both the \textit{DC-DC} enable and relay selector. In fact, if the voltage is the default one, the \textit{DC-DC} does not need to work, and so, in order to reduce the power consumption, be disabled.
 \cleardoublepage

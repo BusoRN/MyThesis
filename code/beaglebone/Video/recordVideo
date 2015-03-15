@@ -18,16 +18,16 @@ while true; do
   ffmpeg -i output.mp4 -acodec mp2 Video.mp4
   echo "Uploading the Video to the server"
   curl -include --form Video.mp4 =@Video.mp4 -A "National Instruments LabVIEW" 
-	    http://planar-contact-601.appspot.com/video/submit -0
+	    http://CENSURED/video/submit -0
   echo "Updating the flag for video"
   curl  --data "name=video&status=on" 
-	    http://planar-contact-601.appspot.com/add/electrovalve
+	    http://CENSURED/add/electrovalve
   curl  --data "name=glass&status=on" 
-	    http://planar-contact-601.appspot.com/add/electrovalve
+	    http://CENSURED/add/electrovalve
   echo "Ploting the beating rate"
   ./Video/compute_beating
   echo "Uploading the beating plot"
   curl -include --form Image.jpg=@Image.jpg -A "National Instruments LabVIEW" 
-	    http://planar-contact-601.appspot.com/picture/submit -0
+	    http://CENSURED/picture/submit -0
   echo "finish"
 done

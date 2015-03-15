@@ -172,13 +172,13 @@ This filter also behaves as \textit{anti-aliasing filter}, to prevent the aliasi
 	\end{center}
 \end{figure}
 	
-	\newpage
-	\begin{figure}[t]
+	\clearpage
+	
 The output of this filter represent the input signal of the embedded ADC inside the Beaglebone Black.\\
 
 Connecting together al this part we obtain the circuit in (Fig.\ref{Fig:pHConditioning}) where we can also see the general purpose input/output pin used to drive the \textit{PGA} and the analog input used for the pH sensor. As it is explained in (Chap.\ref{ch:firmware}) \texttt{AN\_2} is used to let the microcontroller know about the added offset.
 
-\vspace{10mm}
+\begin{figure}[h]
 
 \centering
 \includegraphics[width = \textwidth]{pcb/ph_conditioning}

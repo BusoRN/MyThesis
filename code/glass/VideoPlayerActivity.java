@@ -40,11 +40,13 @@ public class VideoPlayerActivity extends Activity {
            finish();
    }
    String copyAsset(String filename) {
-       final String PATH = Environment.getExternalStorageDirectory().toString() + "/myvideoapps/";
+       final String PATH = Environment.getExternalStorageDirectory().toString() 
+	                       + "/myvideoapps/";
        File dir = new File(PATH);
        if (!dir.exists()) {
            if (!dir.mkdirs()) {
-               Log.v(TAG, "ERROR: Creation of directory " + PATH + " on sdcard failed");
+               Log.v(TAG, "ERROR: Creation of directory " + PATH 
+			          + " on sdcard failed");
                return null;
            } else {
                Log.v(TAG, "Created directory " + PATH + " on sdcard");

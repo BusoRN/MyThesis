@@ -17,12 +17,6 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewSeries;
 import com.jjoe64.graphview.LineGraphView;
 
-
-/**
- * View used to display draw a running Chronometer.
- *
- * This code is greatly inspired by the Android's Chronometer widget.
- */
 public class PHViewer extends FrameLayout {
 
     private Context context;
@@ -36,7 +30,6 @@ public class PHViewer extends FrameLayout {
         public void onChange();
     }
 
-    /** About 24 FPS, visible for testing. */
     static final long DELAY_MILLIS = 41;
 
     private ImageView beatingImage;
@@ -64,8 +57,6 @@ public class PHViewer extends FrameLayout {
 
         public double getAvg();
     }
-
-
     private Listener mChangeListener;
 
     private ManageBitmap mManage;
@@ -85,24 +76,21 @@ public class PHViewer extends FrameLayout {
         mTextTitle = (TextView) findViewById(R.id.message);
         AvgView = (TextView) findViewById(R.id.avg);
         mTextTitle.setText("PH");
-        int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
+        int id = getResources().getIdentifier(
+		        "com.google.android.glass.sample.stopwatch:drawable/layout_color"
+		        ,null,null);
         beatingImage.setImageResource(id);
-//        int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
-//        beatingImage.setImageResource(id);
-
-
     }
 
-
     /**
-     * Sets a {@link Listener}.
+     * Sets a Listener.
      */
     public void setListener(Listener listener) {
         mChangeListener = listener;
     }
 
     /**
-     * Returns the set {@link Listener}.
+     * Returns the set Listener.
      */
     public Listener getListener() {
         return mChangeListener;
@@ -139,7 +127,7 @@ public class PHViewer extends FrameLayout {
         return true;
     }
     /**
-     * Sets a {@link Listener}.
+     * Sets a Listener.
      */
     public void setManageBPM(ManageBitmap manager) {
         mManage = manager;
@@ -152,25 +140,12 @@ public class PHViewer extends FrameLayout {
     void updateText() {
         if(mManage.isReady())
         {
-            Log.i("PH", "ce prova");
             bmp = mManage.getBitmap();
             AvgView.setText(Double.toString(mManage.getAvg()));
             beatingImage.setImageBitmap(bmp);
-
-
         }
-        //  else
-        //{
-        //  int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
-        // beatingImage.setImageResource(id);
-        //}
         if (mChangeListener != null) {
             mChangeListener.onChange();
         }
     }
-
-
-
-
 }
-

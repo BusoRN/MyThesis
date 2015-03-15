@@ -10,7 +10,7 @@
 using namespace std;
 
 std::string const ELECTROVALVES_LINK = 
-    "http://planar-contact-601.appspot.com/show/";
+    "http://CENSURED/show/";
 std::string const TRUE_VALUE = " True ";
 std::string const FALSE_VALUE = " False ";
 
@@ -25,6 +25,7 @@ int main(void)
 	// constructor of pins
 	GPIO EV1(44), EV2(23), EV3(26), EV4(47), EV5(46), EV6(27), EV7(65), EV8(22);
         GPIO RELAY(61);
+	GPIO DCDCENABLE(20);
 
 	CURL *curl;
 	CURLcode res;
@@ -43,7 +44,25 @@ int main(void)
 
 	RELAY.setDirection(OUTPUT);
 
-	RELAY.setValue(HIGH);
+	if (argc == 5)
+	{
+		if(atoi(argv[1])==24)
+		{
+		    RELAY.setValue(HIGH);
+		    DCDCENABLE.setValue(HIGH);//disable the DCDC
+		}
+		else
+		{
+		    RELAY.setValue(LOW);
+		    DCDCENABLE.setValue(LOW);//enable the DCDC
+		}
+	}
+	else
+	{
+		RELAY.setValue(HIGH);
+		DCDCENABLE.setValue(HIGH);//disable the DCDC
+	}
+	
 
 	while(1)
 	{

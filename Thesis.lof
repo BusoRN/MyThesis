@@ -60,13 +60,37 @@
 \contentsline {figure}{\numberline {43}{\ignorespaces Video Submitting from the Browser\relax }}{46}{figure.caption.46}
 \addvspace {10\p@ }
 \contentsline {xchapter}{\spacedlowsmallcaps {Microscope Video Storing}}{47}{chapter.6}
+\contentsline {figure}{\numberline {44}{\ignorespaces Video Storing: Block Diagram\relax }}{48}{figure.caption.47}
+\contentsline {figure}{\numberline {45}{\ignorespaces Video Storing: Sequence Diagram\relax }}{48}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{49}{chapter.7}
+\contentsline {xchapter}{\spacedlowsmallcaps {Wearable Computing - Google Glass }}{50}{chapter.7}
+\contentsline {figure}{\numberline {46}{\ignorespaces Computing Evolution\relax }}{50}{figure.caption.49}
+\contentsline {figure}{\numberline {47}{\ignorespaces Google Glass\relax }}{51}{figure.caption.50}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{51}{chapter.8}
-\contentsline {figure}{\numberline {44}{\ignorespaces Driver for LED\relax }}{51}{figure.caption.47}
-\contentsline {figure}{\numberline {45}{\ignorespaces LEDs experiments board\relax }}{52}{figure.caption.48}
-\contentsline {figure}{\numberline {46}{\ignorespaces Circuit mounted on breadboard top view\relax }}{53}{figure.caption.49}
-\contentsline {figure}{\numberline {47}{\ignorespaces Circuit mounted on breadboard side view\relax }}{54}{figure.caption.50}
+\contentsline {xchapter}{\spacedlowsmallcaps {The Glassware}}{52}{chapter.8}
+\contentsline {figure}{\numberline {48}{\ignorespaces Interactions Between Class\relax }}{52}{figure.caption.51}
+\contentsline {figure}{\numberline {49}{\ignorespaces MainService's Runnable in Background\relax }}{52}{figure.caption.52}
+\contentsline {figure}{\numberline {50}{\ignorespaces Live Card, Adding to the Timeline\relax }}{53}{figure.caption.53}
+\contentsline {figure}{\numberline {51}{\ignorespaces Main Menu\relax }}{55}{figure.caption.54}
+\contentsline {figure}{\numberline {52}{\ignorespaces Graph Menu\relax }}{55}{figure.caption.55}
+\contentsline {figure}{\numberline {53}{\ignorespaces Menu Electrovalves\relax }}{55}{figure.caption.56}
+\contentsline {figure}{\numberline {54}{\ignorespaces Main View\relax }}{56}{figure.caption.57}
+\contentsline {figure}{\numberline {55}{\ignorespaces Temperature View\relax }}{56}{figure.caption.58}
+\contentsline {figure}{\numberline {56}{\ignorespaces Beating View\relax }}{57}{figure.caption.59}
+\contentsline {figure}{\numberline {57}{\ignorespaces \textit {Electrovalves View}\relax }}{57}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {When Status Has Not Dowloaded Yet}}}{57}{subfigure.57.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {When They Are All Off}}}{57}{subfigure.57.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {When Some of Them is On}}}{57}{subfigure.57.3}
+\contentsline {figure}{\numberline {58}{\ignorespaces \textit {Microscope Video}\relax }}{58}{figure.caption.61}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Video}}}{58}{subfigure.58.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Video on Pause}}}{58}{subfigure.58.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{55}{appendix.A}
+\contentsline {xchapter}{\spacedlowsmallcaps {Test and performance}}{60}{chapter.9}
+\contentsline {figure}{\numberline {59}{\ignorespaces Circuit mounted on breadboard side view\relax }}{60}{figure.caption.62}
+\contentsline {figure}{\numberline {60}{\ignorespaces Driver for LED\relax }}{61}{figure.caption.63}
+\contentsline {figure}{\numberline {61}{\ignorespaces LEDs experiments board\relax }}{61}{figure.caption.64}
+\contentsline {figure}{\numberline {62}{\ignorespaces Circuit mounted on breadboard top view\relax }}{62}{figure.caption.65}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Limitations and Improvements}}{63}{chapter.10}
+\addvspace {10\p@ }
+\contentsline {xchapter}{\spacedlowsmallcaps {Code}}{64}{appendix.A}

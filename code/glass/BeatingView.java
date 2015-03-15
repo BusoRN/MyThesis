@@ -12,12 +12,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-/**
- * View used to display draw a running Chronometer.
- *
- * This code is greatly inspired by the Android's Chronometer widget.
- */
 public class BeatingView extends FrameLayout {
 
     boolean mState = false;
@@ -57,7 +51,6 @@ public class BeatingView extends FrameLayout {
         public boolean isReady();
     }
 
-
     private Listener mChangeListener;
 
     private ManageBitmap mManage;
@@ -76,29 +69,28 @@ public class BeatingView extends FrameLayout {
         mTitle = (TextView) findViewById(R.id.message);
         beatingImage = (ImageView) findViewById(R.id.image_left);
         mTitle.setText("Beating");
-        int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
+        int id = getResources().getIdentifier(
+		          "com.google.android.glass.sample.stopwatch:drawable/layout_color",
+		          null,null);
         beatingImage.setImageResource(id);
-
-
     }
 
-
     /**
-     * Sets a {@link Listener}.
+     * Sets a Listener
      */
     public void setListener(Listener listener) {
         mChangeListener = listener;
     }
 
     /**
-     * Returns the set {@link Listener}.
+     * Returns the set Listener.
      */
     public Listener getListener() {
         return mChangeListener;
     }
 
     /**
-     * Starts the chronometer.
+     * Starts the BeatingView.
      */
     public void start() {
         if (!mRunning) {
@@ -108,7 +100,7 @@ public class BeatingView extends FrameLayout {
     }
 
     /**
-     * Stops the chronometer.
+     * Stops the BeatingView.
      */
     public void stop() {
         if (mRunning) {
@@ -145,17 +137,8 @@ public class BeatingView extends FrameLayout {
             bmp = mManage.getBitmap();
             beatingImage.setImageBitmap(bmp);
         }
-      //  else
-        //{
-          //  int id = getResources().getIdentifier("com.google.android.glass.sample.stopwatch:drawable/layout_color",null,null);
-           // beatingImage.setImageResource(id);
-        //}
         if (mChangeListener != null) {
             mChangeListener.onChange();
         }
     }
-
-
-
-
 }

@@ -14,7 +14,7 @@ void Downloader::doDownload()
             this, SLOT(replyFinished(QNetworkReply*)));
 
     manager->get(QNetworkRequest(
-               QUrl("http://planar-contact-601.appspot.com/video/view")));
+               QUrl("http://CENSURED/video/view")));
 }
 
 void Downloader::replyFinished (QNetworkReply *reply)
@@ -73,7 +73,7 @@ void Downloader::checkFlag()
 {
     manager = new QNetworkAccessManager(this);
     QNetworkReply *reply = manager->get(QNetworkRequest
-             (QUrl("http://planar-contact-601.appspot.com/electrovalves/video")));
+             (QUrl("http://CENSURED/electrovalves/video")));
     QEventLoop loop;
     connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
 
@@ -104,7 +104,7 @@ void Downloader::resetFlag()
     status = false;
     manager2 = new QNetworkAccessManager(this);
 
-    QUrl flag_url = QUrl("http://planar-contact-601.appspot.com/add/electrovalve");
+    QUrl flag_url = QUrl("http://CENSURED/add/electrovalve");
     QByteArray postData;
     postData.append("name=video&status=off");
     manager2->post(QNetworkRequest(flag_url), postData);

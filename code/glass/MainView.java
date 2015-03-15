@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2013 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.google.android.glass.sample.klabinterface;
 
 import android.content.Context;
@@ -30,15 +14,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Animated countdown going from {@code mTimeSeconds} to 0.
- *
- * The current animation for each second is as follow:
- *   1. From 0 to 500ms, move the TextView from {@code MAX_TRANSLATION_Y} to 0 and its alpha from
- *      {@code 0} to {@code ALPHA_DELIMITER}.
- *   2. From 500ms to 1000ms, update the TextView's alpha from {@code ALPHA_DELIMITER} to {@code 1}.
- * At each second change, update the TextView text.
- */
 public class MainView extends FrameLayout {
 
     /**
@@ -55,9 +30,7 @@ public class MainView extends FrameLayout {
     /** Time delimiter specifying when the second component is fully shown. */
     private static final long DELAY_MILLIS = 40;
 
-
     private final TextView timeText;
-
 
     private final Handler mHandler = new Handler();
     private final Runnable mUpdateViewRunnable = new Runnable() {
@@ -70,7 +43,6 @@ public class MainView extends FrameLayout {
             }
         }
     };
-
 
     private Listener mListener;
     private boolean mRunning = false;
@@ -87,7 +59,6 @@ public class MainView extends FrameLayout {
         super(context, attrs, style);
         LayoutInflater.from(context).inflate(R.layout.live_card_layout, this);
         timeText = (TextView) findViewById(R.id.timestamp);
-
     }
 
     /**
@@ -130,21 +101,14 @@ public class MainView extends FrameLayout {
         mRunning = false;
     }
 
-
-
-    /**
-     * Updates the view to reflect the current state of animation, visible for testing.
-     *
-     * @return whether or not the count down is finished.
-     */
     void updateView() {
-        //if (mRunning) {
-        timeText.setText( new SimpleDateFormat("hh:mm a").format(new Date()));
-            // updateView(millisLeft);
+        if (mRunning) {
+			timeText.setText( new SimpleDateFormat("hh:mm a")
+			        .format(new Date()));
             if (mListener != null) {
                 mListener.onChange();
             }
 
-        //}
+        }
     }
 }
